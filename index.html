@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Fun Bus Travel Agency</title>
 
@@ -17,14 +18,14 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid sticky-top">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-3">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <div class="col-9">
-          <nav class="nav">
+          <nav class="nav d-flex justify-content-end">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
@@ -34,13 +35,17 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
+
+  
+  <div class="container mb-4">
+    <div class="row mb-4">
         <div class="col-sm-12">
             <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
         </div>
     </div>
-    <div class="row">
+
+    
+    <div class="row mb-4">
       <div class="col-sm-12">
         <h2>Welcome To Fun Bus!</h2>
         <p>
@@ -48,19 +53,19 @@
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row mb-4 mx-auto">
       <div class="col-sm-6">
         <h2>Let's Go!</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-          <img src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
+          <img src="img/adventure.jpg" class="img-fluid rounded" alt="Let's go on adventure!">
       </div>
     </div>
-    <div class="row">
+    <div class="row mb-4 mx-auto">
         <div class="col-sm-6">
-            <img src="img/fun.jpg" class="img-fluid" alt="Lets have fun!">
+            <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
         </div>
         <div class="col-sm-6">
           <h2>Adventure Awaits</h2>
@@ -68,7 +73,30 @@
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
     </div>
-    <div class="row">
+
+    <!-- JavaScript Component: Carousel -->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/slider-1.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/slider-2.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/slider-3.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+
+
+    <div class="row mb-4 mx-auto">
       <div class="col-sm-12">
         <h2>Destinations</h2>
         <table class="table table-striped">
@@ -103,7 +131,7 @@
         </table>
       </div>
     </div>
-    <div class="row">
+    <div class="row mb-4 mx-auto">
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
@@ -120,7 +148,7 @@
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
     </div>
-    <div class="row">
+    <div class="row mb-4 mx-auto">
       <div class="col-sm-8">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
@@ -136,13 +164,100 @@
         </ul>
       </div>
     </div>
-    <div class="row">
+
+    <!-- JavaScript Component: Dropdowns -->
+    <div class="row mt-4 mb-4 mx-auto">
+      <div class="col-sm-3">
+          <div class="btn-group">
+              <button type="button" class="btn btn-primary">Where</button>
+              <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Mercury</a>
+                <a class="dropdown-item" href="#">Venus</a>
+                <a class="dropdown-item" href="#">Mars</a>
+                <a class="dropdown-item" href="#">Jupiter</a>
+                <a class="dropdown-item" href="#">Saturn</a>
+                <a class="dropdown-item" href="#">Uranus</a>
+                <a class="dropdown-item" href="#">Neptune</a>
+                <a class="dropdown-item" href="#">Pluto</a>
+              </div>
+            </div>
+      </div>
+      <div class="col-sm-3">
+          <div class="btn-group">
+              <button type="button" class="btn btn-success">Should</button>
+              <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">North America</a>
+                <a class="dropdown-item" href="#">South America</a>
+                <a class="dropdown-item" href="#">Africa</a>
+                <a class="dropdown-item" href="#">Asia</a>
+                <a class="dropdown-item" href="#">Europe</a>
+                <a class="dropdown-item" href="#">Australia</a>
+                <a class="dropdown-item" href="#">Antarctica</a>
+              </div>
+            </div>
+      </div>
+      <div class="col-sm-3">
+          <div class="btn-group">
+              <button type="button" class="btn btn-warning">You</button>
+              <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Stay Inside</a>
+                <a class="dropdown-item" href="#">Go Outside</a>
+                
+                
+              </div>
+            </div>
+      </div>
+      <div class="col-sm-3">
+          <div class="btn-group">
+              <button type="button" class="btn btn-danger">Go ?</button>
+              <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">The</a>
+                <a class="dropdown-item" href="#">Possibilities</a>
+                <a class="dropdown-item" href="#">Are</a>
+                <a class="dropdown-item" href="#">Endless</a>
+              </div>
+            </div>
+      </div>
+    </div>
+
+    
+    <div class="row mb-4">
       <div class="col-sm-12">
-        <form>
+        <form class="needs-validation" novalidate>
+          <div class="form-group">
           <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
+          <input id="name" type="text" class="form-control" placeholder="Name" required>
+          <div class="invalid-feedback">
+              Please type your name.
+            </div>
+          </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+          <div class="invalid-feedback">
+              What, no email?
+            </div>
+        </div>
+        <div class="form-group">
           <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
+          <input id="phone" type="phone" class="form-control" placeholder="Phone" required>
+          <div class="invalid-feedback">
+              Who doesn't have a phone?
+            </div>
+        </div>
+          <div class="form-group">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
@@ -155,14 +270,49 @@
               Mountain
             </label>
           </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label" for="exampleRadios3">
+              Island
+            </label>
+          </div>
+        </div>
           <button type="submit" class="btn btn-info">Let's Travel</button>
         </form>
       </div>
     </div>
-    <div class="row footer">
-      <div class="col-sm-12">
+    <div class="row mb-4 footer">
+      <div class="col-sm-6">
         Copyright Fun Bus 2018
       </div>
+      <div class="col-sm-6">
+        <!-- JavaScript Component: Modal -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Obligatory Modal Button
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">It's a Modal !!!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          And you clicked it!!!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
     </div>
   </div><!-- container -->
 
