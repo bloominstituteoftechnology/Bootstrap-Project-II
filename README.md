@@ -19,12 +19,12 @@ Use the existing codebase as a starting point and accomplish the following tasks
 * Use the flex utility to vertically center and move the navigation to the far right of it's container.  
 * Use the border radius utility to round the corners on the images named ```adventure.jpg``` and ```fun.jpg```;
 * Use the the display utility ```sticky-top``` on the the ```container-fluid``` div.
-* Use the spacer utility to give enough ```top-margin``` to the rows that are too close together. 
+* Use the spacer utility to give enough ```top-margin``` or ```bottom-margin``` to any element that looks like they are too close together. **Remember the syntax looks like: ```mt-1```** 
 
 ## Task - Build JavaScript Components
 
 * Introduce a carousel somewhere on the site showcasing the images found in the img folder.  It's up to you where it goes!
-* You must use at least 3 of the following JavaScript components listed here:
+* You must use at least 2 of the following JavaScript components listed here:
     - Collapse
     - Dropdowns
     - Modals
