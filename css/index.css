@@ -16,7 +16,11 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
+.nav {
+  max-width: 800px;
+}
 .nav a {
+  font-family: 'Indie Flower', cursive;
   color: black;
 }
 .container {
