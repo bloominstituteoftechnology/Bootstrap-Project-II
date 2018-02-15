@@ -2,7 +2,8 @@
 
 The grid and css components can help us create awesome and effective websites but now we want to upgrade our experiences by updating and styling a form, adding utility classes, and building JavaScript functionality.
 
-## Project 1 - Upgrade A Travel Site
+## Project 1 - Upgrade A Travel Site //Task1 
+
 A travel agency is paying you to upgrade their existing bootstrap site to include an updated form, a carousel, and several other features of your choice.  They are relying on your expertise to help make their site stand out from the others.  **Their site is already fully responsive and you must keep it that way!**
 
 Use the existing codebase as a starting point and accomplish the following tasks to complete this project:
