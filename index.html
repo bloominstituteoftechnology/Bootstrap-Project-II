@@ -136,24 +136,86 @@
             </div>
       </div>
     </div>
-    <div class="row mt-5"> <!-- 3 Column Destination Details Section - Margin on top & bottom -->
+
+    <!-- 3 Column Destination Details Section - Margin on top & bottom -->
+    <div class="row mt-5"> 
       <div class="col-sm-4 my-3">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#funModal">Get More Info</button>
       </div>
       <div class="col-sm-4 my-3">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#mountainModal">Get More Info</button>
       </div>
       <div class="col-sm-4 my-3">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#islandModal">Get More Info</button>
       </div>
     </div>
-    <div class="row mb-5 pt-5"> <!-- Bottom Section - Before You Go w/list -->
+
+    <!-- JavaScript Component: Pop-up Modals for 3 Column Destination Details Section -->
+    <div class="modal fade" id="funModal" tabindex="-1" role="dialog" aria-labelledby="funModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="funModalLabel">Fun In The Sun</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Return</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="mountainModal" tabindex="-1" role="dialog" aria-labelledby="mountainModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="mountainModalLabel">Mountain Excursion</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Return</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="islandModal" tabindex="-1" role="dialog" aria-labelledby="islandModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="islandModalLabel">Island Getaway</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Return</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!-- Bottom Section - Before You Go w/list -->
+    <div class="row mb-5 pt-5"> 
       <div class="col-sm-8">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
