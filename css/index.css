@@ -30,3 +30,6 @@ h5 {
 .rounded {
   border-radius: 6.25rem!important;
 }
+.w-100 .rounded {
+  border-radius: 2.25rem!important;
+}
