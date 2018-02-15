@@ -19,6 +19,9 @@ h5 {
 .nav a {
   color: black;
 }
+.dropdown a:hover {
+  background: lightblue;
+}
 .container {
   max-width: 800px;
 }
