@@ -27,3 +27,10 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+.carousel-caption button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+#finePrint {
+  font-size: 0.8rem;
+}
