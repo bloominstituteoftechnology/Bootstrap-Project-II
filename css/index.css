@@ -16,6 +16,9 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
+.nav {
+  display: flex;
+}
 .nav a {
   color: black;
 }
