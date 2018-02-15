@@ -2,6 +2,7 @@
 
 html, body {
     font-family: 'Roboto', sans-serif;
+    background: rgb(255, 228, 195);
 }
 
 h1, h2, h3, h4, h5 {
@@ -9,7 +10,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container-fluid {
-    background-color:white;
+    background: rgb(230, 253, 255);
     border-bottom: 2px dashed silver;    
 }
 
@@ -18,13 +19,45 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav {
+    
     a {
         color: black;
+
+        &:hover{
+            color: rgb(133, 118, 101);
+        }
     }
 }
 
 .container {
     max-width: 800px;
+}
+
+.first-slide{
+    height: 256.656px;
+    width: 850px;
+}
+
+.dont-collapse{
+    font-size: 1.3rem;
+    font-weight: 600;
+    background: #17a2b8;
+    border-color: #127483;
+    color: rgb(255, 225, 169);
+
+    &:hover{
+        background: #0b4d57;
+        border-color: #0b4d57;
+    }
+
+}
+
+.collapse{
+
+    background: #fff4e5;
+    .list-group-item{
+    background: #fff4e5;
+    }
 }
 
 .footer {
