@@ -11,7 +11,7 @@ h5 {
 }
 .container-fluid {
   background-color: white;
-  border-bottom: 2px dashed silver;
+  border-bottom: 2px dashed gray;
 }
 .logo-heading {
   padding: 20px 0 10px;
@@ -26,4 +26,24 @@ h5 {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+}
+form.box {
+  border: 1px solid #eee;
+  padding: 1rem;
+  margin: 1rem -1rem;
+  border-radius: 1rem;
+}
+@media (max-width: 760px) {
+  form.box {
+    margin: 1rem 0;
+  }
+}
+.carousel-inner {
+  border: 2px solid yellow;
+  box-shadow: .2rem .2rem .2rem .2rem yellow;
+}
+@media (max-width: 760px) {
+  .carousel-inner {
+    margin-right: 2rem;
+  }
 }
