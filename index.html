@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
         <div class="col-3">
@@ -144,18 +144,26 @@
         <form>
           <label for="name">Name</label>
           <input id="name" type="text" class="form-control" placeholder="Name">
+          <label for="email">E-mail</label>
+          <input id="email" type="text" class="form-control" placeholder="E-mail">
           <label for="phone">Phone</label>
           <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          <div class="form-check">
+          <div class="form-check form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
               Beach
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
             <label class="form-check-label" for="exampleRadios2">
               Mountain
+            </label>
+          </div>
+          <div class="form-check form-group">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label" for="exampleRadios3">
+              Islands
             </label>
           </div>
           <button type="submit" class="btn btn-info">Let's Travel</button>
