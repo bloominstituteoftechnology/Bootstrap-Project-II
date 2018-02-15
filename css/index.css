@@ -1,6 +1,7 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  background: #ffe4c3;
 }
 h1,
 h2,
@@ -10,7 +11,7 @@ h5 {
   font-family: 'Indie Flower', cursive;
 }
 .container-fluid {
-  background-color: white;
+  background: #e6fdff;
   border-bottom: 2px dashed silver;
 }
 .logo-heading {
@@ -19,8 +20,32 @@ h5 {
 .nav a {
   color: black;
 }
+.nav a:hover {
+  color: #857665;
+}
 .container {
   max-width: 800px;
+}
+.first-slide {
+  height: 256.656px;
+  width: 850px;
+}
+.dont-collapse {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background: #17a2b8;
+  border-color: #127483;
+  color: #ffe1a9;
+}
+.dont-collapse:hover {
+  background: #0b4d57;
+  border-color: #0b4d57;
+}
+.collapse {
+  background: #fff4e5;
+}
+.collapse .list-group-item {
+  background: #fff4e5;
 }
 .footer {
   color: black;
