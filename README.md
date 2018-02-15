@@ -17,7 +17,7 @@ Use the existing codebase as a starting point and accomplish the following tasks
 
 ## Task - Build Utility classes into the site
 * Use the flex utility to vertically center and move the navigation to the far right of it's container.  
-* Use the border radius utility to round the corners on the images named ```adventure.jpg``` and ```fun.jpg``` by 20px;
+* Use the border radius utility to round the corners on the images named ```adventure.jpg``` and ```fun.jpg```;
 * Use the the display utility ```sticky-top``` on the the ```container-fluid``` div.
 * Use the spacer utility to give enough ```top-margin``` to the rows that are too close together. 
 
