@@ -11,7 +11,7 @@ h5 {
 }
 .container-fluid {
   background-color: white;
-  border-bottom: 2px dashed silver;
+  border-bottom: 1px solid #d9edff;
 }
 .logo-heading {
   padding: 20px 0 10px;
