@@ -19,12 +19,12 @@
 <body>
   <div class="container-fluid">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-baseline"> <!--task2-->
         <div class="col-3">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <div class="col-9">
-          <nav class="nav">
+          <nav class="nav justify-content-end align-items-center"> <!--task2-->
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
@@ -37,7 +37,7 @@
   <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
+            <img src="img/fun-bus.jpg" class="img-fluid rounded" alt="Responsive image">
         </div>
     </div>
     <div class="row">
@@ -55,12 +55,12 @@
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-          <img src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
+          <img src="img/adventure.jpg" class="img-fluid rounded" alt="Let's go on adventure!"> <!--task2-->
       </div>
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <img src="img/fun.jpg" class="img-fluid" alt="Lets have fun!">
+            <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!"> <!--task2-->
         </div>
         <div class="col-sm-6">
           <h2>Adventure Awaits</h2>
@@ -137,24 +137,34 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 ">
         <form>
-          <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
-          <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Beach
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Mountain
-            </label>
-          </div>
+          <div class="form-group">
+            <label for="name" class="mt-2">Name</label>
+            <input id="name" type="text" class="form-control" placeholder="Enter name">
+            <label for="phone"class="mt-2">Phone</label>
+            <input id="phone" type="phone" class="form-control" placeholder="Enter phone">
+            <label for="email"class="my-2">Email</label>
+            <input id="email" type="text" class="form-control" placeholder="Enter email"> <!--task1-->
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Beach
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Mountain
+              </label>
+            </div>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+              <label class="form-check-label" for="exampleRadios3"> <!--task1-->
+                Island
+              </label>
+            </div>
+          </div> <!--task1-->
           <button type="submit" class="btn btn-info">Let's Travel</button>
         </form>
       </div>
