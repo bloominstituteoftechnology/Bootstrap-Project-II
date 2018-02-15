@@ -140,19 +140,37 @@
  <!-- Form -->
     <div class="row mb-5">
       <div class="col-sm-12">
-        <form>
+        <form class="needs-validation" novalidate>
           <div class="form-group">
               <label for="name">Name</label>
-              <input id="name" type="text" class="form-control" placeholder="Name">
+              <input id="name" type="text" class="form-control" placeholder="Name" required>
+              <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please enter your name.
+                </div>
          </div>
          <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+            <small id="emailHelp" class="form-text text-muted">We promise to never share your email with anyone else.</small>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                  Please provide a valid email address.
+              </div>
           </div>
          <div class="form-group">
             <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control" placeholder="Phone">
+            <input id="phone" type="phone" class="form-control" placeholder="Phone" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                  Please provide a valid phone number address.
+              </div>
         </div>
         <div class="form-group">
           <div class="form-check">
@@ -168,8 +186,8 @@
             </label>
           </div>
           <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+              <label class="form-check-label" for="exampleRadios3">
                 Island
               </label>
             </div>
