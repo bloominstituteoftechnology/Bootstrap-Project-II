@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
 
+
   <title>Fun Bus Travel Agency</title>
 
 
@@ -17,13 +18,13 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
-        <div class="col-3">
+        <div class="col-3"> 
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
-        <div class="col-9">
+        <div class="col-9 d-flex justify-content-end justify-content-center">
           <nav class="nav">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
@@ -55,12 +56,12 @@
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-          <img src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
+          <img src="img/adventure.jpg" class="img-fluid rounded" alt="Let's go on adventure!">
       </div>
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <img src="img/fun.jpg" class="img-fluid" alt="Lets have fun!">
+            <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
         </div>
         <div class="col-sm-6">
           <h2>Adventure Awaits</h2>
@@ -143,16 +144,26 @@
           <input id="name" type="text" class="form-control" placeholder="Name">
           <label for="phone">Phone</label>
           <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          <div class="form-check">
+
+          <label for="Email">Email</label>
+          <input id="Email" type="text" class="form-control" placeholder="Email">
+
+          <div class="form-check form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
               Beach
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
             <label class="form-check-label" for="exampleRadios2">
               Mountain
+            </label>
+          </div>
+          <div class="form-check form-group">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label" for="exampleRadios3">
+           Island
             </label>
           </div>
           <button type="submit" class="btn btn-info">Let's Travel</button>
