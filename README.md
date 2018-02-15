@@ -32,4 +32,6 @@ Use the existing codebase as a starting point and accomplish the following tasks
     - Scrollspy
     - Navbar
 
+**If you need to add content for the new components (like collapse for example) just use lorem ipsum for your text!**
+
 ## Stretch Task - Add validation to your form and make every field required.
