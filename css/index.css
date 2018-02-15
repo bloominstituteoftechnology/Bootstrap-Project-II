@@ -2,6 +2,10 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+html body,
+body body {
+  position: relative;
+}
 h1,
 h2,
 h3,
