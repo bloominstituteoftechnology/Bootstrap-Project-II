@@ -17,14 +17,14 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
         <div class="col-3">
-            <h1 class="logo-heading">Fun Bus!</h1>
+            <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <div class="col-9">
-          <nav class="nav">
+          <nav class="nav flex-column align-items-end">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
@@ -37,7 +37,7 @@
   <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
+            <img src="img/fun-bus.jpg" class="img-fluid mb-3" alt="Responsive image">
         </div>
     </div>
     <div class="row">
@@ -55,12 +55,12 @@
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-          <img src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
+          <img src="img/adventure.jpg" class="img-fluid rounded mt-3 mb-3" alt="Let's go on adventure!">
       </div>
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <img src="img/fun.jpg" class="img-fluid" alt="Lets have fun!">
+            <img src="img/fun.jpg" class="img-fluid rounded mb-3" alt="Lets have fun!">
         </div>
         <div class="col-sm-6">
           <h2>Adventure Awaits</h2>
@@ -104,17 +104,17 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-4 mt-4 mb-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mt-4 mb-4">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mt-4 mb-4">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info">Get More Info</button>
@@ -137,22 +137,36 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-6">
         <form>
+          <div class="form-group">
           <label for="name">Name</label>
           <input id="name" type="text" class="form-control" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" class="form-control" placeholder="email">
+        </div>
+        <div class="form-group">
           <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          <div class="form-check">
+          <input id="phone" type="phone" class="form-control" pb-2 placeholder="Phone">
+        </div>
+          <div class="form-check form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
               Beach
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
             <label class="form-check-label" for="exampleRadios2">
               Mountain
+            </label>
+          </div>
+          <div class="form-check form-group">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              Island
             </label>
           </div>
           <button type="submit" class="btn btn-info">Let's Travel</button>
