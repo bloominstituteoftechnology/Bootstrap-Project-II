@@ -25,12 +25,31 @@
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <div class="col-9 d-flex align-items-center d-flex justify-content-end">
-          <nav class="nav">
+<!-- Adding a nav bar Here -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <a class="navbar-brand" href="#"><h1 class="logo-heading">Fun Bus</h1></a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">About Us</a>
+        <a class="nav-item nav-link" href="#">Blog</a>
+        <a class="nav-item nav-link" href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+<!-- end of navbar -->
+          <!-- <nav class="nav">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
             <a class="nav-link" href="#">Contact</a>
-          </nav>
+          </nav> -->
         </div>
       </div>
     </div>
@@ -208,12 +227,38 @@
         </form>
     </div>
 
-
-    <div class="row footer">
-      <div class="col-sm-12">
-        Copyright Fun Bus 2018
+<!-- Javascript component Modal -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+    Click on me
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">It is a modal</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          You are at the end of the site
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
       </div>
     </div>
+  </div>
+ </div>
+ <div class="row footer">
+    <div class="col-sm-12">
+      Copyright Fun Bus 2018
+    </div>
+
   </div><!-- container -->
 
     <script src="js/jquery-3.3.1.min.js"></script>
