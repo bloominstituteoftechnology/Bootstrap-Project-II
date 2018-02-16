@@ -22,6 +22,14 @@ h5 {
 .container {
   max-width: 800px;
 }
+.btn-secondary {
+  background: #17a2b8;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-color: #17a2b8;
+}
+.btn-secondary:hover {
+  background: #148ea1;
+}
 .footer {
   color: black;
   background: blanchedalmond;
