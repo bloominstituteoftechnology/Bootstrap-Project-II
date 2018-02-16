@@ -1,35 +1,66 @@
-// Start here!
-
-html, body {
+// Start here! html, body {
     font-family: 'Roboto', sans-serif;
 }
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Indie Flower', cursive;
+ h1, h2, h3, h4, h5 {
+     font-family: 'Indie Flower', cursive;
 }
-
-.container-fluid {
-    background-color:white;
-    border-bottom: 2px dashed silver;    
+ .container-fluid {
+     background-color:white;
+     border-bottom: 2px dashed silver;
 }
-
-.logo-heading {
-    padding: 20px 0 10px;
+ .logo-heading {
+     padding: 20px 0 10px;
 }
-
-.nav {
-    display:flex;
-    a {
-        color: black;
+ .nav {
+     display:flex;
+     justify-content: flex-end;
+     a {
+         margin-top:24px;
+         color: black;
     }
 }
-
-.container {
-    max-width: 800px;
+ .container {
+     max-width: 800px;
 }
-
-.footer {
-    color: black;
-    background: blanchedalmond;
-    padding: 20px 0;
+ .round-img {
+     border-radius: 60px;
+}
+ .footer {
+     color: black;
+     background: blanchedalmond;
+     padding: 20px 0;
+     max-width: 800px;
+}
+ .modal {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     padding-top: 27rem;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgba(0,0,0,0.7);
+}
+ .modal-content {
+     background-color: #161616;
+     margin: auto;
+     padding: 20px;
+     border: 1px solid #888;
+     width: 80%;
+     p{
+         color:white;
+    }
+}
+ .close {
+     color: #818181;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+     &:hover, &:focus {
+         color: white;
+         text-decoration: none;
+         cursor: pointer;
+    }
 }
