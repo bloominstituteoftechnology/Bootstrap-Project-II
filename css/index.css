@@ -28,8 +28,9 @@ h5 {
   padding: 20px 0;
 }
 .rounded {
-  border-radius: 6.25rem!important;
-}
-.w-100 .rounded {
   border-radius: 2.25rem!important;
+}
+.myBtn {
+  width: 100%;
+  font-size: 2rem;
 }
