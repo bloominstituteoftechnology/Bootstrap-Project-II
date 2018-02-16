@@ -20,7 +20,10 @@
 
 <body>
   <div class="container-fluid sticky-top">
+
+
     <div class="container">
+
       <div class="row align-items-center">
         <div class="col-4">
           <h1 class="logo-heading">Boring Bus</h1>
@@ -258,8 +261,34 @@
       </div>
     </div>
     <div class="row footer">
-      <div class="col-sm-12">
+      <div class="col-sm-8">
         Copyright Boring Bus 2018
+      </div>
+      <div class="col-sm-4 justify-content-between ">
+        <button type="button" class="btn btn-info btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Do Not Click
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">WARNING: A very anoying thing has taken place.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                A problem caused something undesirable to happen. If you want, you can read 1,000,000 pages about it. There is no explanation though. However, for absolutley no reason at all, you can send an error report.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send Error Report</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
