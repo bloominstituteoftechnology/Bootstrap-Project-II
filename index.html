@@ -84,7 +84,6 @@
         </div>
     </div>
     <!-- JavaScript Component: Carousel -->
-    <!-- !! Look up data-target -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> 
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -261,19 +260,32 @@
     <div class="row mt-5">
       <div class="col-sm-12">
         <form>
+
+
           <div class="form-group">
             <label for="name">Name</label>
-            <input id="name" type="text" class="form-control" placeholder="Name">              
+            <input id="name" type="text" class="form-control is-invalid" placeholder="Name" aria-describedby="inputGroupPrepend3" required>              
           </div>
+
+
           <div class="form-group">
             <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control" placeholder="Phone">
-            </div>          
+            <input id="phone" type="phone" class="form-control is-invalid" placeholder="Phone" aria-describedby="inputGroupPrepend3" required>
+          </div>
+          <div class="valid-feedback">
+              Looks good!
+          </div>
+            
+            
           <div class="form-group">
             <label for="email">Email</label>
-            <!-- !! Check if there is email specific type -->
-            <input type="text" class="form-control" id="email" placeholder="Email">
+            <input type="text" class="form-control is-invalid" id="email" placeholder="Email" aria-describedby="inputGroupPrepend3" required>
           </div>
+          <div class="invalid-feedback">
+              Please enter a valid email.
+          </div>
+
+
           <div class="form-group">
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
