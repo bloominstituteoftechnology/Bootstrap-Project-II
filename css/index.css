@@ -26,4 +26,8 @@ h5 {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+  height: 50px;
+}
+.btn-primary {
+  border-color: black;
 }
