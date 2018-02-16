@@ -27,7 +27,7 @@ h5 {
 .container {
   max-width: 800px;
 }
-.round-this {
+.round-img {
   border-radius: 60px;
 }
 .footer {
@@ -69,4 +69,12 @@ h5 {
   color: white;
   text-decoration: none;
   cursor: pointer;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}
+.carousel-caption h3 {
+  text-shadow: 2px 2px 3px #000000;
 }
