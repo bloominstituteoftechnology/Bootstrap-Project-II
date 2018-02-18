@@ -20,10 +20,32 @@ h5 {
   color: black;
 }
 .container {
+  background: white;
   max-width: 800px;
+}
+.modal-content {
+  background: burlywood;
+}
+.modal-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.btn-primary {
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  background-color: burlywood;
+  border-color: burlywood;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0f6c7b;
+  border-color: #0f6c7b;
 }
 .footer {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+}
+.footer .col-sm-12 {
+  text-align: center;
 }
