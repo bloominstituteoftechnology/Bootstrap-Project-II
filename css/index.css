@@ -28,6 +28,12 @@ h5 {
 .container .vertical-center {
   align-items: center;
 }
+.container .carousel #second-slide-caption {
+  color: black;
+}
+.container .carousel #third-slide-caption {
+  color: black;
+}
 .footer {
   color: black;
   background: blanchedalmond;
