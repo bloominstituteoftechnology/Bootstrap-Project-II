@@ -8,7 +8,7 @@
 
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
   <!--[if lt IE 9]>
@@ -62,6 +62,7 @@
 
 
     </div>
+
     <div class="row mt-3">
       <div class="col-sm-12">
         <h2>Welcome To Fun Bus!</h2>
@@ -146,6 +147,9 @@
       <div class="col-sm-8">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
+	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">
+	  Join Our Newsletter!
+	</button>
       </div>
       <div class="col-sm-4">
         <h4>Don't Forget These!</h4>
@@ -207,6 +211,28 @@
       </div>
     </div>
   </div><!-- container -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+	<div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Join our kickin' newsletter!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+	</div>
+	<div class="modal-body">
+	  We have over 10 million subscribers. Find out why!
+          ...
+	</div>
+	<div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-info">Subscribe</button>
+	</div>
+      </div>
+    </div>
+  </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
