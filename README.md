@@ -1,3 +1,5 @@
+Collaborators: [Caroline Cariste](https://github.com/pinto8), [Victor Montoya](https://github.com/victoramontoya) and [Andrew Jarrett](https://github.com/ahrjarrett)
+
 # Bootstrap II
 
 The grid and css components can help us create awesome and effective websites but now we want to upgrade our experiences by updating and styling a form, adding utility classes, and building JavaScript functionality.
@@ -16,10 +18,10 @@ Use the existing codebase as a starting point and accomplish the following tasks
 * Style the form by wrapping each input and all the radio buttons in a ```form-group```
 
 ## Task - Build Utility classes into the site
-* Use the flex utility to vertically center and move the navigation to the far right of it's container.  
+* Use the flex utility to vertically center and move the navigation to the far right of it's container.
 * Use the border radius utility to round the corners on the images named ```adventure.jpg``` and ```fun.jpg```;
 * Use the the display utility ```sticky-top``` on the the ```container-fluid``` div.
-* Use the spacer utility to give enough ```top-margin``` or ```bottom-margin``` to any element that looks like they are too close together. **Remember the syntax looks like: ```mt-1```** 
+* Use the spacer utility to give enough ```top-margin``` or ```bottom-margin``` to any element that looks like they are too close together. **Remember the syntax looks like: ```mt-1```**
 
 ## Task - Build JavaScript Components
 
