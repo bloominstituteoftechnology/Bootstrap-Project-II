@@ -247,18 +247,27 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <form>
+        <form class="validation-req" novalidate>
           <div class="form-group"> 
             <label for="name">Name</label>
-            <input id="name" type="text" class="form-control" placeholder="Name">
+            <input id="name" type="text" class="form-control" placeholder="Name" required>
+            <div class="invalid-feedback">
+              Please input a valid name.
+            </div>
           </div>
           <div class="form-group">
             <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control" placeholder="Phone">
+            <input id="phone" type="phone" class="form-control" placeholder="Phone" required>
+            <div class="invalid-feedback">
+                Please input a valid phone number.
+              </div>
           </div>
           <div class="form-group">
             <label for="email"> Email</label>
-            <input id="email" type="email" class="form-control" placeholder="Email">
+            <input id="email" type="email" class="form-control" placeholder="Email" required>
+            <div class="invalid-feedback">
+                Please use a valid email.
+              </div>
           </div>
           <div class="form-group">
             <div class="form-check">
@@ -282,6 +291,24 @@
           </div>
           <button type="submit" class="btn btn-info">Let's Travel</button>
         </form>
+        
+        <script>
+            (() => {
+              'use strict';
+              window.addEventListener('load', () => {
+                var forms = document.getElementsByClassName('validation-req');
+                var validation = Array.prototype.filter.call(forms, (form) => {
+                  form.addEventListener('submit', (event) => {
+                    if (!form.checkValidity()) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
       </div>
     </div>
     <div class="row footer">
