@@ -148,6 +148,67 @@
         <div class="collapse" id="collapseExample2">
             <div class="card card-body mt-3">
                 Find simmering-hot deals to one-of-a-kind beaches!
+
+                <!-- javascript compononent: modal -->
+
+                <button type="submit" class="btn btn-info mt-3" id="beaches-btn" data-toggle="modal" data-target="#exampleModal1">
+                  Book Beaches Travels
+                </button>
+                <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel1">Book Beaches Travel</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                  <label for="name">Name</label>
+                                  <input id="name" type="text" class="form-control" placeholder="Name">
+                                </div> <!-- form-group row -->
+                              <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input id="phone" type="phone" class="form-control" placeholder="Phone">
+                              </div>  <!-- form-group row -->
+                              <div class="form-group">
+                                <label for="email">Email</label>
+                                <input id="email" type="email" class="form-control" placeholder="Email">
+                              </div> <!-- form-group row -->
+                              <div class="form-check">
+                                  <div class="form-group">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                  <label class="form-check-label" for="exampleRadios1">
+                                    Beach
+                                  </label>
+                                  </div><!-- form-group row -->
+                                </div>
+                                <div class="form-check disabled">
+                                  <div class="form-group">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" disabled>
+                                  <label class="form-check-label" for="exampleRadios2">
+                                    Mountain
+                                  </label>
+                                  </div> <!-- form-group row -->
+                                </div>
+                                <div class="form-check disabled">
+                                  <div class="form-group">
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                                  <label class="form-check-label" for="exampleRadios">
+                                    Island
+                                  </label>
+                                  </div> <!-- form-group row -->
+                                </div>
+                                <button type="submit" class="btn btn-info" id="LTbtn">Let's Travel</button>
+                              </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                
             </div>
           </div> <!-- collapse end -->
 
@@ -164,6 +225,67 @@
           <div class="collapse" id="collapseExample">
             <div class="card card-body mt-3">
               Adventure through rough terrain, and find spots nobody else has through our Mountain Resorts!
+
+              <!-- Javascript component: modal -->
+
+              <button type="submit" class="btn btn-info mt-3" id="mountain-btn" data-toggle="modal" data-target="#exampleModal2">
+                Book Mountain Travels
+              </button>
+              <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel2">Book Mountain Travels</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          <form>
+                              <div class="form-group">
+                                <label for="name">Name</label>
+                                <input id="name" type="text" class="form-control" placeholder="Name">
+                              </div> <!-- form-group row -->
+                            <div class="form-group">
+                              <label for="phone">Phone</label>
+                              <input id="phone" type="phone" class="form-control" placeholder="Phone">
+                            </div>  <!-- form-group row -->
+                            <div class="form-group">
+                              <label for="email">Email</label>
+                              <input id="email" type="email" class="form-control" placeholder="Email">
+                            </div> <!-- form-group row -->
+                              <div class="form-check disabled">
+                                <div class="form-group">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" disabled>
+                                <label class="form-check-label" for="exampleRadios1">
+                                  Beach
+                                </label>
+                                </div><!-- form-group row -->
+                              </div>
+                              <div class="form-check">
+                                <div class="form-group">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+                                <label class="form-check-label" for="exampleRadios2">
+                                  Mountain
+                                </label>
+                                </div> <!-- form-group row -->
+                              </div>
+                              <div class="form-check disabled">
+                                <div class="form-group">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                                <label class="form-check-label" for="exampleRadios">
+                                  Island
+                                </label>
+                                </div> <!-- form-group row -->
+                              </div>
+                              <button type="submit" class="btn btn-info" id="LTbtn">Let's Travel</button>
+                            </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                
             </div>
           </div> <!-- collapse end -->
 
@@ -180,8 +302,69 @@
         <div class="collapse" id="collapseExample3">
             <div class="card card-body mt-3">
               Amazing tropical weather, unique cuisine, and stunning beaches awaits you. Book out island travels now!
+
+              <!-- Javascript component: modal -->
+
+              <button type="submit" class="btn btn-info mt-3" id="island-btn" data-toggle="modal" data-target="#exampleModal3">
+                Book Island Travels
+              </button>
+              <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel3">Book Island Travels</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          <form>
+                              <div class="form-group">
+                                <label for="name">Name</label>
+                                <input id="name" type="text" class="form-control" placeholder="Name">
+                              </div> <!-- form-group row -->
+                            <div class="form-group">
+                              <label for="phone">Phone</label>
+                              <input id="phone" type="phone" class="form-control" placeholder="Phone">
+                            </div>  <!-- form-group row -->
+                            <div class="form-group">
+                              <label for="email">Email</label>
+                              <input id="email" type="email" class="form-control" placeholder="Email">
+                            </div> <!-- form-group row -->
+                            <div class="form-check disabled">
+                                <div class="form-group">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" disabled>
+                                <label class="form-check-label" for="exampleRadios1">
+                                  Beach
+                                </label>
+                                </div><!-- form-group row -->
+                              </div>
+                              <div class="form-check disabled">
+                                <div class="form-group">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" disabled>
+                                <label class="form-check-label" for="exampleRadios2">
+                                  Mountain
+                                </label>
+                                </div> <!-- form-group row -->
+                              </div>
+                              <div class="form-check">
+                                <div class="form-group">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
+                                <label class="form-check-label" for="exampleRadios">
+                                  Island
+                                </label>
+                                </div> <!-- form-group row -->
+                              </div>
+                              <button type="submit" class="btn btn-info" id="LTbtn">Let's Travel</button>
+                            </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
             </div>
           </div> <!-- collapse end -->
+          
       </div>
     </div>
     <div class="row">
@@ -200,50 +383,8 @@
         </ul>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <form>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" type="text" class="form-control" placeholder="Name">
-          </div> <!-- form-group row -->
-        <div class="form-group">
-          <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
-        </div>  <!-- form-group row -->
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input id="email" type="email" class="form-control" placeholder="Email">
-        </div> <!-- form-group row -->
-          <div class="form-check">
-            <div class="form-group">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Beach
-            </label>
-            </div><!-- form-group row -->
-          </div>
-          <div class="form-check">
-            <div class="form-group">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Mountain
-            </label>
-            </div> <!-- form-group row -->
-          </div>
-          <div class="form-check">
-            <div class="form-group">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-            <label class="form-check-label" for="exampleRadios">
-              Island
-            </label>
-            </div> <!-- form-group row -->
-          </div>
-          <button type="submit" class="btn btn-info" id="LTbtn">Let's Travel</button>
-        </form>
-      </div>
-    </div> <!-- row -->
-    <div class="row footer">
+
+    <div class="row footer mt-3">
       <div class="col-sm-12">
         Copyright Fun Bus 2018
       </div>
