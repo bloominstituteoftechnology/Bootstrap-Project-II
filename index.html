@@ -17,14 +17,14 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
         <div class="col-3">
-            <h1 class="logo-heading">Fun Bus</h1>
+            <h1 class="logo-heading">Fun Bus!</h1>
         </div>
-        <div class="col-9">
-          <nav class="nav">
+        <div class="col-9 d-flex justify-content-end">
+          <nav class="nav my-auto">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
@@ -40,7 +40,7 @@
             <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-4">
       <div class="col-sm-12">
         <h2>Welcome To Fun Bus!</h2>
         <p>
@@ -48,27 +48,65 @@
         </p>
       </div>
     </div>
+
     <div class="row">
+
+      <div class="col-sm12">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-dark ml-3" data-toggle="modal" data-target="#exampleModalCenter">
+        ~~~~The dark truth behind this company (don't click!!)~~~~
+        </button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Our secret that we won't tell you in person...</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        This is not an adventure vacation website!!! Run away! We just want to force you to taste-test donuts for our new jelly-filled-donut company!! ARggggggg
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">huh</button>
+        <button type="button" class="btn btn-primary">I still think it's a vacation/touring company</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+    </div>
+
+
+    <div class="row my-3">
       <div class="col-sm-6">
         <h2>Let's Go!</h2>
-        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
+        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-          <img src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
+          <img src="img/adventure.jpg" class="img-fluid rounded-circle" alt="Let's go on adventure!">
       </div>
     </div>
-    <div class="row">
+    <div class="row my-3">
         <div class="col-sm-6">
-            <img src="img/fun.jpg" class="img-fluid" alt="Lets have fun!">
+            <img src="img/fun.jpg" class="img-fluid rounded-circle" alt="Lets have fun!">
         </div>
         <div class="col-sm-6">
           <h2>Adventure Awaits</h2>
-          <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
+          <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
     </div>
-    <div class="row">
+
+
+    <div class="row my-3">
       <div class="col-sm-12">
         <h2>Destinations</h2>
         <table class="table table-striped">
@@ -103,7 +141,42 @@
         </table>
       </div>
     </div>
-    <div class="row">
+
+
+    <div class="row car my-3">
+
+      <div class="col-sm-12">
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/slider-1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/slider-2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/slider-3.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        
+      </div>
+
+    </div>
+
+
+
+
+    <div class="row my-3">
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
@@ -120,7 +193,8 @@
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
     </div>
-    <div class="row">
+
+    <div class="row mt-5">
       <div class="col-sm-8">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
@@ -136,13 +210,27 @@
         </ul>
       </div>
     </div>
-    <div class="row">
+
+
+    <p>
+      <button class="btn btn-success btn-lg" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Take me on the FunBus!
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+
+
+    <div class="form-group row my-5">
       <div class="col-sm-12">
         <form>
           <label for="name">Name</label>
           <input id="name" type="text" class="form-control" placeholder="Name">
           <label for="phone">Phone</label>
           <input id="phone" type="phone" class="form-control" placeholder="Phone">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group mt-5 ml-1">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
@@ -155,10 +243,24 @@
               Mountain
             </label>
           </div>
-          <button type="submit" class="btn btn-info">Let's Travel</button>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Island
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-info mt-5 ml-3">Let's Travel</button>
         </form>
       </div>
+      </div>
     </div>
+  </div>
+</div>
+
+
+
     <div class="row footer">
       <div class="col-sm-12">
         Copyright Fun Bus 2018
