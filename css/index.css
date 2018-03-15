@@ -22,6 +22,9 @@ h5 {
 .container {
   max-width: 800px;
 }
+.accordion-title {
+  color: black !important;
+}
 .footer {
   color: black;
   background: blanchedalmond;
