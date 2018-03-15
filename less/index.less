@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5 {
     a {
         color: black;
     }
+    
+    .nav-link {
+        display: flex;
+    }
 }
 
 .container {
@@ -32,3 +36,28 @@ h1, h2, h3, h4, h5 {
     background: blanchedalmond;
     padding: 20px 0;
 }
+
+.collapse {
+    visibility: hidden;
+  }
+  .collapse.show {
+    visibility: visible;
+    display: block;
+  }
+  .collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+    -webkit-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+  }
+  .collapsing.width {
+    -webkit-transition-property: width, visibility;
+    transition-property: width, visibility;
+    width: 0;
+    height: auto;
+  }

@@ -17,18 +17,36 @@
 </head>
 
 <body>
-  <div class="container-fluid sticky-top"> <!--sticky header -->
+  <div class="container-fluid sticky-top d-flex space-between py-3"> <!--sticky header -->
     <div class="container">
       <div class="row">
         <div class="col-3">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
-        <div class="col-9 d-flex justify-content-end align-items-center"> <!-- aligning w/ flex -->
-          <nav class="nav">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
+
+        <!-- external content navbar -->
+        <div class="col-9 d-flex justify-content-end m-auto nav">
+          <div class="pos-f-t">
+
+              <nav class="navbar navbar-light bg-white justify-content-end">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </nav>
+
+              <div class="collapse show width" id="navbarToggleExternalContent">
+                <div class="bg-white d-flex">                  
+                  <a class="nav-link active" href="#">Home</a>
+                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#">Blog</a>
+                  <a class="nav-link" href="#">Contact</a>                
+                </div>
+              </div>       
+
+
+          </div>
+        </div>
+
           </nav>
         </div>
       </div>
@@ -133,7 +151,7 @@
         </table>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-3">
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
@@ -150,7 +168,7 @@
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-4">
       <div class="col-sm-8">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
