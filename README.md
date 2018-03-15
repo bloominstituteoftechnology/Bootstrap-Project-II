@@ -25,9 +25,9 @@ Use the existing codebase as a starting point and accomplish the following tasks
 
 **Help the TAs out by making html comments where you used your JavaScript Components ```<!-- JavaScript Component: Carousel -->``` would be a great example to let them know where you put it.**
 
-* Introduce a carousel somewhere on the site showcasing the images found in the img folder.  It's up to you where it goes!
+* Introduce a carousel somewhere on the site showcasing the images found in the img folder.  It's up to you where it goes! <<//DONE
 * You must use at least 2 of the following JavaScript components listed here:
-    - Collapse
+    - Collapse <<//DONE
     - Dropdowns
     - Modals
     - Tooltips
