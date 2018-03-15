@@ -9,6 +9,9 @@ h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
+body {
+  position: relative;
+}
 .container-fluid {
   background-color: white;
   border-bottom: 2px dashed silver;
