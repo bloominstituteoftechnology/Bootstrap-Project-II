@@ -1,4 +1,5 @@
 // Start here!
+@color1: black;
 
 html, body {
     font-family: 'Roboto', sans-serif;
@@ -10,7 +11,7 @@ h1, h2, h3, h4, h5 {
 
 .container-fluid {
     background-color:white;
-    border-bottom: 2px dashed silver;    
+    border-bottom: 2px dashed silver;
 }
 
 .logo-heading {
@@ -25,6 +26,24 @@ h1, h2, h3, h4, h5 {
 
 .container {
     max-width: 800px;
+
+    #LTbtn {
+        margin-bottom: 30px;
+    }
+
+    .vertical-center {
+        align-items: center;
+    }
+
+    .carousel {
+        #second-slide-caption {
+            color: @color1;
+        }
+
+        #third-slide-caption {
+            color: @color1;
+        }
+    }
 }
 
 .footer {
