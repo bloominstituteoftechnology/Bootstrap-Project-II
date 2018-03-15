@@ -41,7 +41,7 @@
                 <div class="form-group d-flex justify-content-center mt-3"> <!--email and margin-->
                   <label for="InputEmail"> Newsletter Sign Up</label>
                   </div>
-                  <div>
+                  <div> <!--email-input-->
                   <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter Email">
                 </div>
               </form>
@@ -81,7 +81,7 @@
 
     <!-- JavaScript Component: Carousel -->
     <div class="container">
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center m-5"> <!--margin-all-around-->
       <button class="colbtn" type="button" data-toggle="collapse" data-target="#carouselcollapse" aria-expanded="false" aria-controls="collapseExample">
         ADVENTURE
         </button>
@@ -113,7 +113,7 @@
       </div>
 
     <div class="row">
-      <div class="col-sm-12 d-flex justify-content-center">
+      <div class="col-sm-12 d-flex justify-content-center mb-5"><!--margin-bottom-->
           <div class="btn-group">
               <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 DESTINATIONS
@@ -173,12 +173,12 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-8 mt-3"> <!--margin-top-->
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
-      <div class="col-sm-4">
-        <h4>Don't Forget These!</h4>
+      <div class="col-sm-4 mt-3">
+        <h4>Don't Forget These!</h4> <!--margin-top-->
         <ul class="list-group">
           <li class="list-group-item">Cras justo odio</li>
           <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -189,12 +189,16 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 mt-5 mb-5"> <!--margin-top/bottom-->
         <form>
-          <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
+          <label for="name">Name</label> <!--validation-->
+          <input type="text" class="form-control" id="validationCustom01" placeholder="Name" required>
+      <div class="invalid-feedback">
+        </div>
           <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
+          <input type="text" class="form-control" id="validationCustom02" placeholder="Phone" required>
+      <div class="invalid-feedback">
+        </div>
           <div class="form-check"><!--changed to checkbox-->
               <input type="checkbox" class="custom-control-input" id="customCheck1">
               <label class="custom-control-label" for="customCheck1">Beach</label>
