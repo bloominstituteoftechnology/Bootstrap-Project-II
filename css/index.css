@@ -10,8 +10,7 @@ h5 {
   font-family: 'Indie Flower', cursive;
 }
 .container-fluid {
-  background-color: white;
-  border-bottom: 2px dashed silver;
+  background-color: transparent;
 }
 .nav a {
   color: black;
