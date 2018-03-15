@@ -19,7 +19,7 @@
 
 <body>
   <div class="container-fluid sticky-top">
-    <div class="container d-flex justify-content-sm-around">
+    <div class="container mx-auto">
       <div class="row">
         <div class="col">   <!-- JavaScript Component: Navbar -->
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -187,19 +187,40 @@
     </div>
 
     <!-- JavaScript Component: Collapse -->
-    <div id="accordion">    
-        <div class="card">
+    <div id="accordion" class="mt-3 mb">    
+        <div class="card border border-primary rounded">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <a id="Bespoke"><h4>Bespoke Travel</h4> <p>Click to enter details </p></a>
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <a display-inline id="Bespoke"><h4>Bespoke Travel</h4><p>Click to enter details </p></a>
               </button>
             </h5>
           </div>
       
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <form>
+                    <div class="form-group">
+                      <div class="row mt-3">
+                        <div class="col">
+                          <label for="inlineFormInput">Name</label>
+                          <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row mt-3">
+                        <div class="col">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Details about desired travel</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Please provide as much detail as possible about the trip or experience you desire" rows="auto"></textarea>
+                    </div>
+                  </form>
             </div>
           </div>
         </div>
