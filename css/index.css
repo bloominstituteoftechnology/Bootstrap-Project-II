@@ -19,9 +19,6 @@ h5 {
 .nav a {
   color: black;
 }
-.nav .nav-link {
-  display: flex;
-}
 .container {
   max-width: 800px;
 }
