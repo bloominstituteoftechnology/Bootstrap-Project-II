@@ -8,10 +8,10 @@ h3,
 h4,
 h5 {
   font-family: 'Indie Flower', cursive;
-  color: #00ffbf;
+  color: #131817;
 }
 p {
-  color: white;
+  color: #3b3b3b;
 }
 .container-fluid {
   background-color: white;
@@ -32,5 +32,5 @@ p {
   padding: 20px 0;
 }
 .container {
-  background: #af1515;
+  background: #d270ff;
 }
