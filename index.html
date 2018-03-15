@@ -122,22 +122,85 @@
 
   <!-- Carousel JS component end -->
 
+  <!-- JS Modals attached to buttons in the section below -->
+
+<!-- Modal -->
+    <div class="modal fade" id="sunModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Fun in The Sun</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Cupim shank tongue tenderloin bacon picanha ground round. Pig ham alcatra pork loin. Alcatra kevin short ribs, doner pork loin turkey strip steak buffalo landjaeger burgdoggen. Burgdoggen spare ribs brisket, strip steak boudin ball tip beef ribs sausage pork meatloaf. Frankfurter shank fatback, flank sausage shoulder chuck ham pastrami turkey. Jowl flank chuck picanha pork sirloin pancetta ribeye.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="mountainModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Mountain Excursion</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Bacon ipsum dolor amet strip steak shank ribeye kevin brisket bacon andouille pork pancetta salami meatball hamburger ham chuck swine. Ham hock strip steak rump beef ribs, prosciutto tail meatloaf spare ribs ground round beef tri-tip. Beef ball tip picanha, flank brisket cow filet mignon buffalo jerky. T-bone ground round burgdoggen, jowl kevin cupim ham hock leberkas short loin fatback shoulder meatball chuck. Spare ribs alcatra cupim cow tenderloin ground round meatloaf. Chuck shankle shoulder short loin, ball tip tongue porchetta bacon flank.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="islandModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Island Getaway</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Porchetta beef ribs pork loin capicola. Corned beef shankle picanha turkey sirloin filet mignon drumstick fatback swine. Brisket filet mignon leberkas, venison kevin sausage boudin swine cow shank kielbasa prosciutto pastrami pork short ribs. Doner alcatra kevin, swine strip steak ham ham hock flank capicola cupim turducken spare ribs pork chop. Doner chuck pork turducken filet mignon, meatloaf cow shank.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 
     <div class="row mt-2 mb-5">
       <div class="col-sm-4 mb-2">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#sunModal">Get More Info</button>
       </div>
       <div class="col-sm-4 mb-2">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#mountainModal">Get More Info</button>
       </div>
       <div class="col-sm-4 mb-2">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#islandModal">Get More Info</button>
       </div>
     </div>
     <div class="row">
@@ -156,6 +219,10 @@
         </ul>
       </div>
     </div>
+
+    <!-- End of Modals attachment -->
+
+
     <div class="row mt-3">
       <div class="col-sm-12">
         <form>
