@@ -8,6 +8,7 @@
 
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
@@ -36,8 +37,36 @@
   </div>
   <div class="container">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-10">
             <img src="img/fun-bus.jpg" class="img-fluid mb-4" alt="Responsive image">
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-center "> <!-- Modal Components-->
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger rounded-circle fa fa-yelp" style="height: 50%; width: 100%;" data-toggle="modal" data-target="#exampleModal">
+  Yelp!
+</button>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Customer Reviews</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Please check out what other customers have to say about their Fun Bus experience! 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Not Interested</button>
+          <a href="http://www.yelp.com">
+            <button type="button" class="btn btn-danger">Yelp Please!</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
         </div>
     </div>
     <div class="row">
@@ -108,13 +137,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="./img/slider-1.jpg" alt="First slide">
+              <img class="d-block w-100 img-fluid" src="./img/slider-1.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="./img/slider-2.jpg" alt="Second slide">
+              <img class="d-block w-100 img-fluid" src="./img/slider-2.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="./img/slider-3.jpg" alt="Third slide">
+              <img class="d-block w-100 img-fluid" src="./img/slider-3.jpg" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
