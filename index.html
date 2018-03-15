@@ -17,23 +17,19 @@
 </head>
 
 <body>
-  <div class="container-fluid sticky-top mb-5"> <!-- Navbar -->
+  <div class="container-fluid sticky-top mb-5"> <!-- JS COMPONENT: Navbar -->
     <div class="container">
       <div class="row">
-<!--         <div class="col-3 d-flex">
-            <h1 class="logo-heading">Fun Bus</h1>
-        </div> -->
-        <div class="col-12 d-flex align-items-center">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Brand Image</a>
+        <div class="col-12 d-flex justify-content-around">
+          <nav class="nav navbar navbar-expand-lg d-flex"> 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
+                <a class="nav-item nav-link active" href="#funBus">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#letsGo">Features</a>
+                <a class="nav-item nav-link" href="#prices">Pricing</a>
               </div>
             </div>
           </nav>
@@ -42,7 +38,7 @@
     </div>
   </div>
   <div class="container"> <!-- Intro with rounded images-->
-    <div class="row">
+    <div class="row" id="funBus">
         <div class="col-sm-12">
             <img src="img/fun-bus.jpg" class="img-fluid rounded" alt="Responsive image">
         </div>
@@ -56,7 +52,7 @@
       </div>
     </div> <!-- Intro with rounded images-->
 
-    <div class="row justify-content-center mx-auto"> <!-- Carousel -->
+    <div class="row justify-content-center mx-auto"> <!-- JS COMPONENT: Carousel -->
       <div class="col-sm-12">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
@@ -89,7 +85,7 @@
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-          <img src="img/adventure.jpg" class="img-fluid rounded" alt="Let's go on adventure!">
+          <img src="img/adventure.jpg" class="img-fluid rounded" id="letsGo" alt="Let's go on adventure!">
       </div>
     </div>
     <div class="row mt-4">
@@ -103,9 +99,14 @@
         </div>
     </div>  <!-- Main Content with extra margin top, bottom, and rounded images -->
 
-    <div class="row"> <!-- Destination Table with prices -->
-      <div class="col-sm-12">
-        <h2>Destinations</h2>
+    <div class="row" id="prices"> <!-- Destination Table with prices -->
+      <div class="col-12 d-flex justify-content-center mt-3 mb-4"> <!-- JS COMPONENT: Collapse -->
+        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+        Destination Information
+        </button>
+      </div>
+ 
+      <div class="col-sm-12 collapse" id="collapseExample"> <!-- JS COMPONENT: Collapse, target is div -->
         <table class="table table-striped">
           <thead>
             <tr>
