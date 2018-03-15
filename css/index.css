@@ -25,6 +25,11 @@ h5 {
 .accordion-title {
   color: black !important;
 }
+.btn-shadow {
+  -webkit-box-shadow: 10px 10px 10px gray;
+  -moz-box-shadow: 10px 10px 10px gray;
+  box-shadow: 10px 10px 10px gray;
+}
 .footer {
   color: black;
   background: blanchedalmond;

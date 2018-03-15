@@ -1,5 +1,11 @@
 // Start here!
-
+// Mixin
+.box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
+//CSS
 html, body {
     font-family: 'Roboto', sans-serif;
 }
@@ -29,6 +35,10 @@ h1, h2, h3, h4, h5 {
 
 .accordion-title {
     color: black !important;
+}
+
+.btn-shadow {
+    .box-shadow(10px 10px 10px gray);
 }
 
 .footer {
