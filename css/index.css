@@ -22,6 +22,20 @@ h5 {
 .container {
   max-width: 800px;
 }
+.container .destinations .carousel-item .carousel-caption {
+  visibility: hidden;
+}
+.container .destinations .carousel-item .carousel-caption h5 {
+  font-weight: bold;
+}
+.container .destinations .carousel-item:hover img {
+  opacity: 0.5;
+}
+.container .destinations .carousel-item:hover .carousel-caption {
+  visibility: visible;
+  opacity: 1;
+  color: black;
+}
 .footer {
   color: black;
   background: blanchedalmond;

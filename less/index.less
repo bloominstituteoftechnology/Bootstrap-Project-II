@@ -25,6 +25,32 @@ h1, h2, h3, h4, h5 {
 
 .container {
     max-width: 800px;
+
+    .destinations {
+
+        .carousel-item {
+
+            .carousel-caption {
+                visibility: hidden;
+
+                h5 {
+                    font-weight: bold;
+                }
+            }
+
+            &:hover {
+                img {
+                    opacity: 0.5;
+                }
+
+                .carousel-caption {
+                    visibility: visible;
+                    opacity: 1;
+                    color: black;
+                }
+            }
+        }
+    }
 }
 
 .footer {
