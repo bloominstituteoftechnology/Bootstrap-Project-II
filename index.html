@@ -80,7 +80,7 @@
     </div>
 
     <!-- JavaScript Component: Carousel -->
-    <div class="container">
+    <div class="container"> <!-- JavaScript Component: dropdown -->
         <div class="row d-flex justify-content-center m-5"> <!--margin-all-around-->
       <button class="colbtn" type="button" data-toggle="collapse" data-target="#carouselcollapse" aria-expanded="false" aria-controls="collapseExample">
         LET'S SEE SOME ADVENTURES!
@@ -118,7 +118,7 @@
               <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 DESTINATIONS
               </button>
-              <div class="dropdown-menu"> <!--dropdown-menu-with destinations-->
+              <div class="dropdown-menu"> <!-- JavaScript Component: dropdown-menu-with destinations-->
         <h2>Destinations</h2>
         <table class="table table-striped">
           <thead>
@@ -174,9 +174,25 @@
     </div>
     <div class="row">
       <div class="col-sm-8 mt-3"> <!--margin-top-->
-        <h4>Before You Go...</h4>
-        <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <h4>Before You Go...</h4>
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.
+                  </p>
+              </div>
+            </div>
+          </div>
       </div>
+    </div>
       <div class="col-sm-4 mt-3">
         <h4>Don't Forget These!</h4> <!--margin-top-->
         <ul class="list-group">
