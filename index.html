@@ -26,10 +26,10 @@
         <nav class="col-12 navbar navbar-light d-flex justify-content-space-between align-items-center style="background-color: #e3f2fd;"">
           <h1 class="logo-heading">Fun Bus</h1>
           <div class="nav d-flex">
-            <a class="nav-item nav-link" href="#">Home</a>
-            <a class="nav-item nav-link" href="#">About</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link" href="#">Contact</a>
+            <a class="nav-item nav-link" href="#home">Home</a>
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#destinations">Pricing</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
           </div>
         </nav> 
       </div>
@@ -41,7 +41,7 @@
   <div class="container">
 
     <!-- main picture -->
-    <div class="row">
+    <div id="home" class="row">
         <div class="col-sm-12">
             <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
         </div>
@@ -58,7 +58,7 @@
     </div>
 
     <!-- Let's go -->
-    <div class="row mt-5 d-flex align-items-center">
+    <div id="about" class="row mt-5 d-flex align-items-center">
       <div class="col-sm-6">
         <h2>Let's Go!</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
@@ -82,7 +82,7 @@
     </div>
 
     <!-- destinations -->
-    <div class="row mt-4 destinations">
+    <div id="destinations" class="row mt-4 destinations">
       <div class="col-sm-12">
         <h2>Destinations</h2>
         <!-- JAVASCRIPT COMPONENT - CAROUSEL DESCRIPTIONS -->
@@ -177,14 +177,15 @@
           <a class="dropdown-item" href="#">Cras justo odio</a>
           <a class="dropdown-item" href="#">Dapibus ac facilisis in</a>
           <a class="dropdown-item" href="#">Morbi leo risus</a>
-          <a class="dropdown-item" href="#">Porta ac consectetur ac</a>
-          <a class="dropdown-item" href="#">Vestibulum at eros</a>
+          <!-- commented out for aesthetic purposes -->
+          <!-- <a class="dropdown-item" href="#">Porta ac consectetur ac</a>
+          <a class="dropdown-item" href="#">Vestibulum at eros</a> -->
         </div>
       </div>
     </div>
 
     <!-- FORMS -->
-    <div class="row m-5">
+    <div id="contact" class="row m-5">
       <h2 class="mx-auto mb-3">Reach Out!</h2>
       <div class="col-sm-12">
         <form>
