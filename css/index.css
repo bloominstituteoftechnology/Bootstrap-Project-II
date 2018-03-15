@@ -19,8 +19,12 @@ h5 {
 .nav a {
   color: black;
 }
+.nav a:hover {
+  text-decoration: underline;
+  color: darkcyan;
+}
 .container {
-  max-width: 800px;
+  max-width: 880px;
 }
 .footer {
   color: black;
