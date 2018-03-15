@@ -11,15 +11,15 @@ Use the existing codebase as a starting point and accomplish the following tasks
 1. LESS preprocessing is needed so make sure you understand how to use your compiler.
 
 ## Task - Style and add to the form
-* Add an email input
-* Add a 3rd option in the radio buttons and name it "island"
-* Style the form by wrapping each input and all the radio buttons in a ```form-group```
+* Add an email input <<//DONE
+* Add a 3rd option in the radio buttons and name it "island" <<//DONE
+* Style the form by wrapping each input and all the radio buttons in a ```form-group``` <<//DONE
 
 ## Task - Build Utility classes into the site
-* Use the flex utility to vertically center and move the navigation to the far right of it's container.  
-* Use the border radius utility to round the corners on the images named ```adventure.jpg``` and ```fun.jpg```;
-* Use the the display utility ```sticky-top``` on the the ```container-fluid``` div.
-* Use the spacer utility to give enough ```top-margin``` or ```bottom-margin``` to any element that looks like they are too close together. **Remember the syntax looks like: ```mt-1```** 
+* Use the flex utility to vertically center and move the navigation to the far right of it's container.  <<//DONE
+* Use the border radius utility to round the corners on the images named ```adventure.jpg``` and ```fun.jpg```;<<//DONE
+* Use the the display utility ```sticky-top``` on the the ```container-fluid``` div. <<//DONE   
+* Use the spacer utility to give enough ```top-margin``` or ```bottom-margin``` to any element that looks like they are too close together. **Remember the syntax looks like: ```mt-1```** <<//DONE
 
 ## Task - Build JavaScript Components
 
