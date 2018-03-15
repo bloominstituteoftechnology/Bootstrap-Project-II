@@ -16,7 +16,10 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
-.nav a {
+.navbar {
+  background-color: white !important;
+}
+.navbar a {
   color: black;
 }
 .container {
@@ -26,4 +29,7 @@ h5 {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+}
+.btn-secondary {
+  background-color: #17a1b9;
 }
