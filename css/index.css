@@ -12,17 +12,55 @@ h5 {
 .container-fluid {
   background-color: white;
 }
-.logo {
-  border: 1px solid red;
-}
-.nav a {
-  color: black;
-}
 .container {
   max-width: 800px;
+}
+.logo-container {
+  justify-content: center;
+  align-items: center;
+}
+.nav-container {
+  justify-content: flex-end;
+}
+@media (max-width: 40rem) {
+  .nav-container {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .nav-container nav {
+    width: 100%;
+  }
+  .nav-container nav a {
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid lightgray;
+  }
+  .nav-container nav a:first-child {
+    border-top: 1px solid lightgray;
+  }
+}
+@media (max-width: 40rem) {
+  .nav-container .nav {
+    text-align: center;
+  }
+}
+.nav-container .nav a {
+  color: black;
+}
+@media (max-width: 400px) {
+  .images {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .destination-info {
+    margin-bottom: 1rem;
+  }
 }
 .footer {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+  text-align: center;
 }
