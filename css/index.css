@@ -19,6 +19,16 @@ h5 {
 .nav a {
   color: black;
 }
+.carousel-caption {
+  color: aquamarine;
+}
+.carousel-caption h5 {
+  font-size: 65px;
+}
+.carousel-caption p {
+  color: black;
+  font-size: 14px;
+}
 .container {
   max-width: 800px;
 }
