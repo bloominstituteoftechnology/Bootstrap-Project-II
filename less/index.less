@@ -23,6 +23,22 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+.navbar {
+  flex-flow: row-reverse;
+
+  .navbar-nav {
+    flex-flow: row;
+
+    .nav-item {
+      padding: 0 20px;
+    }
+  }
+
+  button:focus {
+    outline: 0;
+  }
+}
+
 .container {
     max-width: 800px;
 }
