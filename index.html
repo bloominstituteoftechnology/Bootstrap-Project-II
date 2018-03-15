@@ -17,13 +17,13 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid sticky-top"> <!--sticky header -->
     <div class="container">
       <div class="row">
         <div class="col-3">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
-        <div class="col-9">
+        <div class="col-9 d-flex justify-content-end align-items-center"> <!-- aligning w/ flex -->
           <nav class="nav">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
@@ -41,7 +41,7 @@
         </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 my-4"> <!-- margin y axis -->
         <h2>Welcome To Fun Bus!</h2>
         <p>
             Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.
@@ -55,12 +55,12 @@
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-          <img src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
+          <img src="img/adventure.jpg" class="img-fluid rounded" alt="Let's go on adventure!"> <!--rounded border on image-->
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-4"> <!-- margin-top spacing -->
         <div class="col-sm-6">
-            <img src="img/fun.jpg" class="img-fluid" alt="Lets have fun!">
+            <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!"> <!--rounded border on image-->
         </div>
         <div class="col-sm-6">
           <h2>Adventure Awaits</h2>
@@ -153,20 +153,20 @@
           <input id="email" type="text" class="form-control" placeholder="Email">
           </div>
 
-          <div class="form-check">
+          <div class="form-check form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
               Beach
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
             <label class="form-check-label" for="exampleRadios2">
               Mountain
             </label>
           </div>
           <!-- Adding island radio button here -->
-          <div class="form-check">
+          <div class="form-check form-group">
               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
               <label class="form-check-label" for="exampleRadios2">
                 Island
