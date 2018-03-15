@@ -123,7 +123,7 @@
       </div>
     </div>
 
-    <!--Added Carousel-->
+    <!--Added Carousel with captions-->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -230,6 +230,32 @@
         </form> <!-- End of form-group for inputs/radio buttons -->
       </div>
     </div>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#exampleModal">
+    Click Here to see if you won a FREE Trip!
+  </button>
+  
+  <!-- Modal Component Used-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Fun Bus Winner is...</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Congratulations! You've won a FREE trip to Iceland! 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Claim Your Prize!</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <div class="row footer mt-5"> <!--Added 'mt-5' to give top-margin space-->
       <div class="col-sm-12">
