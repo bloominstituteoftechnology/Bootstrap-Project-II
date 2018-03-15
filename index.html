@@ -20,20 +20,28 @@
 <body>
     <div class="container-fluid sticky-top">
         <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <h1 class="logo-heading">Fun Bus</h1>
-                </div>
-                <div class="col-9">
-                    <nav class="nav justify-content-evenly">
-                        <a class="nav-link active" href="#">Home</a>
-                        <a class="nav-link" href="#">About Us</a>
-                        <a class="nav-link" href="#">Blog</a>
-                        <a class="nav-link" href="#">Contact</a>
-                    </nav>
-                </div>
-            </div>
+            <nav id="navbar-example2" class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">Fun Bus</a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fat">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mdo">Book Now!</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Destinations</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#one">Beach</a>
+                            <a class="dropdown-item" href="#two">Mountain</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#three">Island</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
+    </div>
     </div>
     <div class="container">
         <div class="row">
@@ -71,38 +79,63 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12">
-                <h2>Destinations</h2>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">Location</th>
-                            <th scope="col">Activity</th>
-                            <th scope="col">Airfare</th>
-                            <th scope="col">Hotel</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Beach</th>
-                            <td>Chillin</td>
-                            <td>$600</td>
-                            <td>$400</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Mountain</th>
-                            <td>Hiking</td>
-                            <td>$400</td>
-                            <td>$200</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Island</th>
-                            <td>Boating</td>
-                            <td>$1700</td>
-                            <td>$600</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <h2>Destinations</h2>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Beach
+                      </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor amet paleo scenester blue bottle single-origin coffee craft beer cray green juice bushwick ugh 3 wolf moon yuccie swag chia DIY typewriter. Kombucha yuccie stumptown cloud bread, affogato vegan roof party church-key ramps chambray actually
+                            bicycle rights vaporware mixtape. Enamel pin offal intelligentsia prism, viral taiyaki vexillologist man bun. Salvia hashtag hammock offal, truffaut tumeric live-edge meh edison bulb jean shorts organic flexitarian roof party.
+                            <p />
+                            <p /> Chartreuse cornhole tattooed mlkshk. YOLO etsy live-edge cornhole small batch pabst kale chips copper mug heirloom cliche. Leggings gastropub cronut roof party pour-over skateboard. Cronut aesthetic mustache fixie, taxidermy
+                            shaman selfies tilde gastropub. 90's pabst keffiyeh tattooed asymmetrical normcore literally. Hot chicken humblebrag af, live-edge selfies paleo gentrify jianbing seitan retro bushwick four loko etsy YOLO schlitz. Mustache
+                            ugh tote bag, scenester kombucha bespoke mumblecore forage selvage shoreditch irony flexitarian. Farm-to-table gastropub stumptown ethical normcore disrupt mustache cardigan small batch.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Mountain
+                      </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor amet paleo scenester blue bottle single-origin coffee craft beer cray green juice bushwick ugh 3 wolf moon yuccie swag chia DIY typewriter. Kombucha yuccie stumptown cloud bread, affogato vegan roof party church-key ramps chambray actually
+                            bicycle rights vaporware mixtape. Enamel pin offal intelligentsia prism, viral taiyaki vexillologist man bun. Salvia hashtag hammock offal, truffaut tumeric live-edge meh edison bulb jean shorts organic flexitarian roof party.
+                            <p />
+                            <p />Chartreuse cornhole tattooed mlkshk. YOLO etsy live-edge cornhole small batch pabst kale chips copper mug heirloom cliche. Leggings gastropub cronut roof party pour-over skateboard. Cronut aesthetic mustache fixie, taxidermy
+                            shaman selfies tilde gastropub. 90's pabst keffiyeh tattooed asymmetrical normcore literally. Hot chicken humblebrag af, live-edge selfies paleo gentrify jianbing seitan retro bushwick four loko etsy YOLO schlitz. Mustache
+                            ugh tote bag, scenester kombucha bespoke mumblecore forage selvage shoreditch irony flexitarian. Farm-to-table gastropub stumptown ethical normcore disrupt mustache cardigan small batch.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Island
+                      </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd.
+                            <p />
+                            <p />Parsley shallot courgette tatsoi pea sprouts fava bean collard green dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row mt-5">
