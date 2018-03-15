@@ -83,7 +83,7 @@
     <div class="container">
         <div class="row d-flex justify-content-center">
       <button class="colbtn" type="button" data-toggle="collapse" data-target="#carouselcollapse" aria-expanded="false" aria-controls="collapseExample">
-        Carousel
+        ADVENTURE
         </button>
         </div>
       </div>
@@ -113,7 +113,12 @@
       </div>
 
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 d-flex justify-content-center">
+          <div class="btn-group">
+              <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                DESTINATIONS
+              </button>
+              <div class="dropdown-menu">
         <h2>Destinations</h2>
         <table class="table table-striped">
           <thead>
@@ -147,6 +152,9 @@
         </table>
       </div>
     </div>
+  </div>
+</div><!--dropdown-->
+
     <div class="row">
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
@@ -188,16 +196,12 @@
           <label for="phone">Phone</label>
           <input id="phone" type="phone" class="form-control" placeholder="Phone">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Beach
-            </label>
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Beach</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Mountain
-            </label>
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Mountain</label>
           </div>
           <button type="submit" class="btn btn-info">Let's Travel</button>
         </form>
