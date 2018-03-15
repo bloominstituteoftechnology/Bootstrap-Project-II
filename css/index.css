@@ -19,8 +19,28 @@ h5 {
 .nav a {
   color: black;
 }
+.pos-relative {
+  position: relative;
+  top: 30%;
+}
+@media (max-width: 515px) {
+  .pos-relative {
+    display: none;
+  }
+}
+.pos-relative1 {
+  display: flex;
+  justify-content: flex-end;
+  top: 30%;
+}
+@media (min-width: 515px) {
+  .pos-relative1 {
+    display: none;
+  }
+}
 .container {
   max-width: 800px;
+  max-width: 100%;
 }
 .btn-font {
   font-family: 'roboto';

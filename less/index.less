@@ -23,8 +23,28 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+.pos-relative {
+    position: relative;
+    top: 30%;
+
+    @media(max-width: 515px) {
+        display: none;
+    }
+}
+
+.pos-relative1 {
+    display: flex;
+    justify-content: flex-end;
+    top: 30%;
+
+    @media(min-width: 515px) {
+        display: none;
+    }
+}
+
 .container {
     max-width: 800px;
+    max-width: 100%;;
 }
 
 .btn-font {
