@@ -21,43 +21,35 @@
   <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
-        <div class="col-3">
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#"><h1 class="logo-heading">Fun Bus</h1></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar col-12 navbar-expand-sm d-flex p-2 justify-content-around navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <h1 class="logo-heading">Fun Bus</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="dropdown" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-        
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto d-flex p-2 justify-content-around col">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#About-us">About Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
+                <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link" href="#Aboutus">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Locations">Locations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact Us</a>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
           </div>
-        </nav>      </div>
+        </nav>
+      </div>
     </div>
   </div>
   <div class="container">
@@ -67,8 +59,8 @@
       </div>
     </div>
     <div class="row mt-3">
-      <div class="col-sm-12 offset" id="About-us" >
-        <h2 >Welcome To Fun Bus!</h2>
+      <div class="col-sm-12 offset" id="Aboutus">
+        <h2>Welcome To Fun Bus!</h2>
         <p>
           Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger
           adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty
@@ -101,7 +93,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 offset" id="Locations">
         <h2>Destinations</h2>
         <table class="table table-striped">
           <thead>
@@ -166,19 +158,25 @@
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler
           blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="More Info About Sunny Fun">
+          Get More Info
+        </button>
       </div>
       <div class="col-sm-4">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler
           blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="More Info About Mountain Excursions">
+          Get More Info
+        </button>
       </div>
       <div class="col-sm-4">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler
           blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="More Info About Island Getaways">
+          Get More Info
+        </button>
       </div>
     </div>
     <div class="row">
@@ -200,40 +198,117 @@
       </div>
     </div>
     <div class="row mt-3">
-      <div class="col-sm-12">
-        <form>
+      <div class="col-sm-12 offset" id="Contact">
+        <form class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom01">First name</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom02">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustomUsername">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                </div>
+                <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend"
+                  required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">City</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom04">State</label>
+              <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom05">Zip</label>
+              <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+          </div>
           <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" type="text" class="form-control" placeholder="Name">
-            <div class="mt-3">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="mt-3 mb-3">
-            <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-              <label class="form-check-label" for="exampleRadios1">
-                Beach
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
               </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
-                Mountain
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-              <label class="form-check-label" for="exampleRadios3">
-                Island
-              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
             </div>
           </div>
-          <button type="submit" class="btn btn-info mb-3">Let's Travel</button>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Let's Travel!
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Congratulations!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  You have just taken the first click towards endless spam! Thanks for your email address and phone number!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+        </script>
+        
         </form>
       </div>
     </div>
