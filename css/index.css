@@ -19,10 +19,23 @@ h5 {
 .nav a {
   color: black;
 }
+.navbar {
+  flex-flow: row-reverse;
+}
+.navbar .navbar-nav {
+  flex-flow: row;
+}
+.navbar .navbar-nav .nav-item {
+  padding: 0 20px;
+}
+.navbar button:focus {
+  outline: 0;
+}
 .container {
   max-width: 800px;
 }
 .footer {
+  width: 100%;
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
