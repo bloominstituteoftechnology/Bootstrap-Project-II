@@ -30,6 +30,18 @@ h5 {
   -moz-box-shadow: 10px 10px 10px gray;
   box-shadow: 10px 10px 10px gray;
 }
+@media (max-width: 400px) {
+  .btn-shadow {
+    margin-bottom: 20px !important;
+  }
+}
+@media (max-width: 400px) {
+  .my-custom-button {
+    width: 80px !important;
+    height: 80px !important;
+    margin: 10px 0 30px 30px;
+  }
+}
 .footer {
   color: black;
   background: blanchedalmond;
