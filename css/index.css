@@ -22,6 +22,9 @@ h5 {
 .container {
   max-width: 800px;
 }
+.colbtn {
+  background-color: goldenrod;
+}
 .footer {
   color: black;
   background: blanchedalmond;
