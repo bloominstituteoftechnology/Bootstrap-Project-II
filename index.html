@@ -17,14 +17,14 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
         <div class="col-3">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <div class="col-9">
-          <nav class="nav">
+          <nav class="nav d-flex justify-content-end align-items-center">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
@@ -36,12 +36,12 @@
   </div>
   <div class="container">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 mt-1">
             <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
         </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
+    <div class="row ">
+      <div class="col-sm-12 mt-3">
         <h2>Welcome To Fun Bus!</h2>
         <p>
             Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.
@@ -55,12 +55,12 @@
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-          <img src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
+          <img src="img/adventure.jpg" class="img-fluid rounded" alt="Let's go on adventure!">
       </div>
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <img src="img/fun.jpg" class="img-fluid" alt="Lets have fun!">
+            <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
         </div>
         <div class="col-sm-6">
           <h2>Adventure Awaits</h2>
@@ -68,7 +68,42 @@
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
     </div>
+
+
+
     <div class="row">
+      <div id="carouselExampleIndicators" class="carousel slide col-12" data-ride="carousel"> <!-- JavaScript Component: Carousel -->
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/slider-1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/slider-2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/slider-3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+
+
+
+    <div class="row mt-3">
       <div class="col-sm-12">
         <h2>Destinations</h2>
         <table class="table table-striped">
@@ -121,11 +156,11 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-8 mt-4">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mt-4">
         <h4>Don't Forget These!</h4>
         <ul class="list-group">
           <li class="list-group-item">Cras justo odio</li>
@@ -139,31 +174,261 @@
     <div class="row">
       <div class="col-sm-12">
         <form>
-          <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
-          <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Beach
-            </label>
+
+          <div class="form-group">    <!-- JavaScript Component: Validation form required -->
+            <label for="name">Name</label>
+            <input id="name" type="text" class="form-control is-invalid" placeholder="Name" required>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Mountain
-            </label>
+          <div class="form-group">
+            <label for="phone">Phone</label>          
+            <input id="phone" type="phone" class="form-control is-invalid" placeholder="Phone" required>
           </div>
-          <button type="submit" class="btn btn-info">Let's Travel</button>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" class="form-control is-invalid" placeholder="Email" required>
+          </div>
+
+          <div class="form-group">
+            <div class="form-check">            
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Beach
+              </label>
+            </div>
+          
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Mountain
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+              <label class="form-check-label" for="exampleRadios3">
+                Island
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-info is-invalid" required>Let's Travel</button>
         </form>
       </div>
     </div>
-    <div class="row footer">
+
+
+
+    <div class="row justify-content-center mt-4"> <!-- JavaScript Component: Collapse -->
+      <p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Ancient Aliens Ipsum</a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Batman Ipsum</button>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Ipsum</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              ancient alien sumerian texts chariot of the gods kachina doll, choral castle giorgio astronaut crystal skull choral castle, mayan clearly worm hole grey weightless mayan mystery. sightings worm hole burmuta triangle evidence space brothers, inter-dimensional earth mound ancient god burmuta triangle , chariot of the gods . the answer is a resounding yes... Weightless space time, ancient alien theorists sanskrit vymaanika-shaastra astronaut, technology space brothers . the answer is a resounding yes... , Sumerian texts king soloman seti ezekiel contend, space travel seti .
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+                Every man who has lotted here over the centuries, has looked up to the light and imagined climbing to freedom. So easy, so simple! And like shipwrecked men turning to seawater foregoing uncontrollable thirst, many have died trying. And then here there can be no true despair without hope. So as I terrorize Gotham, I will feed its people hope to poison their souls. I will let them believe that they can survive so that you can watch them climbing over each other to stay in the sun. You can watch me torture an entire city. And then when you've truly understood the depth of your failure, we will fulfill Ra's Al Ghul's destiny. We will destroy Gotham. And then, when that is done, and Gotham is... ashes Then you have my permission to die.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row justify-content-center mt-2"> <!-- JavaScript Component: Modals -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+        Long Ancient Aliens Ipsum
+      </button>
+  
+    <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Ancient Aliens</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            ancient alien mainstream archaelogy king soloman portal elongated skull vimana, astronaut burmuta triangle astronaut space time foo fighter gods, i know it sounds crazy... Ancient alien theorists. anti-gravity mayan space brothers ancient religions vymaanika-shaastra ezekiel sumerian texts , pre-colonial aerodynamics contend vimana aircraft gods flying vessels kachina doll , targeted mutation anti-gravity the answer is a resounding yes... . legendary times contend indian texts worm hole machu picchu vymaanika-shaastra nazca lines, space brothers earth mound space brothers flying vessels , chariot of the gods space travel gods star gates . chariot of the gods king soloman contend anti-gravity mahabharata stonehenge, mystery indian texts mayan puma punku vimana megoliths , the answer is a resounding yes... Mercury .
+
+            otherworldly visitors gods burmuta triangle space travel nasa the vedas extraterrestrial, seti legendary times vymaanika-shaastra the vedas choral castle , legendary times worm hole pre-colonial aerodynamics mahabharata spaceships . choral castle annunaki the vedas puma punku contend, kachina doll alien magnetic current, space travel annunaki mystery . machu picchu weightless king soloman machu picchu annunaki helicopter heiroglyph mystery, petroglyph grey contend legendary times puma punku elongated skull , von daniken space time dna manipulation weightless foo fighter. mahabharata ancient civilization golden disk sky people, stonehenge the vedas ezekiel , magnetic current indian texts vymaanika-shaastra vortex.
+            
+            nazca lines seti inter-dimensional contend evidence mainstream archaelogy, ancient religions stonehenge magnetic current mainstream archaelogy, ancient religions star gates astronaut ezekiel. foo fighter nasa pre-colonial aerodynamics gods machu picchu , crystal skull anti-gravity the answer is a resounding yes... , Helicopter heiroglyph mayan pyramids petroglyph mayan inter-dimensional . nazca lines easter island sightings aircraft earth mound astronaut , i know it sounds crazy... Megoliths nasa petroglyph portal ezekiel inter-dimensional space time gods. anti-gravity gods nazca lines anti-gravity sanskrit worm hole sightings , earth mound mayan extraterrestrial origin anti-gravity sumerian texts elongated skull, mainstream archaelogy helicopter heiroglyph contend mercury kachina doll.
+            
+            annunaki sightings kachina doll sun disc stonehenge nazca lines king soloman flying vessels nasa sightings, mystery machu picchu evidence sightings crystal skull dna manipulation mainstream archaelogy mainstream archaelogy. king soloman ancient religions star gates flying vessels sky people , ancient religions mystery mainstream archaelogy astronaut ezekiel star gates electromagnetic. cover up alien mercury star gates grey mystery ezekiel, star gates indian texts nasa , ancient alien theorists star gates giorgio ancient alien . ancient alien theorists mayan sky people dna manipulation nazca lines mahabharata foo fighter, easter island contend anti-gravity vimana helicopter heiroglyph helicopter heiroglyph .
+            
+            king soloman stonehenge astronaut the vedas sanskrit ancient civilization space brothers, the answer is a resounding yes... Mainstream archaelogy , dna manipulation von daniken ancient alien puma punku alien. king soloman sightings foo fighter extraterrestrial origin sumerian texts stonehenge ufo chariot of the gods , indian texts ancient alien theorists evidence choral castle mystery sun disc otherworldly visitors . helicopter heiroglyph anti-gravity ancient alien golden disk ezekiel space travel, cover up dna manipulation inter-dimensional petroglyph , ancient alien flying vessels foo fighter weightless . i know it sounds crazy... , I know it sounds crazy... Clearly ancient alien aircraft kachina doll extraterrestrial, clearly evidence ancient god annunaki .
+            
+            sun disc the answer is a resounding yes... Vortex , the vedas flying vessels vymaanika-shaastra ancient alien. electromagnetic megoliths grey ancient religions ancient alien theorists, ancient god weightless sanskrit sky people, ancient civilization dna manipulation portal mystery. earth mound vortex space brothers, the vedas mystery , extraterrestrial origin ancient civilization. mainstream archaelogy worm hole sumerian texts extraterrestrial origin , dna manipulation astronaut puma punku machu picchu elongated skull, ancient alien ancient civilization ancient alien . magnetic current burmuta triangle worm hole dna manipulation , von daniken star people king soloman , star people ezekiel electromagnetic portal grey nasa.
+            
+            space brothers gods inter-dimensional crystal skull magnetic current space travel, kachina doll contend burmuta triangle gods space travel weightless, star gates star gates golden disk worm hole. von daniken star people easter island mayan extraterrestrial origin mystery petroglyph, space travel foo fighter sky people giorgio nazca lines , dna manipulation gods helicopter heiroglyph i know it sounds crazy.... space travel nazca lines nasa aircraft star gates sumerian texts , foo fighter golden disk extraterrestrial origin golden disk . flying vessels space time dna manipulation ancient god von daniken magnetic current sun disc, inter-dimensional star people space brothers pre-colonial aerodynamics ancient civilization ancient god , indian texts von daniken contend puma punku helicopter heiroglyph kachina doll .
+            
+            sky people mystery portal seti machu picchu puma punku sun disc weightless ancient civilization, legendary times nasa star people kachina doll dna manipulation evidence . cover up mayan helicopter heiroglyph mayan sumerian texts dna manipulation, spaceships giorgio mayan foo fighter portal star gates sanskrit, vimana golden disk clearly . chariot of the gods space time space time vymaanika-shaastra pyramids extraterrestrial , sumerian texts pre-colonial aerodynamics star gates the vedas petroglyph, extraterrestrial choral castle elongated skull indian texts. ezekiel star people machu picchu worm hole , the answer is a resounding yes.... sumerian texts foo fighter stonehenge king soloman legendary times star gates, mystery aircraft easter island dna manipulation earth mound , magnetic current portal sumerian texts ancient alien theorists aircraft .
+            
+            puma punku crystal skull clearly star gates inter-dimensional clearly, mahabharata dna manipulation sumerian texts. gods dna manipulation the vedas choral castle grey, sumerian texts nazca lines vortex indian texts, clearly foo fighter portal helicopter heiroglyph. star gates worm hole giorgio mercury crystal skull cover up, weightless worm hole flying vessels i know it sounds crazy..., extraterrestrial ancient god stonehenge sumerian texts astronaut . space brothers vymaanika-shaastra portal crystal skull targeted mutation , extraterrestrial origin sightings gods evidence pyramids spaceships , helicopter heiroglyph alien kachina doll mystery . otherworldly visitors legendary times sun disc vymaanika-shaastra cover up ancient civilization mahabharata , pre-colonial aerodynamics technology indian texts anti-gravity alien dna manipulation spaceships .
+            
+            ancient civilization sightings targeted mutation indian texts nasa sanskrit , otherworldly visitors mayan ancient civilization ancient civilization mahabharata, extraterrestrial astronaut portal vymaanika-shaastra spaceships indian texts. space travel kachina doll aircraft weightless ancient alien seti megoliths inter-dimensional , flying vessels pre-colonial aerodynamics sumerian texts king soloman megoliths ancient civilization petroglyph, nazca lines alien seti pyramids the vedas sumerian texts alien. magnetic current ancient god grey flying vessels star gates giorgio, crystal skull gods targeted mutation grey mayan vortex , sky people seti king soloman petroglyph vortex king soloman. kachina doll helicopter heiroglyph, .
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row justify-content-center mt-4"> <!-- JavaScript Component: Modals -->
+            <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2">
+          Long Batman ipsum
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle2">Batman Ipsum</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  How can you move faster than possible, fight longer than possible, without the most powerful impulse of the spirit? The fear of death.
+
+                  You should use your full name. I like that name, Robin.
+                  
+                  Just you, sir? Don't worry, Master Wayne. It takes a little time to get back in the swing of things.
+                  
+                  To manipulate the fears in others, you must first master your own. Are you ready to begin?
+                  
+                  I seek the means to fight injustice. To turn fear against those who prey on the fearful.
+                  
+                  Death does not wait for you to be ready! Death is not considerate of fair! And make no mistake, here you face death. Tiger. Jujitsu. Panther. You're skilled. But this is not a dance. And you are afraid. But not of me. Tell us Mr. Wayne, what do you fear?
+                  
+                  When their enemies were at the gates the Romans would suspend democracy and appoint one man to protect the city. It wasn't considered an honor, it was a public service.
+                  
+                  You have learn to bury your guilt with anger. I will teach you to confront it and to face the truth.
+                  
+                  I told you I was immortal. Oh there are many forms of immortality.
+                  
+                  Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.
+                  
+                  But no ordinary child, a child born in hell, forged from suffering, hardened by pain. Not a man from privilege.
+                  
+                  But we've met before. That was a long time ago, I was a kid at St. Swithin's, It used to be funded by the Wayne Foundation. It's an orphanage. My mum died when I was small, it was a car accident. I don't remember it. My dad got shot a couple of years later for a gambling debt. Oh I remember that one just fine. Not a lot of people know what it feels like to be angry in your bones. I mean they understand. The fosters parents. Everybody understands, for a while. Then they want the angry little kid to do something he knows he can't do, move on. After a while they stop understanding. They send the angry kid to a boy's home, I figured it out too late. Yeah I learned to hide the anger, and practice smiling in the mirror. It's like putting on a mask. So you showed up this one day, in a cool car, pretty girl on your arm. We were so excited! Bruce Wayne, a billionaire orphan? We used to make up stories about you man, legends and you know with the other kids, that's all it was, just stories, but right when I saw you, I knew who you really were. I'd seen that look on your face before. It's the same one I taught myself. I don't why you took the fault for Dent's murder but I'm still a believer in the Batman. Even if you're not...
+                  
+                  Tomorrow, you will be released. If you are bored of brawling with thieves and want to achieve something there is a rare blue flower that grows on the eastern slopes. Pick one of these flowers. If you can carry it to the top of the mountain, you may find what you were looking for in the first place.
+                  
+                  The training is nothing! Will is everything! The will to act.
+                  
+                  Theatricality and deception, powerful agents to the uninitiated. But we are initiated aren't we, Bruce? Members of the League of Shadows. And you betrayed us.
+                  
+                  No, no, no, I kill the bus driver.
+                  
+                  Do I really look like a guy with a plan?
+                  
+                  All creatures feel fear. Especially the scary ones. 
+                  
+                  Does it come in black?
+                  
+                  You are in hell, little man. And I am the devil.
+                  
+                  Bruce Wayne! Design, live and breathe. What brings you out of the prior sleep, Mr. Wayne?
+                  
+                  Introduce a little anarchy, upset the established order and everything becomes chaos. I'm an agent of chaos. Oh, and you know the thing about chaos? It's fair.
+                  
+                  I seek the means to fight injustice. To turn fear against those who prey on the fearful.
+                  
+                  Because some men aren't looking for anything logical, like money. They can't be bought, bullied, reasoned or negotiated with. Some men just wanna watch the world burn.
+                  
+                  I speak for the rest of the board and Mr Wayne, in expressing our own excitement.
+                  
+                  Do you wanna know why I use a knife? Guns are too quick. You can't savor all the... little emotions. You see, in their last moments, people show you who they really are. So in a way, I knew your friends better than you ever did. Would you like to know which of them were cowards?
+                  
+                  You see, I'm a guy of simple taste. I enjoy dynamite and gunpowder and gasoline.
+                  
+                  Bats frighten me. It's time my enemies shared my dread.
+                  
+                  The first time I stole so that I wouldn't starve, yes. I lost many assumptions about the simple nature of right and wrong. And when I traveled I learned the fear before a crime and the thrill of success. But I never became one of them.
+                  
+                  That's a lovely lovely voice!
+                  
+                  Swear to me!
+                  
+                  Your anger gives you great power. But if you Iet it, it will destroy you as it almost did me.
+                  
+                  It's simple. We, uh, kill the Batman.
+                  
+                  But I know the rage that drives you. That impossible anger strangIing the grief until the memory of your loved one is just poison in your veins. And one day, you catch yourself wishing the person you loved had never existed so you'd be spared your pain.
+                  
+                  I hope you're not a member of the fire brigade.
+                  
+                  Gotham's been good to our family, but the city's been suffering. People less fortunate than us have been enduring very hard times. So we built a new, cheap, public transportation system to unite the city. And at the center, Wayne tower.
+                  
+                  It's not just your name, sir. It's your father's name. And it's all that's left of him. Don't destroy it.
+                  
+                  Look around you. You'll see two councilmen, a union official, couple off-duty cops and a judge. I wouldn't have a second's hesitation of blowing your head off in front of them. Now, that's power you can't buy. That's the power of fear.
+                  
+                  Do you want my opinion? You need to lighten up.
+                  
+                  Every year, I took a holiday. I went to Florence, this cafe on the banks of the Arno. Every fine evening, I would sit there and order a Fernet Branca. I had this fantasy, that I would look across the tables and I would see you there with a wife maybe a couple of kids. You wouldn't say anything to me, nor me to you. But we would both know that you've made it, that you were happy. I never wanted you to come back to Gotham. I always knew there was nothing here for you except pain and tragedy and I wanted something more for you than that. I still do.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <div class="row justify-content-center mt-4"> <!-- JavaScript Component: Dropdowns -->
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Fun Ipsum generators
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="http://ancientalienipsum.com/">Ancient Aliens</a>
+              <a class="dropdown-item" href="http://batman-ipsum.com/">Batman</a>
+              <a class="dropdown-item" href="https://www.webdesignerdepot.com/2013/08/101-essential-lorem-ipsum-generators/">Many more</a>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="row justify-content-center mt-4"> <!-- JavaScript Component: Scrollspy -->
+        <nav id="navbar-example2" class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">Back to the Beginning</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#carouselExampleIndicators">See Destinations</a>
+              </li>                           
+            </ul>
+          </nav>
+          
+    </div>
+
+
+    <div class="row footer mt-3">
       <div class="col-sm-12">
         Copyright Fun Bus 2018
       </div>
-    </div>
+    </div>    
   </div><!-- container -->
 
     <script src="js/jquery-3.3.1.min.js"></script>

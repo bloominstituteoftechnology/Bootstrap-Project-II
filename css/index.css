@@ -16,6 +16,9 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
+.nav {
+  height: 100%;
+}
 .nav a {
   color: black;
 }
