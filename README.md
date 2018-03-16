@@ -28,12 +28,12 @@ Use the existing codebase as a starting point and accomplish the following tasks
 * Introduce a carousel somewhere on the site showcasing the images found in the img folder.  It's up to you where it goes! <<//DONE
 * You must use at least 2 of the following JavaScript components listed here:
     - Collapse <<//DONE
-    - Dropdowns
-    - Modals
+    - Dropdowns <<//DONE
+    - Modals <<//DONE
     - Tooltips
-    - Scrollspy
+    - Scrollspy <<//DONE
     - Navbar
 
 **If you need to add content for the new components (like collapse for example) just use lorem ipsum for your text!**
 
-## Stretch Task - Add validation to your form and make every field required.
+## Stretch Task - Add validation to your form and make every field required. <<//DONE
