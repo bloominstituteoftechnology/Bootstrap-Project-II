@@ -22,6 +22,12 @@ h5 {
 .container {
   max-width: 800px;
 }
+@media (max-width: 400px) {
+  .container table {
+    display: none !important;
+    border: 5px solid black !important;
+  }
+}
 .footer {
   color: black;
   background: blanchedalmond;

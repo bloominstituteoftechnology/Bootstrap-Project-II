@@ -25,10 +25,18 @@ h1, h2, h3, h4, h5 {
 
 .container {
     max-width: 800px;
+    @media (max-width:400px){
+        table {
+            display: none !important;
+            border: 5px solid black !important;
+        }
+    }
 }
 
 .footer {
     color: black;
     background: blanchedalmond;
     padding: 20px 0;
+    
+    //border: 5px solid red !important;
 }
