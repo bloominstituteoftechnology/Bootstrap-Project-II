@@ -137,6 +137,7 @@
       </div>
     </div>
     <div class="row mt-4">
+
       <div class="col-sm-4 mb-5">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
@@ -165,6 +166,7 @@
             </div>
           </div>
       </div>
+
       <div class="col-sm-4">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
@@ -193,6 +195,7 @@
             </div>
           </div>
       </div>
+
       <div class="col-sm-4">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
@@ -226,6 +229,9 @@
       <div class="col-sm-8 d-flex justify-content-center flex-column text-justify">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
+        
+        <!-- Dropdown -->
+
         <div class="dropdown">
             <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               High-Risk Destinations
@@ -237,7 +243,7 @@
             </div>
           </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mb-5">
         <h4>Don't Forget These!</h4>
         <ul class="list-group">
           <li class="list-group-item">Cras justo odio</li>
@@ -249,22 +255,43 @@
       </div>
     </div>
 
-        <div class="row">
-      <div class="col-sm-12 mt-5">
-        <form>
+        <div class="row border">
+      <div class="col-sm-12 mt-5 mb-5">
+        <!---Validation-->
+        <form class="needs-validation" novalidate>
           <div class= "form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          </div>
-          <div class= "form-group">
-          <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
-          </div>
-          <div class= "form-group">
-          <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
+          <label for="exampleInputEmail1">Email address</label>          
+          <input id="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+          <div class='invalid-feedback'>
+              You do have an Email, right?
+            </div>
+          <div class='valid-feedback'>
+              Nice!
+            </div>
           </div>
 
+          <div class= "form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" class="form-control" placeholder="Name" required>
+          <div class='invalid-feedback'>
+              Don't lie. You have a name.
+            </div>
+          <div class='valid-feedback'>
+              Cool!
+            </div>
+          </div>
+
+          <div class= "form-group">
+          <label for="phone">Phone</label>
+          <input id="phone" type="phone" class="form-control" placeholder="Phone" required>
+          <div class='valid-feedback'>
+              Awesome!
+            </div>
+          <div class='invalid-feedback'>
+              Are you a hermit?
+            </div>
+          </div>
+          
           <div class= "form-group">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -291,15 +318,39 @@
           </div>
           </div>
 
-          <div class= "form-group">
+          <div class= "form-group mb-1">
           <button type="submit" class="btn btn-info">Let's Travel</button>
           </div>
         </form>
 
+        <!--Javascript-->
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
+        
+        
+
       </div>
     </div>
-    <div class="row footer">
-      <div class="col-sm-12">
+    <div class="row footer mt-5">
+      <div class="col-sm-12 d-flex justify-content-center">
         Copyright Fun Bus 2018
       </div>
     </div>
