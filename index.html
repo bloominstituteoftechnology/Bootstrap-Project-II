@@ -248,6 +248,39 @@
         Copyright Fun Bus 2018
       </div>
     </div>
+    <!--FORM VALIDATION TESTING/PRACTICE-->
+    <div class="row">
+      <div class="col-8">
+    <form class="needs-validation" novalidate>
+      <div class="form-group">
+          <label for="validationCustom01">Name</label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="Name" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="validationCustom02">Email</label>
+            <input type="text" class="form-control" id="validationCustom02" placeholder="Email" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+                uh-oh!
+              </div>
+          </div>
+          <div class="form-group">
+            <label for="validationCustom03">Phone</label>
+            <input type="text" class="form-control" id="validationCustom03" placeholder="Phone" required>
+            <div class="invalid-feedback">
+              Please provide a valid phone number.
+            </div>
+          </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+      <!--copied 'Custom Styles' code to text validation. Deleted parts of code that were not needed and only kept the fields that were used in the original form on Fun Bus Website. The portion of code within <script> tags goes into index.js file.  -->
+    </div>
+    </div>
   </div><!-- container -->
 
     <script src="js/jquery-3.3.1.min.js"></script>
