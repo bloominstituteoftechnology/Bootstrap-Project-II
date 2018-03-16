@@ -1,5 +1,11 @@
 // Start here!
-
+// Mixin
+.box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
+//CSS
 html, body {
     font-family: 'Roboto', sans-serif;
 }
@@ -25,6 +31,26 @@ h1, h2, h3, h4, h5 {
 
 .container {
     max-width: 800px;
+}
+
+.accordion-title {
+    color: black !important;
+}
+
+.btn-shadow {
+    .box-shadow(10px 10px 10px gray);
+
+    @media(max-width: 400px) {
+        margin-bottom: 20px !important;
+    }
+}
+
+.my-custom-button {
+    @media(max-width: 400px) {
+        width: 80px !important;
+        height: 80px !important;
+        margin: 10px 0 30px 30px;
+    }
 }
 
 .footer {
