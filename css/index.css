@@ -11,12 +11,12 @@ h5 {
 }
 .container-fluid {
   background-color: white;
-  border-bottom: 2px dashed silver;
+  max-width: 800px;
 }
 .logo-heading {
   padding: 20px 0 10px;
 }
-.nav a {
+.navbar a {
   color: black;
 }
 .container {

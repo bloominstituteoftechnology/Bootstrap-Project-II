@@ -10,35 +10,40 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="js/index.js"> -->
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
 
   <!-- NAVIGATION BAR -->
   <!-- JAVASCRIPT -->
-  <div class="container-fluid sticky-top" style="border-bottom: hidden;">
-    <div class="container">
-      <div class="row">
-        <nav class="col-12 navbar navbar-light d-flex justify-content-space-between align-items-center style="background-color: #e3f2fd;"">
-          <h1 class="logo-heading">Fun Bus</h1>
-          <div class="nav d-flex">
-            <a class="nav-item nav-link" href="#home">Home</a>
-            <a class="nav-item nav-link" href="#about">About</a>
-            <a class="nav-item nav-link" href="#destinations">Pricing</a>
-            <a class="nav-item nav-link" href="#contact">Contact</a>
-          </div>
-        </nav> 
-      </div>
-    </div>
+  <div class="container-fluid sticky-top mx-auto">
+    <nav id="navbar" class="navbar navbar-light bg-light">
+      <h1 class="logo-heading">Fun Bus</h1>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#destinations">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </div>
-
+  
 
   <!-- BULK CONTENT -->
-  <div class="container">
+  <div class="container pt-105" id="bulk">
 
     <!-- main picture -->
     <div id="home" class="row">
