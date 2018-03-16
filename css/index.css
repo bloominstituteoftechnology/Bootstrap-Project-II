@@ -2,6 +2,9 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  background: whitesmoke;
+}
 h1,
 h2,
 h3,
@@ -9,21 +12,25 @@ h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
-.container-fluid {
-  background-color: white;
-  border-bottom: 2px dashed silver;
-}
 .logo-heading {
   padding: 20px 0 10px;
 }
 .nav a {
   color: black;
 }
-.container {
+.big-conatiner {
+  background: khaki;
   max-width: 800px;
 }
-.footer {
+.container {
+  background: lightgray;
+  max-width: 800px;
+}
+.container .btn {
+  color: white;
+  background: black;
+}
+.container .footer {
   color: black;
-  background: blanchedalmond;
   padding: 20px 0;
 }
