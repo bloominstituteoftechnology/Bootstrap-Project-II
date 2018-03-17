@@ -11,16 +11,30 @@ h5 {
 }
 .container-fluid {
   background-color: white;
-  border-bottom: 2px dashed silver;
+  max-width: 800px;
 }
 .logo-heading {
   padding: 20px 0 10px;
 }
-.nav a {
+.navbar a {
   color: black;
 }
 .container {
   max-width: 800px;
+}
+.container .destinations .carousel-item .carousel-caption {
+  visibility: hidden;
+}
+.container .destinations .carousel-item .carousel-caption h5 {
+  font-weight: bold;
+}
+.container .destinations .carousel-item:hover img {
+  opacity: 0.5;
+}
+.container .destinations .carousel-item:hover .carousel-caption {
+  visibility: visible;
+  opacity: 1;
+  color: black;
 }
 .footer {
   color: black;
