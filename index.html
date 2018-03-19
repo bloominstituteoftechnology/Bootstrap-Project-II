@@ -24,7 +24,7 @@
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <div class="col-9">
-          <nav class="nav">
+          <nav class="nav d-flex justify-content-end mt-3">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
@@ -41,7 +41,7 @@
         </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 mt-3"><!-- added margin -->
         <h2>Welcome To Fun Bus!</h2>
         <p>
             Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.
@@ -55,12 +55,12 @@
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-          <img src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
+          <img src="img/adventure.jpg" class="img-fluid rounded" alt="Let's go on adventure!"><!-- img corners rounded -->
       </div>
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <img src="img/fun.jpg" class="img-fluid" alt="Lets have fun!">
+            <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!"><!-- img corners rounded -->
         </div>
         <div class="col-sm-6">
           <h2>Adventure Awaits</h2>
@@ -121,11 +121,11 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-8 mt-3"><!-- added margin -->
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mt-3"><!-- added margin -->
         <h4>Don't Forget These!</h4>
         <ul class="list-group">
           <li class="list-group-item">Cras justo odio</li>
@@ -143,25 +143,45 @@
           <input id="name" type="text" class="form-control" placeholder="Name">
           <label for="phone">Phone</label>
           <input id="phone" type="phone" class="form-control" placeholder="Phone">
+          <label for="email">Email</label><!-- added email input -->
+          <input id="email" type="text" class="form-control" placeholder="Email">
+        </form> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 mt-2">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
               Beach
             </label>
           </div>
+      </div>
+      <div class="col-sm-4 mt-2">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
             <label class="form-check-label" for="exampleRadios2">
               Mountain
             </label>
           </div>
+      </div>
+      <div class="col-sm-4 mt-2">
+          <div class="form-check"> <!--added Island radio button-->
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              Island
+            </label>
+         </div> 
+      </div>     
           <button type="submit" class="btn btn-info">Let's Travel</button>
-        </form>
+        </form>       
       </div>
     </div>
     <div class="row footer">
-      <div class="col-sm-12">
-        Copyright Fun Bus 2018
+      <div class="col-sm-12 col-12 text-center mb-2 mt-2"><!--margin added -->
+        <div>
+          Copyright Fun Bus 2018
+        </div>
       </div>
     </div>
   </div><!-- container -->
