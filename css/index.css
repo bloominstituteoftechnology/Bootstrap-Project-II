@@ -8,10 +8,13 @@ h3,
 h4,
 h5 {
   font-family: 'Indie Flower', cursive;
+  color: #131817;
+}
+p {
+  color: #3b3b3b;
 }
 .container-fluid {
   background-color: white;
-  border-bottom: 2px dashed silver;
 }
 .logo-heading {
   padding: 20px 0 10px;
@@ -21,9 +24,13 @@ h5 {
 }
 .container {
   max-width: 800px;
+  border-bottom: 2px dashed #000000;
 }
 .footer {
   color: black;
-  background: blanchedalmond;
+  background: #ffffff;
   padding: 20px 0;
+}
+.container {
+  background: #d270ff;
 }
