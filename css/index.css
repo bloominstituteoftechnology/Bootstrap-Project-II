@@ -19,8 +19,48 @@ h5 {
 .nav a {
   color: black;
 }
+.pos-relative {
+  position: relative;
+  top: 30%;
+}
+@media (max-width: 515px) {
+  .pos-relative {
+    display: none;
+  }
+}
+.pos-relative1 {
+  display: flex;
+  justify-content: flex-end;
+  top: 30%;
+}
+@media (min-width: 515px) {
+  .pos-relative1 {
+    display: none;
+  }
+}
 .container {
   max-width: 800px;
+}
+.btn-font {
+  font-family: 'roboto';
+  font-size: 1.2rem;
+  color: white;
+  background-color: #17a2b8;
+}
+.btn-font:hover {
+  background-color: #1596aa;
+  color: white;
+}
+.btn-colored {
+  font-family: 'roboto';
+  font-size: 1.2rem;
+  color: white;
+  background-color: #17a2b8;
+  font-size: 1rem;
+}
+.btn-colored:hover {
+  background-color: #1596aa;
+  color: white;
 }
 .footer {
   color: black;

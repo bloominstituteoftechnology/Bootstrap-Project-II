@@ -23,8 +23,44 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+.pos-relative {
+    position: relative;
+    top: 30%;
+
+    @media(max-width: 515px) {
+        display: none;
+    }
+}
+
+.pos-relative1 {
+    display: flex;
+    justify-content: flex-end;
+    top: 30%;
+
+    @media(min-width: 515px) {
+        display: none;
+    }
+}
+
 .container {
     max-width: 800px;
+}
+
+.btn-font {
+    font-family: 'roboto';
+    font-size: 1.2rem;
+    color: white;
+    background-color: #17a2b8;
+
+    &:hover {
+        background-color: darken(#17a2b8, 3%);
+        color: white;
+    }
+}
+
+.btn-colored {
+    .btn-font;
+    font-size: 1rem;
 }
 
 .footer {
