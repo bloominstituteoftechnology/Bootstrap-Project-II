@@ -2,7 +2,9 @@
 
 <html lang="en">
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Fun Bus Travel Agency</title>
 
@@ -17,7 +19,7 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid"> <!--Navbar-->
     <div class="container">
       <div class="row">
         <div class="col-3">
@@ -26,7 +28,7 @@
         <div class="col-9">
           <nav class="nav">
             <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href`="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
             <a class="nav-link" href="#">Contact</a>
           </nav>
@@ -34,10 +36,22 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
+  <div class="container"> <!--Main Content-->
+    <div class="row"><!--Carousel-->
         <div class="col-sm-12">
-            <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 carousel-img" src="img/fun-bus.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="img/happ-bus-1.jpeg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="img/happ-bus-2.jpeg" alt="Third slide">
+              </div>
+            </div>
+          </div>
         </div>
     </div>
     <div class="row">
