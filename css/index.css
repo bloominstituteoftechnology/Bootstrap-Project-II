@@ -20,10 +20,13 @@ h5 {
   color: black;
 }
 .container {
-  max-width: 800px;
+  max-width: 100%;
 }
 .footer {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+}
+.carousal {
+  min-width: 100%;
 }
