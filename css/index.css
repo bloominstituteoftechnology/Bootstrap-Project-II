@@ -1,5 +1,6 @@
 html,
 body {
+  font-size: 100%;
   font-family: 'Roboto', sans-serif;
 }
 h1,
@@ -9,9 +10,14 @@ h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
-.container-fluid {
+.my-nav {
   background-color: white;
   border-bottom: 2px dashed silver;
+}
+.my-nav .navbar h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: auto 0;
 }
 .logo-heading {
   padding: 20px 0 10px;

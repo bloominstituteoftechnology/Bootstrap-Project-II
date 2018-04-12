@@ -15,8 +15,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-        <!--Flex & FlexProps should be on col-Div, because the col-div constrains the nav-->
-<body>
+
+<!--Task 2 Answers before Implementing Collapsable Navbar-->
   <!-- <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
@@ -35,36 +35,33 @@
       </div>
     </div>
   </div> -->
+<!--///////////////////////////////////////////////////////-->
 
-<div class="container-fluid sticky-top">
+<body>
+<!--Note to Self: Some info on Navbar utility classes @ https://github.com/twbs/bootstrap/issues/21982-->
+<div class="container-fluid sticky-top my-nav">
   <div class="container">
     <nav class="navbar navbar-expand-md navbar-light funbus-nav">
-      <div class="row">
-        <div class="col-6 col-sm-3">
-          <h1 class="navbar-brand">Funbus</h1>
-        </div><!--Column 1-->
-        <div class="col-6 col-sm-9 d-flex justify-content-end">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav d-flex justify-content-end">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div><!--Column 2-->
-      </div><!--row-->
+      <h1 class="navbar-brand">Funbus</h1>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div><!--Navbar Content-->
     </nav>
   </div><!--Container-->
 </div><!--ContainerFluid-->
