@@ -24,9 +24,15 @@
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <div class="col-9 d-flex align-items-center justify-content-end">
-          <nav class="nav">
+	  <!-- JavaScript Component: Dropdown -->  
+	  <nav class="nav dropdown-show">
             <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
+            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+	      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+		<a class="dropdown-item" href="#">Action</a>
+		<a class="dropdown-item" href="#">Adventure</a>
+		<a class="dropdown-item" href="#">Really Wild Things</a>
+	      </div><!-- dropdown-menu -->
             <a class="nav-link" href="#">Blog</a>
             <a class="nav-link" href="#">Contact</a>
           </nav>
@@ -146,6 +152,7 @@
     </div>
     <div class="row mt-3">
 	<div class="col-sm-8">
+	    <!-- JavaScript Component Collapse -->
 	    <a class="btn btn-primary" data-toggle="collapse" href="#mycollapse" role="button" aria-expanded="false" aria-controls="mycollapse">
 		<h4>Before You Go...</h4>
 	    </a>
@@ -209,6 +216,7 @@
   </div><!-- container -->
 
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>
