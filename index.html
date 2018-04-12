@@ -26,7 +26,15 @@
         <div class="col-9 d-flex align-items-center justify-content-end">
           <nav class="nav">
             <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
+
+
+            <!-- DROPDOWN ADDED  -->
+            <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <p>Action</p>
+                <p>Adventure</p>
+                <p>Really Wild Things</p>
+            </div>
             <a class="nav-link" href="#">Blog</a>
             <a class="nav-link" href="#">Contact</a>
           </nav>
@@ -160,7 +168,7 @@
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
     </div>
-    <div class="row mt-5">
+    <div class="row mt-5 mb-5">
       <div class="col-sm-8">
 
 
@@ -216,7 +224,7 @@
         </form>
       </div>
     </div>
-    <div class="row footer mb-3">
+    <div class="row footer mt-5 mb-3">
       <div class="col-sm-12">
         Copyright Fun Bus 2018
       </div>
@@ -224,6 +232,7 @@
   </div><!-- container -->
 
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>
