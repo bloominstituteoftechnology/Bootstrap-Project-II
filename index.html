@@ -23,9 +23,9 @@
         <div class="col-3">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
-        <div class="col-9">
+        <div class="col-9 d-flex align-items-center">
           <nav class="nav">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
             <a class="nav-link" href="#">Contact</a>
@@ -34,6 +34,7 @@
       </div>
     </div>
   </div>
+
   <div class="container">
     <div class="row">
         <div class="col-sm-12">
@@ -136,34 +137,70 @@
         </ul>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <form>
-          <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
-          <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Beach
-            </label>
+
+<div class="form-group">
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <form>
+              <label for="name">Name</label>
+              <input id="name" type="text" class="form-control" placeholder="Name">
+              <label for="phone">Phone</label>
+              <input id="phone" type="phone" class="form-control" placeholder="Phone">
+              <label for="email">Email</label>
+              <input id="email" type="text" class="form-control" placeholder="Email">
+            </form>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Mountain
-            </label>
+        </div>
+      </div>           
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <div class="form-check text-center">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Beach
+                </label>
+            </div>
+          
+            <div class="form-check text-center">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  Mountain
+                </label>
+            </div>
+                    
+            <div class="form-check text-center">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  Island
+                </label>
+            </div>
+      
           </div>
-          <button type="submit" class="btn btn-info">Let's Travel</button>
-        </form>
+        </div>
       </div>
-    </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-12">
+            <button type="submit" class="btn btn-info">Let's Travel</button>
+          </div>
+        </div>
+      </div>
+</div>    
+
+
+  
+  <div class="container">
     <div class="row footer">
-      <div class="col-sm-12">
+      <div class="col-sm-12 text-center">
         Copyright Fun Bus 2018
       </div>
     </div>
+  </div>
+    
   </div><!-- container -->
 
     <script src="js/jquery-3.3.1.min.js"></script>
