@@ -178,15 +178,21 @@
     </div>
     <div class="row mt-5" id="form"><!--Form-->
       <div class="col-sm-12">
-        <form>
+        <form class="needs-validation" novalidate>
           <div class="form-row">
               <div class="form-group col-6"><!--Name-->
                 <label for="name">Name</label>
                 <input id="name" type="text" class="form-control" placeholder="Name">
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
               </div>
               <div class="form-group col-6"><!--Last Name-->
                 <label for="surename">Last Name</label>
                 <input id="surename" type="text" class="form-control" placeholder="surename">
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
               </div>
           </div>
           <div class="form-row">
@@ -194,12 +200,18 @@
                 <div class="form-group col-6">
                   <label for="phone">Phone</label><!--Phone-->
                   <input id="phone" type="phone" class="form-control" placeholder="Phone">
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
                 </div>
               </div>
               <div class="form-group col-6">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
               </div>
           </div>
           <div class="form-group"><!--Radio buttons-->
@@ -221,6 +233,9 @@
                 Island
               </label>
             </div>
+          </div>
+          <div class="valid-feedback">
+            Looks good!
           </div>
           <button type="submit" class="btn btn-info">Let's Travel</button>
         </form>
