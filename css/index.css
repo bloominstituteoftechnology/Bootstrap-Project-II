@@ -8,6 +8,7 @@ h3,
 h4,
 h5 {
   font-family: 'Indie Flower', cursive;
+  text-shadow: 0 0 3px #FF0000;
 }
 .container-fluid {
   background-color: white;
@@ -17,7 +18,7 @@ h5 {
   padding: 20px 0 10px;
 }
 .nav a {
-  color: black;
+  color: blue;
 }
 .container {
   max-width: 800px;
