@@ -11,6 +11,7 @@ body {
   /*same height as header*/
   margin-top: -60px;
   /*same height as header*/
+  display: hidden;
 }
 .container-fluid {
   background-color: white;
