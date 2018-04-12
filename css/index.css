@@ -16,11 +16,17 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
+.carousel-caption {
+  color: black;
+}
 .nav a {
   color: black;
 }
 .container {
   max-width: 800px;
+}
+.dropdown button {
+  background-color: #17a2b8;
 }
 .footer {
   color: black;
