@@ -18,22 +18,18 @@
 
 <body>
   <div class="container-fluid">
+      <h1 class="logo-heading">Fun Bus</h1>
     <div class="container">
-      <div class="row">
-        <div class="col-3">
-            <h1 class="logo-heading">Fun Bus</h1>
-        </div>
-        <div class="col-9">
-          <nav class="nav">
+        <div class="col-9 ">
+          <nav class="nav d-flex justify-content-end ">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
             <a class="nav-link" href="#">Contact</a>
           </nav>
-        </div>
-      </div>
     </div>
   </div>
+  
   <div class="container">
     <div class="row">
         <div class="col-sm-12">
@@ -138,11 +134,16 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <form>
-          <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
-          <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
+
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" type="text" class="form-group-item form-control" placeholder="Name">
+            </div>
+            <label for="email" class="mt-2">Email</label>
+            <input id="email" type="email" class="form-control mb-2" placeholder="Email">
+            <label for="phone">Phone</label>
+            <input id="phone" type="phone" class="form-control mb-3" placeholder="Phone">
+            
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
@@ -155,6 +156,12 @@
               Mountain
             </label>
           </div>
+          <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Island
+              </label>
+            </div>
           <button type="submit" class="btn btn-info">Let's Travel</button>
         </form>
       </div>
