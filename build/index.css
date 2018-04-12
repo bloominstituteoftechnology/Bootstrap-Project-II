@@ -33,3 +33,13 @@ h5 {
 #carousel .carousel-item .carousel-img {
   object-fit: cover;
 }
+#adventure .custom-img {
+  border-radius: 4.85rem;
+  border-top-left-radius: 1.3rem;
+  border-bottom-right-radius: 1.3rem;
+}
+#letsgo .custom-img {
+  border-radius: 4.85rem;
+  border-top-left-radius: 1.3rem;
+  border-bottom-right-radius: 1.3rem;
+}

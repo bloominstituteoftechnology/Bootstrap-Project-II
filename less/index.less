@@ -1,5 +1,14 @@
 // Start here!
 
+// Mixing
+#my-styles() {
+    .custom-border-radius {
+        border-radius: 4.85rem;
+        border-top-left-radius: 1.3rem;
+        border-bottom-right-radius: 1.3rem;
+    }
+}
+
 html, body {
     font-family: 'Roboto', sans-serif;
 }
@@ -40,4 +49,12 @@ h1, h2, h3, h4, h5 {
             object-fit: cover;
         }
     }
+}
+
+#adventure .custom-img {
+    #my-styles > .custom-border-radius;
+}
+
+#letsgo .custom-img {
+    #my-styles > .custom-border-radius;
 }
