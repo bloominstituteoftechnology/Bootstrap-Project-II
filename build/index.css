@@ -2,6 +2,9 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  position: relative;
+}
 h1,
 h2,
 h3,
@@ -38,11 +41,18 @@ h5 {
 }
 #adventure .custom-img {
   border-radius: 4.85rem;
-  border-top-left-radius: 1.3rem;
-  border-bottom-right-radius: 1.3rem;
+  border-top-right-radius: 1.3rem;
+  border-bottom-left-radius: 1.3rem;
 }
 #letsgo .custom-img {
   border-radius: 4.85rem;
   border-top-left-radius: 1.3rem;
   border-bottom-right-radius: 1.3rem;
+}
+#scrollspy {
+  max-width: 18%;
+  position: fixed;
+  top: 7.5rem;
+  left: 1.5rem;
+  overflow-y: auto;
 }
