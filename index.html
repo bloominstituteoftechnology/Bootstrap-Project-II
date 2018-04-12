@@ -134,21 +134,45 @@
  
 
     <div class="row mt-3">
-      <div class="col-sm-4">
+       <div class="col-sm-4">
+       <!-- JavaScript Component: Modal -->	    
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
-      </div>
-      <div class="col-sm-4">
-        <h4>Mountain Excursion</h4>
+        <button type="button" class="btn btn-info btn-primary" data-toggle="modal" data-target="#mymodal">Get More Info</button>
+	  <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-dialog" role="document">
+	      <div class="modal-content">
+		<div class="modal-header">
+		    <h5 class="modal-title" id="myModalLabel">Fun Modal Box</h5>
+		    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		    </button>
+		</div><!-- modal header -->
+		<div class="modal-body">
+		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div><!-- modal body -->
+		<div class="modal-footer">
+		    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		    <button type="button" class="btn btn-primary">Save changes</button>
+		</div><!-- modal footer -->
+	    </div><!-- modal content -->
+	</div><!-- modal-dialog -->
+      </div><!-- modal fade -->
+     </div><!-- col-sm-4 fun in the sun> -->
+
+     
+     <div class="col-sm-4">
+	<!-- JavaScript Component: Tooltip --> 
+	<h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
-      </div>
-      <div class="col-sm-4">
+        <button type="button" class="btn btn-info btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Look! It's a tooltip!">Get More Info</button>
+     </div>
+     
+     <div class="col-sm-4">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info">Get More Info</button>
-      </div>
+     </div>
     </div>
     <div class="row mt-3">
 	<div class="col-sm-8">
