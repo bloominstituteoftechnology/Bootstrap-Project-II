@@ -11,10 +11,13 @@ h5 {
 }
 .container-fluid {
   background-color: white;
-  border-bottom: 2px dashed silver;
+  border-bottom: 1px solid silver;
 }
 .logo-heading {
   padding: 20px 0 10px;
+}
+.nav1 {
+  background-image: url("https://www.vacation.com/-/media/Vacation/Homepage-Vacation-Tile/vacation-hero-image-maldives-1800x482.ashx?h=482&w=1800&la=en&hash=E3B6034544E9C4B8AE95DB691F871A42D5DDB540");
 }
 .nav a {
   color: black;
@@ -26,4 +29,26 @@ h5 {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+}
+.mnt {
+  max-height: 400px;
+  width: 100%;
+  box-shadow: 3px 3px 5px;
+}
+.h2des {
+  background: #65C2FF
+    ;
+}
+.destbl {
+  border: 1px solid #65C2FF
+    ;
+}
+.funi {
+  box-shadow: 3px 3px 5px;
+}
+.avni {
+  box-shadow: 3px 3px 5px;
+}
+#carouselExampleSlidesOnly {
+  box-shadow: 3px 3px 5px;
 }
