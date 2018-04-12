@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Fun Bus Travel Agency</title>
+  <title>Fun Bus Travel Company</title>
 
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
     <div class="container">
       <div class="row">
         <div class="col-3">
-            <h1 class="logo-heading">Fun Bus</h1>
+            <h2 class="logo-heading">Fun Bus Travel Co.</h2>
         </div>
         <div class="col-9 d-flex align-items-center d-flex justify-content-end">
           <nav class="nav">
@@ -36,11 +36,13 @@
   </div>
 
   <div class="container">
+
     <div class="row">
         <div class="col-sm-12">
             <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
         </div>
     </div>
+
     <div class="row">
       <div class="col-sm-12 mt-4">
         <h2>Welcome To Fun Bus!</h2>
@@ -49,6 +51,43 @@
         </p>
       </div>
     </div>
+
+  <!-- JavaScript Component: Modal -->
+
+    <div class="container-modal">
+      <div class="row">
+        <div class="col">
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch Demo Video
+          </button>
+  
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Video Demo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+                <div class="modal-body">
+                Click here to launch video demo.
+                </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-sm-6 mt-4">
         <h2>Begin the Adventure of Your Life</h2>
@@ -69,6 +108,57 @@
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
     </div>
+    
+    <!-- JavaScript Component: Dropdowns -->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col mt-33 text-center">
+          <h2>What's Your Travelling Preference?</h2>
+    
+    <div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Solo Traveller
+    </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </div>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Travelling as a Couple
+        </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+    </div>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Travelling as a Group
+        </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    
     <div class="row">
       <div class="col-sm-12 mt-3">
         <h2>Destinations</h2>
@@ -147,7 +237,7 @@
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
-      <div class="col-sm-4 mt-5 mb-4">
+      <div class="col-sm-4 mt-5">
         <h4>Don't Forget These!</h4>
         <ul class="list-group">
           <li class="list-group-item">Cras justo odio</li>
@@ -159,8 +249,8 @@
       </div>
     </div>
 
-    <h4>Things You Will Need:</h4>
-    <div class="container">
+    <div class="container col-sm-12 mt-4">
+      <h4>Things You Will Need</h4>
       <div class="row">
         <div class="col">
             <div id="accordion">
@@ -215,7 +305,8 @@
 <div class="form-group">
     <div class="container">
         <div class="row">
-          <div class="col-sm-12 mt-4">
+          <div class="col-sm-12 mt-5">
+            <h4>Book Now!</h4>
             <form>
               <label for="name">Name</label>
               <input id="name" type="text" class="form-control" placeholder="Name">
@@ -265,8 +356,6 @@
       </div>
 </div>    
 
-
-  
   <div class="container">
     <div class="row footer">
       <div class="col-sm-12 text-center">
