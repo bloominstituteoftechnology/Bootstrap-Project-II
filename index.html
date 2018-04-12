@@ -153,21 +153,48 @@
     <div class="row"><!--Form-->
       <div class="col-sm-12">
         <form>
-          <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
-          <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Beach
-            </label>
+          <div class="form-row">
+              <div class="form-group col-6"><!--Name-->
+                <label for="name">Name</label>
+                <input id="name" type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group col-6"><!--Last Name-->
+                <label for="surename">Last Name</label>
+                <input id="surename" type="text" class="form-control" placeholder="surename">
+              </div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Mountain
-            </label>
+          <div class="form-row">
+              <div class="from-group">
+                <div class="form-group col-6">
+                  <label for="phone">Phone</label><!--Phone-->
+                  <input id="phone" type="phone" class="form-control" placeholder="Phone">
+                </div>
+              </div>
+              <div class="form-group col-6">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+          </div>
+          <div class="form-group"><!--Radio buttons-->
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Beach
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Mountain
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+              <label class="form-check-label" for="exampleRadios3">
+                Island
+              </label>
+            </div>
           </div>
           <button type="submit" class="btn btn-info">Let's Travel</button>
         </form>
