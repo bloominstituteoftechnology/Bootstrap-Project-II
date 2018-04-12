@@ -34,6 +34,12 @@ h5 {
 .m-title {
   text-align: center;
 }
+.f-custom {
+  margin-top: 10px;
+}
+.form-header {
+  text-align: center;
+}
 @media (max-width: 480px) {
   .c-nav {
     padding: 5px;
