@@ -27,3 +27,11 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+div .col-3 {
+  width: 100%;
+  justify-content: flex-end;
+}
+#test {
+  width: 100%;
+  display: flex;
+}
