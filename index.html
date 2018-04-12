@@ -24,13 +24,28 @@
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <!--positioned nav to right and center-->
-        <div class="col-9 d-flex justify-content-end  align-items-center">
+        <div class="col-9 d-flex justify-content-end  align-items-center"> <!--standard inline nav-->
           <nav class="nav">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
             <a class="nav-link" href="#">Contact</a>
           </nav>
+          <!-- <div class="pos-f-t d-md-none d-lg-none d-xl-none" > -->
+              <!-- <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                  <a class="text-white" href="#">Home</a>
+                  <a class="text-white" href="#">About</a>
+                  <a class="text-white" href="#">Blog</a>
+                  <a class="text-white" href="#">Contact</a>
+                </div>
+              </div>
+              <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </nav> -->
+            <!-- </div> -->
         </div>
       </div>
     </div>
@@ -158,20 +173,34 @@
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
+      
+
       <div class="col-sm-4">
-        <h4>Don't Forget These!</h4>
+        <!-- <h4>Don't Forget These!</h4>
         <ul class="list-group">
           <li class="list-group-item">Cras justo odio</li>
           <li class="list-group-item">Dapibus ac facilisis in</li>
           <li class="list-group-item">Morbi leo risus</li>
           <li class="list-group-item">Porta ac consectetur ac</li>
           <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
+        </ul> -->
+        <div class="dropdown"> <!--used drop-down-->
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Don't Forget These!
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Cras justo odio</a>
+              <a class="dropdown-item" href="#">Dapibus ac facilisis in</a>
+              <a class="dropdown-item" href="#">Morbi leo risus</a>
+              <a class="dropdown-item" href="#">Porta ac consectetur ac</a>
+              <a class="dropdown-item" href="#">Vestibulum at eros</a>
+            </div>
+          </div>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <form>
+        <form class="mt-3"> <!--set margin top -->
 
           <div class="form-group">
               <label for="name">Name</label>
@@ -221,7 +250,59 @@
       </div>
     </div>
     <div class="row footer mt-3"> <!--add margin top-->
-      <div class="col-sm-12">
+
+      <div class="col-6 d-flex justify-content-center">
+
+  <!-- implemented modal -->      
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalLong">
+    Click for Terms of Service Details
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal Component Test</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+       
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      </div>
+
+      <div class="col-6 d-flex justify-content-center align-items-center">
         Copyright Fun Bus 2018
       </div>
     </div>
