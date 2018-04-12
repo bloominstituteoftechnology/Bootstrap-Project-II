@@ -109,31 +109,57 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="img/beach_photo.jpeg" alt="First slide">
+            <img class="d-block w-100" src="img/slider-1.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/island_pic.jpg" alt="Second slide">
+            <img class="d-block w-100" src="img/slider-2.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/mountain_pic.jpg" alt="Third slide">
+            <img class="d-block w-100" src="img/slider-3.jpg" alt="Third slide">
           </div>
         </div>
       </div>
+
+      <!-- USED COLLAPSE FUNCTIONS FOR EACH OF THESE SECTIONS BELOW -->
+
+
     <div class="row">
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+          <a class="btn btn-info rounded-circle" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Get More Info
+          </a>
+          <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+          </div>
       </div>
       <div class="col-sm-4">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+            <a class="btn btn-info rounded-circle" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                 Get More Info
+            </a>
+            <div class="collapse" id="collapseExample2">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
       </div>
       <div class="col-sm-4">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+             <a class="btn btn-info rounded-circle" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Get More Info
+             </a>
+             <div class="collapse" id="collapseExample3">
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
+              </div>
+          
       </div>
     </div>
     <div class="row mb-5">
@@ -152,7 +178,7 @@
         </ul>
       </div>
     </div>
-    <div class="row mb-5">
+    <div class="row mb-5 bg-light">
       <div class="col-sm-12">
         <form>
           <div class="form-group">
@@ -189,7 +215,30 @@
 
 
           </div>
-          <button type="submit" class="btn btn-info">Let's Travel</button>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">
+              Let's Travel!
+          </button>
+
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModalLongTitle">Thank you for submitting!</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    blahblahblah blahblah blahblahblah blah
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Confirm</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
         </form>
       </div>
     </div>

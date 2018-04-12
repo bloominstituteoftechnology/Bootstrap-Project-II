@@ -9,8 +9,9 @@ h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
+
 .container-fluid {
-  background-color: white;
+  background-color: gold;
   border-bottom: 2px dashed silver;
 }
 .logo-heading {
