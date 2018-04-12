@@ -20,14 +20,27 @@ h5 {
 .nav a {
   color: black;
 }
+.nav a:hover {
+  transition: color 0.25s ease-out 0s;
+  color: #87ceeb;
+}
 .dont-forget li {
   background-color: #fff7ec;
 }
 .collap {
   background-color: #fff7ec;
 }
+#accordion .btn {
+  font-size: 24px;
+}
+#accordion .btn:hover {
+  font-style: italic;
+}
 .container {
   max-width: 800px;
+}
+.table {
+  border: 2px solid blanchedalmond;
 }
 .footer {
   color: black;

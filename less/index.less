@@ -21,6 +21,11 @@ h1, h2, h3, h4, h5 {
 .nav {
     a {
         color: black;
+
+        &:hover{
+          transition: color 0.25s ease-out 0s;
+          color: rgb(135,206,235);
+        }
     }
 }
 
@@ -32,8 +37,21 @@ h1, h2, h3, h4, h5 {
   background-color: lighten(rgba(255,235,205,1), 6%)
 }
 
+#accordion{
+  .btn{
+    font-size: 24px;
+      &:hover{
+        font-style: italic;
+      }
+  }
+}
+
 .container {
     max-width: 800px;
+}
+
+.table{
+  border: 2px solid blanchedalmond;
 }
 
 .footer {
