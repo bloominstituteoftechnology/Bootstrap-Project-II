@@ -21,15 +21,15 @@
   <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
-        <div class="col-3">
+        <div class="col-sm-4 col-2">
           <h1 class="logo-heading">Fun Bus</h1>
         </div>
-        <div class="col-9 col-xs-7 d-flex justify-content-end align-items-center">
+        <div class="col-sm-8 col-10 col-xs-7 d-flex justify-content-end align-items-center">
           <nav class="nav">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link c-navactive c-nav" href="#">Home</a>
+            <a class="nav-link c-nav" href="#">About Us</a>
+            <a class="nav-link c-nav" href="#">Blog</a>
+            <a class="nav-link c-nav" href="#">Contact</a>
           </nav>
         </div>
       </div>
@@ -51,7 +51,7 @@
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-2 mb-2">
       <div class="col-sm-6">
         <h2>Let's Go!</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition
@@ -60,14 +60,14 @@
           cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-        <img src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
+        <img src="img/adventure.jpg" class="img-fluid rounded" alt="Let's go on adventure!">
       </div>
     </div>
     <div class="row">
       <div class="col-sm-6">
-        <img src="img/fun.jpg" class="img-fluid" alt="Lets have fun!">
+        <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 mt-2">
         <h2>Adventure Awaits</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition
           colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
@@ -75,62 +75,94 @@
           cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <h2>Destinations</h2>
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Location</th>
-              <th scope="col">Activity</th>
-              <th scope="col">Airfare</th>
-              <th scope="col">Hotel</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Beach</th>
-              <td>Chillin</td>
-              <td>$600</td>
-              <td>$400</td>
-            </tr>
-            <tr>
-              <th scope="row">Mountain</th>
-              <td>Hiking</td>
-              <td>$400</td>
-              <td>$200</td>
-            </tr>
-            <tr>
-              <th scope="row">Island</th>
-              <td>Boating</td>
-              <td>$1700</td>
-              <td>$600</td>
-            </tr>
-          </tbody>
-        </table>
+    <!-- Start JS component: Accordion -->
+    <div class="row c2-custom">
+      <div id="accordion c2-custom">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h2>Destinations</h2>
+              </button>
+            </h5>
+          </div>
+          <!-- Card One-->
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <div class="row mt-2">
+                <div class="col-sm-4 tabs">
+                  <h4>Fun In The Sun</h4>
+                  <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign.
+                    Traveler blogger website design expedition clean excursion traveling.</p>
+                  <button type="button" class="btn btn-info">Get More Info</button>
+                </div>
+                <div class="col-sm-4 tabs">
+                  <h4>Mountain Excursion</h4>
+                  <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign.
+                    Traveler blogger website design expedition clean excursion traveling.</p>
+                  <button type="button" class="btn btn-info">Get More Info</button>
+                </div>
+                <div class="col-sm-4 tabs">
+                  <h4>Island Getaway</h4>
+                  <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign.
+                    Traveler blogger website design expedition clean excursion traveling.</p>
+                  <button type="button" class="btn btn-info">Get More Info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card Two -->
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h2>Prices and Details</h2>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <div class="row">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Location</th>
+                        <th scope="col">Activity</th>
+                        <th scope="col">Airfare</th>
+                        <th scope="col">Hotel</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Beach</th>
+                        <td>Chillin</td>
+                        <td>$600</td>
+                        <td>$400</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Mountain</th>
+                        <td>Hiking</td>
+                        <td>$400</td>
+                        <td>$200</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Island</th>
+                        <td>Boating</td>
+                        <td>$1700</td>
+                        <td>$600</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <h4>Fun In The Sun</h4>
-        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler
-          blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
-      </div>
-      <div class="col-sm-4">
-        <h4>Mountain Excursion</h4>
-        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler
-          blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
-      </div>
-      <div class="col-sm-4">
-        <h4>Island Getaway</h4>
-        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler
-          blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
-      </div>
-    </div>
-    <div class="row">
+
+
+    <div class="row mt-4">
       <div class="col-sm-8">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical
@@ -159,7 +191,7 @@
             <label for="email">E-Mail</label>
             <input id="email" type="email" class="form-control" placeholder="E-Mail">
           </div>
-          <div class="form-group d-flex custom-flags justify-content-around col-4">
+          <div class="form-group d-flex custom-flags justify-content-around col-12 col-sm-4">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
               <label class="form-check-label" for="exampleRadios1">
@@ -180,14 +212,33 @@
             </div>
           </div>
           <div class="col-8"></div>
+          <!-- Start JS component: Modal -->
           <div class="form-group">
-            <button type="submit" class="btn btn-info">Let's Travel</button>
+            <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#travelModal">Let's Travel</button>
+            <div class="modal fade" id="travelModal" tabindex="-1" role="dialog" aria-labelledby="travelModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m-title" id="travelModalLabel">Thank You!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Thank You for booking one of our great tours! We will be in touch shortly!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Awesome!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </form>
       </div>
     </div>
     <div class="row footer">
-      <div class="col-sm-12">
+      <div class="col-sm-12 d-flex justify-content-center">
         Copyright Fun Bus 2018
       </div>
     </div>

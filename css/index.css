@@ -26,7 +26,22 @@ h5 {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+  font-size: 0.75rem;
 }
-/*.custom-flags {
-    margin-left: 1%;
-} */
+.c2-custom {
+  display: block;
+}
+.m-title {
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .c-nav {
+    padding: 5px;
+  }
+  .tabs {
+    margin-top: 10px;
+  }
+  body {
+    text-align: center;
+  }
+}
