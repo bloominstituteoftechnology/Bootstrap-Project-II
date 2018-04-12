@@ -28,7 +28,17 @@
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
+            
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Contact
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button">Phone</button>
+                  <button class="dropdown-item" type="button">Email</button>
+                  <button class="dropdown-item" type="button">PO Box</button>
+                </div>
+              </div>
           </nav>
         </div>
       </div>
@@ -96,6 +106,67 @@
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
     </div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+    Check out our great prices!
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Destinations</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-sm-12">
+                  
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Location</th>
+                        <th scope="col">Activity</th>
+                        <th scope="col">Airfare</th>
+                        <th scope="col">Hotel</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Beach</th>
+                        <td>Chillin</td>
+                        <td>$600</td>
+                        <td>$400</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Mountain</th>
+                        <td>Hiking</td>
+                        <td>$400</td>
+                        <td>$200</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Island</th>
+                        <td>Boating</td>
+                        <td>$1700</td>
+                        <td>$600</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- moving this into the modulo
     <div class="row">
       <div class="col-sm-12">
         <h2>Destinations</h2>
@@ -131,7 +202,8 @@
         </table>
       </div>
     </div>
-    <div class="row">
+  -->
+    <div class="row mt-4">
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
