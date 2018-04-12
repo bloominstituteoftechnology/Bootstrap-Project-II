@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 
   <title>Fun Bus Travel Agency</title>
 
@@ -11,21 +13,22 @@
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
         <div class="col-3">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
-        <div class="col-9">
-          <nav class="nav">
-            <a class="nav-link active" href="#">Home</a>
+        <div class="col-9 d-flex justify-content-end align-items-center">
+          <nav class="nav nav-pills">
+            <a class="nav-link" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
             <a class="nav-link" href="#">Contact</a>
@@ -139,23 +142,47 @@
     <div class="row">
       <div class="col-sm-12">
         <form>
-          <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
-          <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Beach
-            </label>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" class="form-control" placeholder="Name">
+          </div> 
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Mountain
-            </label>
+          
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input id="phone" type="phone" class="form-control" placeholder="Phone">        
           </div>
-          <button type="submit" class="btn btn-info">Let's Travel</button>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Beach
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Mountain
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+              <label class="form-check-label" for="exampleRadios3">
+                Island
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-info">Let's Travel</button>
+          </div>
         </form>
       </div>
     </div>
@@ -165,9 +192,5 @@
       </div>
     </div>
   </div><!-- container -->
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/index.js"></script>
 </body>
 </html>

@@ -10,14 +10,18 @@ h5 {
   font-family: 'Indie Flower', cursive;
 }
 .container-fluid {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 2px dashed silver;
 }
 .logo-heading {
   padding: 20px 0 10px;
 }
-.nav a {
-  color: black;
+nav a {
+  color: #179ec0;
+}
+nav a:hover {
+  color: white;
+  background: #179ec0;
 }
 .container {
   max-width: 800px;
