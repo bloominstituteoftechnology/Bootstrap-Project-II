@@ -48,7 +48,7 @@
         
 
 
-          <div id=" center carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -75,6 +75,11 @@
               </a>
             </div>
 
+
+
+
+
+            
         </div>
     </div>
   </div>
@@ -201,18 +206,46 @@
         </ul>
       </div>
     </div>
+
+
+
     <div class="row">
       <div class="col-sm-12">
 
-          <div class="form-group">
-              <label for="name">Name</label>
-              <input id="name" type="text" class="form-group-item form-control" placeholder="Name">
+       <form class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationTooltip01">Name</label>
+            <input type="text" class="form-control" id="validationTooltip01">
+            <div class="valid-tooltip">
+              Looks good!
             </div>
-            <label for="email" class="mt-2">Email</label>
-            <input id="email" type="email" class="form-control mb-2" placeholder="Email">
-            <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control mb-3" placeholder="Phone">
-            
+          </div>
+          
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationTooltip03">Email</label>
+            <input type="text" class="form-control" id="validationTooltip03">
+            <div class="invalid-tooltip">
+              Please provide a valid city.
+            </div>
+          </div>
+      
+          <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationTooltip05">Phone</label>
+            <input type="text" class="form-control" id="validationTooltip05" >
+            <div class="invalid-tooltip">
+              Please provide a valid zip.
+            </div>
+          </div>
+        </div>
+       
+      </form>
+
+
+
+
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
