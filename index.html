@@ -138,35 +138,42 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <form>
-          <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
-          <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
-	  <label for="email">Email</label>
-	  <input id="email" type="email" class="form-control" placeholder="Email">
-          <div class="form-check">
+         <form>
+	      
+          <label class="form-group" for="name">Name</label>
+          <input id="name" type="text" class="form-control form-group" placeholder="Name">
+
+	  <label class="form-group" for="phone">Phone</label>
+          <input id="phone" type="phone" class="form-control form-group" placeholder="Phone">
+
+	  <label class="form-group" for="email">Email</label>
+	  <input id="email" type="email" class="form-control form-group" placeholder="Email">
+
+	  <div class="form-check form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
               Beach
             </label>
-          </div>
-          <div class="form-check">
+	    
+          </div><!-- Beach radio button -->
+          <div class="form-check form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
             <label class="form-check-label" for="exampleRadios2">
 		Mountain
             </label>
-          </div>
-	  <div class="form-check">
+          </div><!-- Mountain radio button -->
+
+	  <div class="form-check form-group">
               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
               <label class="form-check-label" for="exampleRadios2">
 		  Island
               </label>
-          </div>
-          <button type="submit" class="btn btn-info">Let's Travel</button>
-        </form>
-      </div>
-    </div>
+          </div><!-- Island radio button -->
+
+	  <button type="submit" class="btn btn-info">Let's Travel</button>
+        </form> <!--end of form -->
+      </div> <!--div col-sm-12-->
+    </div><!--div row -->
     <div class="row footer">
       <div class="col-sm-12">
         Copyright Fun Bus 2018
