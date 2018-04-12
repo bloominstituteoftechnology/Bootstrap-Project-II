@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <!-- Navigation -->
   <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
@@ -34,8 +35,11 @@
       </div>
     </div>
   </div>
+
+  <!-- Main Contents -->
   <div class="container">
-    <div class="row">
+    <!-- Slider -->
+    <div class="row mt-4">
         <div class="col-sm-12">
             <!-- JavaScript Component: Carousel -->
             <div id="mainCarousel" class="carousel slide" data-ride="carousel">
@@ -66,6 +70,8 @@
             </div>
         </div>
     </div>
+
+    <!-- About Fun Bus -->
     <div class="row">
       <div class="col-sm-12 mt-3">
         <h2>Welcome To Fun Bus!</h2>
@@ -94,8 +100,10 @@
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12 mb-3">
+
+    <!-- Destinations -->
+    <div class="row mt-4">
+      <div class="col-sm-12">
         <h2>Destinations</h2>
         <table class="table table-striped">
           <thead>
@@ -129,17 +137,13 @@
         </table>
       </div>
     </div>
-    <div class="row mb-5 mr-2">
-      <!-- JavaScript Component: Modals -->
+    <div class="row mt-2">
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalFunInTheSun">
-          Get More Info
-        </button>
-        
-        <!-- Modal -->
+        <!-- JavaScript Component: Modal -->
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalFunInTheSun">Get More Info</button>
+        <!-- Fun In The Sun Modal -->
         <div class="modal fade" id="modalFunInTheSun" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -150,11 +154,66 @@
                 </button>
               </div>
               <div class="modal-body">
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et vehicula lacus. Sed sit amet eros pharetra, auctor
-                ex sed, varius eros. Integer nisl urna, dapibus eu leo eget, finibus vulputate nunc. Nullam interdum interdum magna, a sollicitudin
-                orci mollis a. Nunc condimentum, libero non molestie pharetra, quam justo pulvinar magna, eu condimentum lorem tortor eget
-                leo. Maecenas sed leo non velit tristique eleifend. In vitae turpis non diam vulputate tristique. Morbi aliquet felis sit
-                amet nulla venenatis volutpat.
+                <img src="img/fun-in-the-sun.jpg" alt="Beach Destination" class="img-fluid">
+                <!-- JavaScript Component: Nav with Tabs -->
+                <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-at-a-glance-tab" data-toggle="pill" href="#pills-at-a-glance" role="tab" aria-controls="pills-at-a-glance"
+                      aria-selected="true">At A Glance</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-itinerary-tab" data-toggle="pill" href="#pills-itinerary" role="tab" aria-controls="pills-itinerary"
+                      aria-selected="false">Itinerary</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-at-a-glance" role="tabpanel" aria-labelledby="pills-at-a-glance-tab">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et vehicula lacus. Sed sit amet eros pharetra, auctor ex
+                    sed, varius eros. Integer nisl urna, dapibus eu leo eget, finibus vulputate nunc. Nullam interdum interdum magna, a sollicitudin
+                    orci mollis a. Nunc condimentum, libero non molestie pharetra, quam justo pulvinar magna, eu condimentum lorem tortor eget
+                    leo. Maecenas sed leo non velit tristique eleifend. In vitae turpis non diam vulputate tristique. Morbi aliquet felis sit
+                    amet nulla venenatis volutpat.</p>
+                  </div>
+                  <div class="tab-pane fade" id="pills-itinerary" role="tabpanel" aria-labelledby="pills-itinerary-tab">
+                    <!-- JavaScript Component: Collapse -->
+                    <div id="funInTheSunItinerary" role="tablist" aria-multiselectable="true">
+                      <div class="card">
+                        <div class="card-header" role="tab" id="day1Header">
+                          <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#funInTheSunItinerary" href="#day1Content" aria-expanded="true" aria-controls="day1Content">
+                              Day 1
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="day1Content" class="collapse show" role="tabpanel" aria-labelledby="day1Header">
+                          <div class="card-body">
+                            <p>Phasellus ex nisi, tristique porta fringilla eu, pretium vel turpis. Suspendisse consequat orci quis porta elementum. Praesent
+                            commodo bibendum turpis. Ut fringilla gravida ipsum, in rhoncus enim tincidunt sed. Proin rhoncus diam at bibendum congue.
+                            Praesent sed sodales nunc, id interdum velit. Quisque eget ex sed justo cursus interdum. Mauris vehicula velit vitae nisl
+                            tempus, vel placerat odio consequat.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" role="tab" id="day2Header">
+                          <h5 class="mb-0">
+                            <a data-toggle="collapse" data-parent="#funInTheSunItinerary" href="#day2Content" aria-expanded="true" aria-controls="day2Content">
+                              Day2
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="day2Content" class="collapse in" role="tabpanel" aria-labelledby="day2Header">
+                          <div class="card-body">
+                            <p>Phasellus ex nisi, tristique porta fringilla eu, pretium vel turpis. Suspendisse consequat orci quis porta elementum. Praesent
+                            commodo bibendum turpis. Ut fringilla gravida ipsum, in rhoncus enim tincidunt sed. Proin rhoncus diam at bibendum congue.
+                            Praesent sed sodales nunc, id interdum velit. Quisque eget ex sed justo cursus interdum. Mauris vehicula velit vitae nisl
+                            tempus, vel placerat odio consequat.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -163,12 +222,8 @@
       <div class="col-sm-4">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalMountainExcursion">
-          Get More Info
-        </button>
-        
-        <!-- Modal -->
+        <!-- JavaScript Component: Modal -->
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalMountainExcursion">Get More Info</button>
         <div class="modal fade" id="modalMountainExcursion" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -192,12 +247,8 @@
       <div class="col-sm-4">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalIsalandGetaway">
-          Get More Info
-        </button>
-        
-        <!-- Modal -->
+        <!-- JavaScript Component: Modal -->
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalIsalandGetaway">Get More Info</button>
         <div class="modal fade" id="modalIsalandGetaway" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -219,43 +270,50 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-8">
+
+    <!-- Before You Go -->
+    <div class="row mt-4">
+      <div class="col-12">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
     </div>
-    <div class="row">
+
+    <!-- Don't Forget These -->
+    <div class="row mt-2">
+      <!-- JavaScript Component: Scrollspy on List Group -->
       <div class="col-6">
-          <h4>Don't Forget These!</h4>
-          <div id="latin" class="list-group">
-          
-        <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+        <h4>Don't Forget These!</h4>
+        <div id="latin" class="list-group">
+          <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
         </div>  
       </div>  
       <div class="col-6">
-        <div data-spy="scroll" data-target="#latin" data-offset="0" class="scrollspy-group">
-            <h4 id="list-item-1">Item 1</h4>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-            <h4 id="list-item-2">Item 2</h4>
-            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
-            <h4 id="list-item-3">Item 3</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ..</p>
-            <h4 id="list-item-4">Item 4</h4>
-            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+        <div data-spy="scroll" data-target="#latin" data-offset="0" class="scrollspy-group mt-4">
+          <h4 id="list-item-1">Item 1</h4>
+          <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+          <h4 id="list-item-2">Item 2</h4>
+          <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
+          <h4 id="list-item-3">Item 3</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ..</p>
+          <h4 id="list-item-4">Item 4</h4>
+          <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
         </div>
       </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12">
-      <form>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
-        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="row mt-5">
+      <h2 class="w-100 text-center">Ready to Book?</h2>
+      <div class="col-sm-12">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" class="form-control" placeholder="Name">
+          </div>
           <div class="form-row">
             <div class="col-6 form-group">
               <label for="phone">Phone</label>
@@ -286,11 +344,13 @@
               </label>
             </div>
           </div>
-          <button type="submit" class="btn btn-info">Let's Travel</button>
+          <button type="submit" class="btn btn-info d-block mx-auto w-50">Let's Travel</button>
         </form>
       </div>
     </div>
-    <div class="row footer">
+
+    <!-- Footer -->
+    <div class="row footer mt-5">
       <div class="col-sm-12">
         Copyright Fun Bus 2018
       </div>
