@@ -15,28 +15,63 @@
   <![endif]-->
 </head>
 
-<body>
-  <div class="container-fluid sticky-top">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!--   <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link active" href="#content1">Content 1</a></li>
+      <li class="nav-item"><a class="nav-link active" href="#content2">Content 2</a></li>
+      <li class="nav-item"><a class="nav-link active" href="#content3">Content 3</a></li>
+      <li class="nav-item"><a class="nav-link active" href="#content4">Content 4</a></li>
+    </ul>
+  </nav>
+  
+  <div id="content1" class="container-fluid bg-success" style="padding-top: 70px; padding-bottom: 70px">
+    <h1>Content 1</h1>
+    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+    </p>
+  </div>
+  
+  <div id="content2" class="container-fluid bg-success" style="padding-top: 70px; padding-bottom: 70px">
+    <h1>Content 1</h1>
+    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+    </p>
+  </div>
+  
+    <div id="content3" class="container-fluid bg-success" style="padding-top: 70px; padding-bottom: 70px">
+    <h1>Content 1</h1>
+    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+    </p>
+  </div>
+  
+    <div id="content4" class="container-fluid bg-success" style="padding-top: 70px; padding-bottom: 70px">
+    <h1>Content 1</h1>
+    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+    </p>
+  </div> -->
+  
+   <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
         <div class="col-3">
           <h1 class="logo-heading">Fun Bus</h1>
         </div>
-        <div class="col-9 d-flex align-items-center justify-content-end">
-          <nav class="nav" id="navbar-example2">
-            <a class="nav-link active" href="#home">Home</a>
-            <a class="nav-link" href="#about">About Us</a>
-            <a class="nav-link" href="#blog">Blog</a>
-            <a class="nav-link" href="#contact">Contact</a>
+        <div class="col-9 d-flex align-items-center justify-content-end" id="my-scroll">
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" href="#home">Content 1</a></li>
+              <li class="nav-item"><a class="nav-link active" href="#about">Content 2</a></li>
+              <li class="nav-item"><a class="nav-link active" href="#blog">Content 3</a></li>
+              <li class="nav-item"><a class="nav-link active" href="#contact">Content 4</a></li>
+            </ul>
           </nav>
-        </div>
+       </div>
       </div>
     </div>
   </div>
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 mb-5">
+      <div id="home" class="col-sm-12 mb-5">
         <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
       </div>
     </div>
@@ -49,7 +84,7 @@
       </div>
     </div>
     <div class="row mb-5">
-      <div class="col-sm-6">
+      <div id="about" class="col-sm-6">
         <h2>Let's Go!</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
@@ -96,7 +131,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div><!-- HEY JEFF LOOK CAROUSEL -->
+        </div>
         
         <h2>Destinations</h2>
         <table class="table table-striped">
@@ -132,7 +167,7 @@
       </div>
     </div>
     <div class="row mb-5">
-      <div class="col-sm-4">
+      <div class="col-sm-4" id="blog">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -171,7 +206,7 @@
       </div>
     </div>
     <div class="row mb-5">
-      <div class="col-sm-12">
+      <div class="col-sm-12" id="contact">
         <form class="needs-validation" novalidate>
           <div class="form-group">
             <label for="name">Name</label>
@@ -236,9 +271,8 @@
         Copyright Fun Bus 2018
       </div>
     </div>
-  </div><!-- container -->
+  </div>
 
-  <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
