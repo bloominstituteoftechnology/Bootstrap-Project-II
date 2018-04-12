@@ -1,6 +1,7 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  background: #c5ddc6;
 }
 h1,
 h2,
@@ -10,11 +11,14 @@ h5 {
   font-family: 'Indie Flower', cursive;
 }
 .container-fluid {
-  background-color: white;
+  background-color: #c5ddc6;
   border-bottom: 2px dashed silver;
 }
 .logo-heading {
   margin-bottom: 0px;
+}
+.nav {
+  background: #c5ddc6;
 }
 .nav a {
   color: black;
