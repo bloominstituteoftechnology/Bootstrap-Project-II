@@ -27,6 +27,9 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+#main-content {
+  margin-top: 7.5rem;
+}
 #carousel .carousel-item {
   max-height: 30vh;
 }
