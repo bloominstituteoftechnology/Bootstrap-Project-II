@@ -16,29 +16,29 @@
   <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#nav-bar-scrollspy" data-offset="0">
   <div class="container-fluid sticky-top">
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <nav id="nav-bar-scrollspy" class="navbar navbar-expand-lg navbar-dark bg-secondary">
         <a class="navbar-brand" href="#">Fun Bus</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#Adventure">Adventure Awaits</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#Destinations">Destinations</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#Contact">Contact</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown"><!-- JavaScript Component: Dropdown -->
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 This is a drop down
               </a>
@@ -51,6 +51,7 @@
           </ul>
         </div>
       </nav>
+
       <!-- <div class="row">
         <div class="col-3">
             <h1 class="logo-heading">Fun Bus</h1>
@@ -67,6 +68,7 @@
     </div><!--nav container-->
   </div>
   <div class="container">
+      <span class="anchor" id="Home"></span>
     <div class="row">
         <div class="col-sm-12">
             <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
@@ -94,6 +96,7 @@
         <div class="col-sm-6">
             <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
         </div>
+        <span class="anchor" id="Adventure"></span>
         <div class="col-sm-6">
           <h2>Adventure Awaits</h2>
           <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
@@ -101,6 +104,7 @@
         </div>
     </div>
     <div class="row">
+      <span class="anchor" id="Destinations"></span>
       <div class="col-sm-12">
         <h2>Destinations</h2>
         <table class="table table-striped">
@@ -135,7 +139,55 @@
         </table>
       </div>
     </div>
-    <div class="row">
+
+    <div id="accordion"><!-- JavaScript Component: Dropdown -->
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Do you like fun?
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                But how much sun fun can one human have?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                If you are still reading this, you have too much time on your hand.
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="row mt-3">
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
@@ -151,7 +203,7 @@
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
-    </div>
+    </div><!--More info content-->
     <div class="row">
       <div class="col-sm-8 mt-3">
         <h4>Before You Go...</h4>
@@ -169,7 +221,7 @@
       </div>
     </div>
 
-    <div id="indicators" class="carousel slide" data-ride="carousel">
+    <div id="indicators" class="carousel slide mt-3" data-ride="carousel"><!-- JavaScript Component: Carousel -->
       <ol class="carousel-indicators">
         <li data-target="#indicators" data-slide-to="0" class="active"></li>
         <li data-target="#indicators" data-slide-to="1"></li>
@@ -208,8 +260,9 @@
       </a>
     </div>
 
-    <div class="row">
-      <div class="col-sm-12">
+    <div class="row d-flex mt-3">
+      <span class="anchor" id="Contact"></span>
+      <div class="col-sm-8">
         <form>
           <div class="form-group">
             <label for="name">Name</label>
@@ -244,6 +297,31 @@
             <button type="submit" class="btn btn-info">Let's Travel</button>
           </div>   
         </form>
+      </div>
+      <div class="col-sm-2 ml-auto"> <!-- JavaScript Component: Modal Button -->
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">
+            Disclaimer
+          </button>
+
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"> <!-- JavaScript Component: Modal Modal -->
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Something funny here</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    Why do Christians take everything so personally with Christ? You know? It's like, not only do you have to worship Him, you want everybody to. It's like, I eat lobster. Do I go around pushing lobster on people? Do I say, "You must like lobster! It's good, it's good." It's not only where you live. You go to Africa. You travel all over the world. "Eat lobster! Have some more lobster! It's good. We want you to have lobster!"
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-info">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
     <div class="row footer">
