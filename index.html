@@ -82,19 +82,86 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row">Beach</th>
+              <th scope="row"><button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal1">Beach</button></th>
+              <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1Label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModal1Label">Beach</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <td>Chillin</td>
               <td>$600</td>
               <td>$400</td>
             </tr>
             <tr>
-              <th scope="row">Mountain</th>
+              <th scope="row">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal2">Mountain</button>
+              </th>
+              <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModal2Label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModal2Label">Mountain</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <td>Hiking</td>
               <td>$400</td>
               <td>$200</td>
             </tr>
             <tr>
-              <th scope="row">Island</th>
+              <th scope="row">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal3">Island</button>
+              </th>
+              <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModal3Label">Island</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <td>Boating</td>
               <td>$1700</td>
               <td>$600</td>
@@ -104,17 +171,17 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-4 mt-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mt-4">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mt-4">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info">Get More Info</button>
@@ -154,20 +221,77 @@
         <h4 class="mt-4">Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
+      <!-- ------------------ACCORDION-------------------- -->
       <div class="col-sm-4">
         <h4 class="mt-4">Don't Forget These!</h4>
         <ul class="list-group">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
+          <div id="accordion" role="tablist">
+            <div class="card">
+              <div role="tab" id="headingOne">
+                <h5 class="mb-0">
+                  <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <li class="list-group-item">Tips to travel</li>
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div role="tab" id="headingTwo">
+                <h5 class="mb-0">
+                  <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <li class="list-group-item">What to bring</li>
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div role="tab" id="headingThree">
+                <h5 class="mb-0">
+                  <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <li class="list-group-item">Anti-getting ripped off tips</li>
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div role="tab" id="headingFour">
+                <h5 class="mb-0">
+                  <a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    <li class="list-group-item">Read other traveler's blog</li>
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                </div>
+              </div>
+            </div>
+          </div>
         </ul>
       </div>
     </div>
+
+    <!-- ------------------ACCORDION-------------------- -->
     <div class="row">
       <div class="col-sm-12">
-        <form>
+        <h3 class="mt-3 mb-3">Let's get you started</h3>
+        <form class='mt-6'>
           <div class="form-group">
             <label for="name">Name</label>
             <input id="name" type="text" class="form-control" placeholder="Name">
@@ -204,7 +328,7 @@
         </form>
       </div>
     </div>
-    <div class="row footer">
+    <div class="row footer mt-4">
       <div class="col-sm-12">
         Copyright Fun Bus 2018
       </div>
