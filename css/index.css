@@ -27,3 +27,7 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
