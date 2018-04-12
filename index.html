@@ -25,16 +25,16 @@
         </div>
         <!-- nav bar -->
         <div class="col-9 d-flex align-items-center justify-content-end">
-            <nav class="navbar navbar-expand-lg navbar-light rounded" style="background-color:#17a2b8; color:white;">
+            <nav id="navbar1" class="navbar navbar-expand-lg navbar-light rounded" style="background-color:#17a2b8; color:white;">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
                     <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href=#lets-go>Let's Go!</a>
-                    <a class="nav-item nav-link" href=#destination>Destinations</a>
-                    <a class="nav-item nav-link" href=#contact>Contact</a>
+                    <a class="nav-item nav-link" href="#lets-go">Let's Go!</a>
+                    <a class="nav-item nav-link" href="#destination">Destinations</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
                   </div>
                 </div>
               </nav><!-- end JS Component: nav bar -->
@@ -195,12 +195,23 @@
               <label class="form-check-label" for="exampleRadios1">
                 Island
               </label>
-            </div>  
+            </div>  <!--
             <button type="submit" class="btn btn-info mt-3 mb-3">Let's Travel</button>
+            -->
+            <p> <!-- start JS component: collapse -->
+                <button class="btn btn-info mt-3 mb-3" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Let's Travel
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                 Thanks for your submission!
+                </div>
+              </div>
           </div> 
         </form>
       </div>
-    </div>
+    </div><!-- start JS component: collapse -->
     <div class="row footer mt-5">
       <div class="col-sm-12 d-flex justify-content-center">
         Copyright Fun Bus 2018
