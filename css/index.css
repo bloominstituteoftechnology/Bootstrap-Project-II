@@ -16,8 +16,8 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
-.nav a {
-  color: black;
+.navbar a {
+  color: black !important;
 }
 .container {
   max-width: 800px;
@@ -25,5 +25,5 @@ h5 {
 .footer {
   color: black;
   background: blanchedalmond;
-  padding: 20px 0;
+  padding: 10px 0;
 }
