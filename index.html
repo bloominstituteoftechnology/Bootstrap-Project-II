@@ -15,15 +15,45 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
+<!--carousal-->
+<div class = "container-fluid">
+  <div class ="row">
+    <div class = "col-sm-12">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/slider-1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/slider-2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/slider-3.jpg" alt="Third slide">
+    </div>
+  </div>
+</div>
+</div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<!--end of carousal-->
 
 <body>
   <div class="container-fluid">
     <div class="container">
-      <div class="row">
-        <div class="col-3">
+      <div class="column">
+        <div class="col-"9>
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
-        <div class="col-9">
+
+    <!--    <div class="col-9">
           <nav class="nav">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
@@ -33,13 +63,45 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
   <div class="container">
-    <div class="row">
+    <div class="column">
         <div class="col-sm-12">
             <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
         </div>
     </div>
+    <!--navbar-->
+    <div class="container-fluid"></div>
+    <div class= "container">
+<div class="d-flex justify-content-end">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Travel Ideas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+      </nav>
+      <!--navbar end-->
+    <!--dropdown-->
+    
     <div class="row">
       <div class="col-sm-12">
         <h2>Welcome To Fun Bus!</h2>
@@ -48,6 +110,28 @@
         </p>
       </div>
     </div>
+  </div>
+    <!--modal-->
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
     <div class="row">
       <div class="col-sm-6">
         <h2>Let's Go!</h2>
@@ -57,6 +141,7 @@
       <div class="col-sm-6">
           <img src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
       </div>
+      
     </div>
     <div class="row">
         <div class="col-sm-6">
@@ -67,7 +152,37 @@
           <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
-    </div>
+    </div> -->
+    <!--collapse-->
+    <p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Let's Go!</a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Lets have fun!</button>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Let's Go! Let's have Fun</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+                <img src="img/fun.jpg"class="w-50 p-3" class="img-fluid" alt="Lets have fun!"class="rounded-4">
+                Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.
+                Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.
+             </div> 
+             </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2"class="rounded-4">
+            <div class="card card-body">
+                <img src="img/adventure.jpg"class="w-50 p-3" class="img-fluid" alt="Let's go on adventure!">
+                Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
+                <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+      <!--colapse end-->
+    <!--scroll-->
     <div class="row">
       <div class="col-sm-12">
         <h2>Destinations</h2>
@@ -120,12 +235,25 @@
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
     </div>
+    
     <div class="row">
-      <div class="col-sm-8">
-        <h4>Before You Go...</h4>
-        <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
+        <div class="col-sm-12 mt-5 " >
+          <div class="dropdown">
+              <div class="d-flex justify-content-end">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dont Forget These
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Cras justo odio</a>
+                <a class="dropdown-item" href="#">Dapibus ac facilisis i</a>
+                <a class="dropdown-item" href="#">Porta ac consectetur ac</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-4">
+      
+     <!-- <div class="col-sm-4">
         <h4>Don't Forget These!</h4>
         <ul class="list-group">
           <li class="list-group-item">Cras justo odio</li>
@@ -135,30 +263,45 @@
           <li class="list-group-item">Vestibulum at eros</li>
         </ul>
       </div>
-    </div>
+    </div>-->
     <div class="row">
       <div class="col-sm-12">
         <form>
+          <!--email-->  
+       <div class="form-group">
+         <label for="exampleFormControlInput1 mt-5">Email address</label>
+         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                
           <label for="name">Name</label>
           <input id="name" type="text" class="form-control" placeholder="Name">
           <label for="phone">Phone</label>
           <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          <div class="form-check">
+          <!--button beach-->
+          <div class="form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
               Beach
             </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <!--button end-->
+          <div class="form-group">
+            <input class="form-check-input mt-2" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
             <label class="form-check-label" for="exampleRadios2">
               Mountain
             </label>
           </div>
+          <!--island-->
+          <div class="form-group">
+              <input class="form-check-input mt-2" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Island
+              </label>
+            </div>
           <button type="submit" class="btn btn-info">Let's Travel</button>
         </form>
       </div>
     </div>
+  </div>
     <div class="row footer">
       <div class="col-sm-12">
         Copyright Fun Bus 2018
