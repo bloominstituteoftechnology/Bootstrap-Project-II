@@ -74,7 +74,7 @@
 
     <!-- JavaScript Component: Carousel -->
 
-    <div id="myCarouselControls" class="carousel slide" data-ride="carousel">
+    <div id="myCarouselControls" class="carousel slide mt-5 mb-3" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="d-block w-100" src="img/slider-1.jpg" alt="First slide">
@@ -106,8 +106,12 @@
 
     <div class="row">
       <div class="col-sm-12">
+        
+ 
         <h2>Destinations</h2>
-        <table class="table table-striped">
+
+        
+        <table class="table table-striped mytable">
           <thead>
             <tr>
               <th scope="col">Location</th>
@@ -158,8 +162,17 @@
     </div>
     <div class="row mt-5">
       <div class="col-sm-8">
-        <h4>Before You Go...</h4>
-        <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
+
+
+        <!-- JAVASCRIPT COLLAPSE -->
+
+
+
+          <a class="btn btn-primary" data-toggle="collapse" href="#myCollapse" role="button" aria-expanded="false" aria-controls="myCollapse">
+              <h4>Before You Go...</h4>
+          </a>
+        
+        <p class="collapse" id="myCollapse">Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
       <div class="col-sm-4">
         <h4>Don't Forget These!</h4>
@@ -172,7 +185,7 @@
         </ul>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-5">
       <div class="col-sm-12">
         <form>
           <label for="name">Name</label>
