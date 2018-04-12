@@ -1,6 +1,7 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  background: rgba(135, 206, 235, 0.35);
 }
 h1,
 h2,
@@ -10,7 +11,7 @@ h5 {
   font-family: 'Indie Flower', cursive;
 }
 .container-fluid {
-  background-color: white;
+  background-color: #fff7ec;
   border-bottom: 2px dashed silver;
 }
 .logo-heading {
@@ -18,6 +19,12 @@ h5 {
 }
 .nav a {
   color: black;
+}
+.dont-forget li {
+  background-color: #fff7ec;
+}
+.collap {
+  background-color: #fff7ec;
 }
 .container {
   max-width: 800px;

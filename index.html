@@ -34,7 +34,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container mt-5">
     <div class="row">
         <div class="col-sm-12">
             <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
@@ -104,6 +104,27 @@
       </div>
     </div>
 
+
+<!--Buttons have Tooltips-->
+
+    <div class="row mt-4">
+      <div class="col-sm-4 pr-4">
+        <h4>Fun In The Sun</h4>
+        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Fun In The Sun">Get More Info</button>
+      </div>
+      <div class="col-sm-4 pr-4">
+        <h4>Mountain Excursion</h4>
+        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Mountain Excursion">Get More Info</button>
+      </div>
+      <div class="col-sm-4 pr-4">
+        <h4>Island Getaway</h4>
+        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Island Getaway">Get More Info</button>
+      </div>
+    </div>
+
 <!--Carousel-->
 
     <div id="carouselExampleControls" class="carousel slide mt-4 mb-5" data-ride="carousel">
@@ -129,23 +150,6 @@
     </div>
 
 
-    <div class="row mt-4">
-      <div class="col-sm-4 pr-4">
-        <h4>Fun In The Sun</h4>
-        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
-      </div>
-      <div class="col-sm-4 pr-4">
-        <h4>Mountain Excursion</h4>
-        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
-      </div>
-      <div class="col-sm-4 pr-4">
-        <h4>Island Getaway</h4>
-        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
-      </div>
-    </div>
     <div class="row mt-5">
       <div class="col-sm-8">
         <h4>Before You Go...</h4>
@@ -153,7 +157,7 @@
       </div>
       <div class="col-sm-4">
         <h4>Don't Forget These!</h4>
-        <ul class="list-group">
+        <ul class="list-group dont-forget">
           <li class="list-group-item">Cras justo odio</li>
           <li class="list-group-item">Dapibus ac facilisis in</li>
           <li class="list-group-item">Morbi leo risus</li>
@@ -162,7 +166,59 @@
         </ul>
       </div>
     </div>
-    <div class="row mt-4 mb-5">
+
+
+
+<!--Accordion Collapse-->
+
+    <div id="accordion" class="mt-4">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Travel Options
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body collap">
+            We have partnerships with Uber and Lyft to get you to and from the airport at a discounted price! You can book your flight, schedule a Driver to pick you up and rent a car all on our site! <br><br><a href="#">Book Your Travel Now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Where to Stay
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body collap">
+            We have a partnership with AirBnB and thousands of local hotels around the world to get you the best room options without breaking the bank! <br><br><a href="#">Find Your Hotel!</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Tour Guides
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body collap">
+            We have a large variety of Tour Guides to help you find all of the best Restaurants, Bars, Tourist Hot Spots, and hidden gems most visitors never get to see! <br><br><a href="#">Find A Guide!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row mt-5 mb-5">
       <div class="col-sm-12">
         <form>
             <label for="name">Name</label>
