@@ -1,5 +1,12 @@
 // Start here!
 
+.border(){
+  border: solid 1px red;
+  //background-color: black
+}
+.remove(){
+  display:none;
+}
 html, body {
     font-family: 'Roboto', sans-serif;
 }
@@ -10,7 +17,7 @@ h1, h2, h3, h4, h5 {
 
 .container-fluid {
     background-color:white;
-    border-bottom: 2px dashed silver;    
+    border-bottom: 2px dashed silver;
 }
 
 .logo-heading {
@@ -19,7 +26,9 @@ h1, h2, h3, h4, h5 {
 
 .nav {
     a {
+
         color: black;
+        // .border();
     }
 }
 
@@ -31,4 +40,16 @@ h1, h2, h3, h4, h5 {
     color: black;
     background: blanchedalmond;
     padding: 20px 0;
+}
+
+div .col-3 {
+  // .border();
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#test{
+  // .border();
+  width: 100%;
+  display: flex;
 }
