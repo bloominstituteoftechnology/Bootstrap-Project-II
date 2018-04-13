@@ -157,6 +157,10 @@
 
 
 
+
+
+
+
     <div class="row">
       <div class="col-sm-8 mt-5">
         <h4>Before You Go...</h4>
@@ -175,7 +179,7 @@
         </ul>
       </div>
     </div>
-    <!-- JavaScript Component: Carousel -->
+    
     <div class="dropdown d-flex justify-content-around mr-auto">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false">
@@ -218,9 +222,9 @@
         </div>
       </div>
 
-<!-- JavaScript Component: Carousel -->
+     
 
-<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
   Tooltip with HTML
 </button>
 
@@ -230,6 +234,15 @@
         </div>
       </div>
     </div>
+
+<!-- JavaScript Component: tooltips -->
+    <script>
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    
+    </script>
+
     <!-- container -->
 
     <script src="js/jquery-3.3.1.min.js"></script>
