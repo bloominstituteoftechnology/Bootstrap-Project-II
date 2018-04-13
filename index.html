@@ -19,8 +19,8 @@
 <body>
   <div class="container-fluid sticky-top">
     <div class="container">
-      <div class="row">
-        <div class="col-3">
+      <div class="row custom-row-1">
+        <div class="col-3 custom-col-1">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <div class="col-9 d-flex align-items-center justify-content-end">
@@ -230,7 +230,7 @@
           <h4>Don't Forget These!</h4>
           <div id="latin" class="list-group">
           
-        <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+        <a class="list-group-item list-group-item-action active my-active" href="#list-item-1">Item 1</a>
         <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
         <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
         <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
@@ -251,20 +251,35 @@
   </div>
   <div class="row">
     <div class="col-sm-12">
-      <form>
+      <form class = "my-form-1">
         <div class="form-group">
           <label for="name">Name</label>
           <input id="name" type="text" class="form-control" placeholder="Name">
         </div>
-          <div class="form-row">
+          <div class="form-row custom">
             <div class="col-6 form-group">
               <label for="phone">Phone</label>
               <input id="phone" type="phone" class="form-control" placeholder="Phone">
             </div>
-            <div class="col-6 form-group">
-              <label for="email">Email</label>
-              <input id="email" type="email" class="form-control" placeholder="Email">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="InputEmail-1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
+            
+            <div class="form-group submit-1">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
           </div>
           <div class="form-group">
             <div class="form-check">
@@ -284,6 +299,7 @@
               <label class="form-check-label" for="exampleRadios3">
                 Island
               </label>
+            
             </div>
           </div>
           <button type="submit" class="btn btn-info">Let's Travel</button>
