@@ -9,6 +9,12 @@ h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
+body {
+  background-image: url("../img/footer.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
 .container-fluid {
   background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 2px dashed silver;
@@ -23,11 +29,27 @@ nav a:hover {
   color: white;
   background: #179ec0;
 }
+nav .dropdown-item:hover {
+  color: white;
+  background: #179ec0;
+}
 .container {
   max-width: 800px;
 }
 .footer {
-  color: black;
-  background: blanchedalmond;
-  padding: 20px 0;
+  color: white;
+  background: #179ec0;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: white;
+  background: #179ec0;
+}
+.hover-color {
+  color: white;
+  background: #179ec0;
+}
+.white-background {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #179ec0;
 }

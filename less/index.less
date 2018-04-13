@@ -1,11 +1,19 @@
 // Start here!
 
+@info-color: rgb(23, 158, 192);
+
 html, body {
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Indie Flower', cursive;
+}
+body {
+    background-image: url("../img/footer.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
 }
 
 .container-fluid {
@@ -19,20 +27,38 @@ h1, h2, h3, h4, h5 {
 
 nav {
     a {
-        color: rgb(23, 158, 192);
+        color: @info-color;
         &:hover {
-            color: white;
-            background: rgb(23, 158, 192);
+            .hover-color;
+        }
+    }
+    .dropdown-item {
+        &:hover {
+            .hover-color;
         }
     }
 }
+
 
 .container {
     max-width: 800px;
 }
 
 .footer {
-    color: black;
-    background: blanchedalmond;
-    padding: 20px 0;
+    .hover-color;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    .hover-color;
+}
+
+.hover-color {
+    color: white;
+    background: @info-color;
+}
+
+.white-background {
+    background-color: rgba(255,255,255, 0.5);
+    border: 1px solid @info-color;
 }

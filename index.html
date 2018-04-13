@@ -20,30 +20,66 @@
 </head>
 
 <body>
+
+<!-- Help your PM out by making html comments where you used your JavaScript components -->
+
+<!-- Use sticky-top on the container-fluid div -->
+  
   <div class="container-fluid sticky-top">
+
+
     <div class="container">
       <div class="row">
         <div class="col-3">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
+
+ <!-- Use the flex utility to vertically center and move the nav to the far right of it’s container -->
+
         <div class="col-9 d-flex justify-content-end align-items-center">
-          <nav class="nav nav-pills">
-            <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom" href="#">Home</a>
-            <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom" href="#">About Us</a>
-            <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom" href="#">Blog</a>
-            <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom" href="#">Contact</a>
-          </nav>
+
+<!-- Use at least 2 of the following JS components:
+
+navbar -->
+          
+            <nav class="navbar nav-pills">
+              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#">Blog</a>
+
+<!-- Use at least 2 of the following JS components:
+
+dropdown -->
+              
+              <div class="dropdown">
+                  <a class="nav-link dropdown-toggle" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Contact</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                    <a class="dropdown-item" href="#">Phone</a>
+                    <a class="dropdown-item" href="#">E-mail</a>
+                    <a class="dropdown-item" href="#">Live Chat</a>
+                    <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Skype</a>
+                  </div>
+              </div>
+            </nav>
         </div>
       </div>
     </div>
   </div>
+
+<!-- Use spacer utility to give enough top-margin or bottom-margin to elements that look too close together -->
+
   <div class="container mt-4">
     <div class="row">
         <div class="col-sm-12">
             <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
         </div>
     </div>
+
+<!-- Use spacer utility to give enough top-margin or bottom-margin to elements that look too close together -->
+
     <div class="row mt-4">
+
       <div class="col-sm-12">
         <h2>Welcome To Fun Bus!</h2>
         <p>
@@ -51,17 +87,24 @@
         </p>
       </div>
     </div>
+
+<!-- Use spacer utility to give enough top-margin or bottom-margin to elements that look too close together -->
+
     <div class="row mt-4">
       <div class="col-sm-6">
         <h2>Let's Go!</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
+
+ <!-- Use border radius to round the corners on the images adventure.jpg -->
+
       <div class="col-sm-6">
           <img src="img/adventure.jpg" class="img-fluid rounded-circle" alt="Let's go on adventure!">
       </div>
     </div>
 
+<!-- Add carousel of images found in the img folder -->
 <!-- My carousel -->
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -91,8 +134,12 @@
     </a>
   </div>
 
-
+<!-- Use spacer utility to give enough top-margin or bottom-margin to elements that look too close together -->
+  
     <div class="row mt-4">
+
+<!-- Use border radius to round the corners on the images fun.jpg -->
+
         <div class="col-sm-6 rounded mb-4">
             <img src="img/fun.jpg" class="img-fluid rounded-circle" alt="Lets have fun!">
         </div>
@@ -102,8 +149,26 @@
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
     </div>
-    <div class="row mt-4">
-      <div class="col-sm-12">
+
+<!-- Use spacer utility to give enough top-margin or bottom-margin to elements that look too close together -->
+
+    <div class="row mt-4 justify-content-end">
+
+<!-- Use at least 2 of the following JS components:
+
+collapse -->
+
+        <p>
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapsed1 collapsed2">
+              Destinations
+            </button>
+        </p>
+          <div class="collapse multi-collapse" id="collapsed1">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+      <div class="col-sm-12 collapse multi-collapse" id="collapsed2">
         <h2>Destinations</h2>
         <table class="table table-striped">
           <thead>
@@ -137,29 +202,35 @@
         </table>
       </div>
     </div>
+
+<!-- Use spacer utility to give enough top-margin or bottom-margin to elements that look too close together -->
+
     <div class="row mt-5">
-      <div class="col-sm-4">
+      <div class="col-sm-4 white-background p-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 white-background p-4">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 white-background p-4">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
     </div>
-    <div class="row mt-5">
-      <div class="col-sm-8">
+
+<!-- Use spacer utility to give enough top-margin or bottom-margin to elements that look too close together -->
+
+    <div class="row mt-5 white-background p-4">
+      <div class="col-sm-4">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-8">
         <h4>Don't Forget These!</h4>
         <ul class="list-group">
           <li class="list-group-item">Cras justo odio</li>
@@ -170,23 +241,32 @@
         </ul>
       </div>
     </div>
-    <div class="row mt-4">
-      <div class="col-sm-12">
+
+<!-- Style the form by wrapping each input and all the radio buttons in a form-group -->
+
+<!-- Add validation to your form and make every field required Validate forms -->
+
+    <div class="row mt-4 justify-content-center">
+      <div class="col-sm-8 white-background p-4">
         <form>
           <div class="form-group">
             <label for="name">Name</label>
-            <input id="name" type="text" class="form-control" placeholder="Name">
+            <input id="name" type="text" class="form-control" placeholder="Name" required>
           </div> 
+
+<!-- Add an email input -->
+
           <div class="form-group">
             <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           
           <div class="form-group">
             <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control" placeholder="Phone">        
+            <input id="phone" type="phone" class="form-control" placeholder="Phone" required>        
           </div>
+
           <div class="form-group">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -195,6 +275,7 @@
               </label>
             </div>
           </div>
+
           <div class="form-group">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
@@ -203,6 +284,9 @@
               </label>
             </div>
           </div>
+
+<!-- Add a 3rd option in the radio buttons and name it “island” -->
+
           <div class="form-group">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
@@ -217,17 +301,16 @@
         </form>
       </div>
     </div>
-    <div class="row footer ">
-      <div class="col-sm-12">
-        Copyright Fun Bus 2018
-      </div>
-    </div>
   </div><!-- container -->
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
-  <script src="https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js"></script>
+<!-- Use spacer utility to give enough top-margin or bottom-margin to elements that look too close together -->
 
+  <div class="row footer py-3 mt-4">
+      <div class="col d-flex justify-content-center">
+        <p>Copyright Fun Bus 2018</p>
+      </div>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/index.js"></script>
 
