@@ -16,8 +16,21 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
+.nav {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .nav {
+    display: none;
+  }
+}
 .nav a {
   color: black;
+}
+@media (max-width: 2000px) and (min-width: 500px) {
+  .nav-bar {
+    display: none;
+  }
 }
 .container {
   max-width: 800px;

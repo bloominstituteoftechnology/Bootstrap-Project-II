@@ -18,11 +18,20 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav {
+   display: flex;
+   @media(max-width: 500px) {
+       display: none;
+   }
     a {
-        color: black;
+        color: black;        
+    }
+    
+}
+.nav-bar {
+    @media(max-width: 2000px) and (min-width: 500px) {
+     display: none;
     }
 }
-
 .container {
     max-width: 800px;
 }
