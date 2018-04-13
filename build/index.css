@@ -1,0 +1,59 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+.container-fluid {
+  background-color: white;
+  border-bottom: 2px dashed silver;
+}
+.logo-heading {
+  padding: 20px 0 10px;
+}
+.nav a {
+  color: black;
+}
+.container {
+  max-width: 800px;
+}
+.footer {
+  color: black;
+  background: blanchedalmond;
+  padding: 20px 0;
+}
+#main-content {
+  margin-top: 7.5rem;
+}
+#carousel .carousel-item {
+  max-height: 30vh;
+}
+#carousel .carousel-item .carousel-img {
+  object-fit: cover;
+}
+#adventure .custom-img {
+  border-radius: 4.85rem;
+  border-top-right-radius: 1.3rem;
+  border-bottom-left-radius: 1.3rem;
+}
+#letsgo .custom-img {
+  border-radius: 4.85rem;
+  border-top-left-radius: 1.3rem;
+  border-bottom-right-radius: 1.3rem;
+}
+#scrollspy {
+  max-width: 18%;
+  position: fixed;
+  top: 7.5rem;
+  left: 1.5rem;
+  overflow-y: auto;
+  font-family: 'Indie Flower', cursive;
+}

@@ -1,7 +1,27 @@
 // Start here!
+// variables
+@margin-top: 7.5rem;
+
+// Namespace
+#my-styles() {
+    .custom-border-radius-left {
+        border-radius: 4.85rem;
+        border-top-left-radius: 1.3rem;
+        border-bottom-right-radius: 1.3rem;
+    }
+    .custom-border-radius-right {
+        border-radius: 4.85rem;
+        border-top-right-radius: 1.3rem;
+        border-bottom-left-radius: 1.3rem;
+    }
+}
 
 html, body {
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
 }
 
 h1, h2, h3, h4, h5 {
@@ -31,4 +51,34 @@ h1, h2, h3, h4, h5 {
     color: black;
     background: blanchedalmond;
     padding: 20px 0;
+}
+
+#main-content {
+    margin-top: @margin-top;
+}
+
+#carousel {
+    .carousel-item {
+        max-height: 30vh;
+        .carousel-img {
+            object-fit: cover;
+        }
+    }
+}
+
+#adventure .custom-img {
+    #my-styles > .custom-border-radius-right;
+}
+
+#letsgo .custom-img {
+    #my-styles > .custom-border-radius-left;
+}
+
+#scrollspy {
+    max-width: 18%;
+    position: fixed;
+    top: @margin-top;
+    left: 1.5rem;
+    overflow-y: auto;
+    font-family: 'Indie Flower', cursive;
 }

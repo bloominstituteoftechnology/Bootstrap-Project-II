@@ -2,7 +2,9 @@
 
 <html lang="en">
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Fun Bus Travel Agency</title>
 
@@ -16,9 +18,36 @@
   <![endif]-->
 </head>
 
-<body>
-  <div class="container-fluid">
-    <div class="container">
+<body data-spy="scroll" data-target="#scrollspy" data-offset="140">
+ 
+  <div class="container-fluid"> <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light justify-content-center">
+        <!-- <div class="row justify-content-around"> -->
+            <!-- <div class="col-12 col-lg-3 d-flex"> -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <h1 class="logo-heading">Fun Bus</h1>
+            <!-- </div> -->
+            <!-- <div class="col-0 col-lg-9"> -->
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul>
+                </div>
+            <!-- </div> -->
+        <!-- </div> -->
+    </nav>
+    <!-- <div class="container">
       <div class="row">
         <div class="col-3">
             <h1 class="logo-heading">Fun Bus</h1>
@@ -26,21 +55,33 @@
         <div class="col-9">
           <nav class="nav">
             <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href`="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
             <a class="nav-link" href="#">Contact</a>
           </nav>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
-  <div class="container">
-    <div class="row">
+  <div class="container" id="main-content"> <!--Main Content-->
+    <div class="row"><!--Carousel-->
         <div class="col-sm-12">
-            <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 carousel-img" src="img/fun-bus.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="img/happ-bus-1.jpeg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 carousel-img" src="img/happ-bus-2.jpeg" alt="Third slide">
+              </div>
+            </div>
+          </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-5" id="welcome"><!--Welcome message-->
       <div class="col-sm-12">
         <h2>Welcome To Fun Bus!</h2>
         <p>
@@ -48,19 +89,19 @@
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-5" id="letsgo"><!--Lets's Go-->
       <div class="col-sm-6">
         <h2>Let's Go!</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-          <img src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
+          <img src="img/adventure.jpg" class="img-fluid custom-img" alt="Let's go on adventure!">
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-5" id="adventure"><!--Adventure Awaits-->
         <div class="col-sm-6">
-            <img src="img/fun.jpg" class="img-fluid" alt="Lets have fun!">
+            <img src="img/fun.jpg" class="img-fluid custom-img" alt="Lets have fun!">
         </div>
         <div class="col-sm-6">
           <h2>Adventure Awaits</h2>
@@ -68,7 +109,7 @@
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-5" id="destinations"><!--(table)-Destinations-->
       <div class="col-sm-12">
         <h2>Destinations</h2>
         <table class="table table-striped">
@@ -103,7 +144,7 @@
         </table>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-5" id="excursions"><!--Excursions-->
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
@@ -120,12 +161,12 @@
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-5" id="before-go"><!--Before you go-->
       <div class="col-sm-8">
         <h4>Before You Go...</h4>
-        <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
+        <p class="mt-3">Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4"><!--Don't forget these-->
         <h4>Don't Forget These!</h4>
         <ul class="list-group">
           <li class="list-group-item">Cras justo odio</li>
@@ -136,35 +177,106 @@
         </ul>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-5" id="form"><!--Form-->
       <div class="col-sm-12">
-        <form>
-          <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
-          <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Beach
-            </label>
+        <form class="needs-validation" novalidate>
+          <div class="form-row">
+              <div class="form-group col-6"><!--Name-->
+                <label for="name">Name</label>
+                <input id="name" type="text" class="form-control" placeholder="Name" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  How must we call you?
+                </div>
+              </div>
+              <div class="form-group col-6"><!--Last Name-->
+                <label for="surename">Last Name</label>
+                <input id="surename" type="text" class="form-control" placeholder="surename">
+                <div class="valid-feedback">
+                  is not mandatory!
+                </div>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Mountain
-            </label>
+          <div class="form-row">
+              <div class="form-group col-6">
+                <label for="phone">Phone</label><!--Phone-->
+                <input id="phone" type="phone" class="form-control" placeholder="Phone" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  We need a way to contact you easily!
+                </div>
+              </div>
+              <div class="form-group col-6">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Where do we send your tickets?
+                </div>
+              </div>
           </div>
+          <div class="form-group"><!--Radio buttons-->
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+              <label class="form-check-label" for="exampleRadios1">
+                Beach
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Mountain
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" required>
+              <label class="form-check-label" for="exampleRadios3">
+                Island
+              </label>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+          </div>
+          <!-- <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div> -->
           <button type="submit" class="btn btn-info">Let's Travel</button>
         </form>
       </div>
     </div>
-    <div class="row footer">
+    <div class="row  mt-5 footer" id="footer"><!--(Footer)-@CopyRights-->
       <div class="col-sm-12">
         Copyright Fun Bus 2018
       </div>
     </div>
-  </div><!-- container -->
+  </div><!-- End Main Content -->
+
+  <div id="scrollspy" class="list-group d-none d-xl-block"><!--Scrollspy-->
+      <a class="list-group-item list-group-item-action" href="#welcome">Welcome to fun bus</a>
+      <a class="list-group-item list-group-item-action" href="#letsgo">Let's go!</a>
+      <a class="list-group-item list-group-item-action" href="#adventure">Adventure Awaits</a>
+      <a class="list-group-item list-group-item-action" href="#destinations">Destinations</a>
+      <a class="list-group-item list-group-item-action" href="#excursions">Excursions</a>
+      <a class="list-group-item list-group-item-action" href="#before-go">Before you go...</a>
+      <a class="list-group-item list-group-item-action" href="#form">Whan to be in touch?</a>
+    </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
