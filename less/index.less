@@ -10,7 +10,23 @@ h1, h2, h3, h4, h5 {
 
 .container-fluid {
     background-color:white;
-    border-bottom: 2px dashed silver;    
+    border-bottom: 2px dashed silver; 
+    .container{
+        .custom-row-1{
+        background: #F4CC70;
+        }
+            .custom-col-1{
+                color:darkred;
+                font-weight:bold;
+            }
+            nav a:link{
+              color: #400000
+            }
+                &:hover{
+                    font-weight:bold;
+                    color:darkred
+        }
+    }       
 }
 
 .logo-heading {
@@ -25,7 +41,32 @@ h1, h2, h3, h4, h5 {
 
 .container {
     max-width: 800px;
+
 }
+.my-active{
+    background-color:#20948B !important;
+    border-color: #DE7A22 !important;
+}
+.my-form-1{
+    border: 2px double darkred;
+    padding:16px;
+    margin-top: 20px;
+    .custom{
+        margin-right:0px;
+        
+    }
+}
+.submit-1{
+    width:87%;
+    
+}
+.btn-primary {
+    color: #fff;
+    background-color: #20948B;
+    border-color: #DE7A22;
+    align-self: end;
+}
+
 
 .footer {
     color: black;
@@ -37,5 +78,5 @@ h1, h2, h3, h4, h5 {
     height: 200px;
     margin-top: .5rem;
     overflow: auto;
-    
+       
 }
