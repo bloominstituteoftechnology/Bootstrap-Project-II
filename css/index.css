@@ -50,4 +50,18 @@ h5 {
   body {
     text-align: center;
   }
+  .c-head {
+    flex-direction: column;
+  }
+  .c-lo {
+    justify-content: center;
+  }
+  .c-nav2 {
+    display: flex;
+    justify-content: space-between !important;
+    flex-wrap: nowrap;
+  }
+  .navl-custom {
+    padding: 0.5rem 0.7rem;
+  }
 }

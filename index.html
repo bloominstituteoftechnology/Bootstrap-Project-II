@@ -18,29 +18,33 @@
 </head>
 
 <body>
+  <!-- header -->
   <div class="container-fluid sticky-top">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-4 col-2">
+      <div class="row c-head">
+        <div class="col-sm-4 col-12 d-flex c-lo">
           <h1 class="logo-heading">Fun Bus</h1>
         </div>
-        <div class="col-sm-8 col-10 col-xs-7 d-flex justify-content-end align-items-center">
-          <nav class="nav">
-            <a class="nav-link c-navactive c-nav" href="#">Home</a>
-            <a class="nav-link c-nav" href="#">About Us</a>
-            <a class="nav-link c-nav" href="#">Blog</a>
-            <a class="nav-link c-nav" href="#">Contact</a>
+        <div class="col-sm-8 col-12 d-flex justify-content-end align-items-center c-nav">
+          <nav class="nav c-nav2">
+            <a class="nav-link active navl-custom" href="#">Home</a>
+            <a class="nav-link navl-custom" href="#">About Us</a>
+            <a class="nav-link navl-custom" href="#">Blog</a>
+            <a class="nav-link navl-custom" href="#">Contact</a>
           </nav>
         </div>
       </div>
     </div>
   </div>
+  <!--header img-->
   <div class="container">
     <div class="row mb-2">
       <div class="col-sm-12">
         <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
       </div>
     </div>
+
+    <!-- CTA -->
     <div class="row mb-2 mt-2">
       <div class="col-sm-12 m-tb-1">
         <h2>Welcome To Fun Bus!</h2>
@@ -51,6 +55,8 @@
         </p>
       </div>
     </div>
+
+    <!-- Content -->
     <div class="row mt-2 mb-2">
       <div class="col-sm-6">
         <h2>Let's Go!</h2>
@@ -75,6 +81,7 @@
           cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
     </div>
+
     <!-- Start JS component: Accordion -->
     <div class="row c2-custom mt-2">
       <div id="accordion c2-custom">
@@ -161,7 +168,7 @@
       </div>
     </div>
 
-
+    <!-- Bottom Content-->
     <div class="row mt-4">
       <div class="col-sm-6">
         <h4>Before You Go...</h4>
@@ -180,6 +187,7 @@
         </ul>
       </div>
     </div>
+
     <!-- Start Forms -->
     <div class="row mt-4">
       <div class="col-sm-12">
@@ -213,25 +221,28 @@
               </label>
             </div>
           </div>
-          <div class="col-8"></div>
           <!-- Start JS component: Modal -->
-          <div class="form-group">
+
+          <!-- Trigger -->
+          <div class="form-group d-flex justify-content-center">
             <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#travelModal">Let's Travel</button>
-            <div class="modal fade" id="travelModal" tabindex="-1" role="dialog" aria-labelledby="travelModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title m-title" id="travelModalLabel">Thank You!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    Thank You for booking one of our great tours! We will be in touch shortly!
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Awesome!</button>
-                  </div>
+          </div>
+
+          <!-- Modal-->
+          <div class="modal fade" id="travelModal" tabindex="-1" role="dialog" aria-labelledby="travelModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="travelModalLabel">Thank You!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Thank You for booking one of our great tours! We will be in touch shortly!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Awesome!</button>
                 </div>
               </div>
             </div>
@@ -244,9 +255,8 @@
         Copyright Fun Bus 2018
       </div>
     </div>
+    <!-- container -->
   </div>
-  <!-- container -->
-
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/index.js"></script>
