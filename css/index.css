@@ -19,11 +19,30 @@ h5 {
 .nav a {
   color: black;
 }
-.container {
-  max-width: 800px;
-}
 .footer {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+  max-width: 80%;
+  display: block;
+  margin-right: 0;
+}
+.container-for-scroll {
+  height: auto;
+  max-width: 800px;
+}
+#sideBarNavigation {
+  position: fixed;
+  max-width: 12rem;
+}
+@media (max-width: 550px) {
+  #sideBarNavigation {
+    display: none;
+  }
+}
+body {
+  position: relative;
+}
+#spyOnThis {
+  height: 100%;
 }
