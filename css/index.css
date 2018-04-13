@@ -1,3 +1,9 @@
+.box-shadow {
+  box-shadow: -4px 4px 2px 0 rgba(192, 192, 192, 0.2);
+}
+.text-shadow {
+  text-shadow: 1px 1px 0 #5a5a5a;
+}
 html,
 body {
   font-family: 'Roboto', sans-serif;
@@ -10,20 +16,72 @@ h5 {
   font-family: 'Indie Flower', cursive;
 }
 .container-fluid {
-  background-color: white;
+  background: white;
   border-bottom: 2px dashed silver;
+}
+.main .row {
+  margin: 4vh 0 0;
+}
+.main .row:last-child {
+  margin-bottom: 4vh;
 }
 .logo-heading {
   padding: 20px 0 10px;
 }
-.nav a {
-  color: black;
+header {
+  background: #fcb756 !important;
+}
+header .logo-heading {
+  color: white;
+}
+header .nav a {
+  color: white;
+  text-shadow: 1px 1px 0 #5a5a5a;
+}
+header .nav .dropdown-menu {
+  box-shadow: -4px 4px 2px 0 rgba(192, 192, 192, 0.2);
+}
+header .nav .dropdown-header {
+  background: #fdcc88 !important;
+  color: white;
+}
+header .nav .dropdown-item {
+  color: silver !important;
+}
+header.container-fluid {
+  border-bottom: 2px dashed white !important;
 }
 .container {
   max-width: 800px;
 }
-.footer {
+.carousel-item {
+  margin: 2vh 0 4vh;
+}
+#cta-btn {
+  background: #fba224;
+  font-size: 1.5rem !important;
+  font-family: "Indie Flower", "Roboto", sans-serif;
+  box-shadow: -4px 4px 2px 0 rgba(192, 192, 192, 0.2);
+  border: none;
+}
+#cta-btn:hover {
+  background: #ffffff;
+  color: #fcb756;
+}
+.form-main {
+  background-color: #fff5e6;
+  box-shadow: -4px 4px 2px 0 rgba(192, 192, 192, 0.2);
+  background-image: url(/img/fun-bus.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+footer .row {
+  background-color: #ffebcc;
   color: black;
-  background: blanchedalmond;
   padding: 20px 0;
+  justify-content: center;
+}
+footer .row div {
+  max-width: 800px;
 }

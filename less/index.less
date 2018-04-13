@@ -1,33 +1,117 @@
 // Start here!
+//Themes 
+@primary: hsl(36, 100%, 90%);
+@secondary: #fcb756;
+@accent: silver;
+@headercolor: @secondary;
+@cta: darken(@secondary, 10%);
+//Mixins
+.box-shadow {
+    box-shadow: -4px 4px 2px 0 fade(@accent, 20%);
+}
 
-html, body {
+.text-shadow {
+    text-shadow: 1px 1px 0 darken(@accent, 40%);
+}
+
+//End Mixins
+//Start Media Queries
+@phone: ~"(max-width:576px)";
+html,
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Indie Flower', cursive;
 }
 
 .container-fluid {
-    background-color:white;
-    border-bottom: 2px dashed silver;    
+    background: white;
+    border-bottom: 2px dashed silver;
+}
+
+.main {
+    .row {
+        margin: 4vh 0 0;
+        &:last-child {
+            margin-bottom: 4vh;
+        }
+    }
 }
 
 .logo-heading {
     padding: 20px 0 10px;
 }
 
-.nav {
-    a {
-        color: black;
+header {
+    background: @headercolor  !important;
+    .logo-heading {
+        color: white;
     }
+    .nav {
+        a {
+            color: white;
+            .text-shadow;
+        }
+        .dropdown-menu {
+            .box-shadow;
+        }
+        .dropdown-header {
+            background: lighten(@secondary, 10%) !important;
+            color: white;
+        }
+        .dropdown-item {
+            color: @accent !important;
+        }
+    }
+}
+
+header.container-fluid {
+    border-bottom: 2px dashed white !important;
 }
 
 .container {
     max-width: 800px;
 }
 
-.footer {
-    color: black;
-    padding: 20px 0;
+.carousel-item {
+    margin: 2vh 0 4vh;
+}
+
+#cta-btn {
+    background: @cta;
+    font-size: 1.5rem !important;
+    font-family: "Indie Flower", "Roboto", sans-serif;
+    .box-shadow;
+    border: none;
+    &:hover {
+        background: lighten(@cta, 50%);
+        color: @secondary;
+    }
+}
+
+.form-main {
+    background-color: lighten(@primary, 5%);
+    .box-shadow;
+    background-image: url(/img/fun-bus.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+footer {
+    .row {
+        background-color: @primary;
+        color: black;
+        padding: 20px 0;
+        justify-content: center;
+        div {
+            max-width: 800px;
+        }
+    }
 }
