@@ -47,8 +47,18 @@ body {
 }
 @media (max-width: 576px) {
   .mein-button {
-    font-size: .5rem;
-    height: 1.5rem;
+    font-size: .55rem;
+    height: 2rem;
     width: 5rem;
+  }
+}
+@media (max-width: 576px) {
+  .mein-group {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 576px) {
+  .mein-item {
+    padding: 0;
   }
 }
