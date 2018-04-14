@@ -8,42 +8,47 @@ h1, h2, h3, h4, h5 {
     font-family: 'Indie Flower', cursive;
 }
 
-.container-fluid {
-    background-color:white;
-    border-bottom: 2px dashed silver;    
-}
-
 .logo-heading {
     padding: 20px 0 10px;
 }
 
-.nav {
-    a {
-        color: black;
-    }
+body {
+    position: relative;
 }
+
 .footer {
     color: black;
     background: blanchedalmond;
     padding: 20px 0;
-    max-width: 80%;
-    display: block;
-    margin-right: 0;
 }
-.container-for-scroll {
-    height: auto;
-    max-width: 800px;
+.mein-main-nav {
+    margin: 0;
 }
-#sideBarNavigation {
+#meinNavigation {
     position: fixed;
-    max-width: 12rem;
-    @media(max-width: 550px) {
-        display: none;
+}
+.mein-text.active {
+        color: white !important;
+        background-color: blanchedalmond !important;
+    }
+.mein-container-top {
+    max-width: 800px;
+    margin: 0;
+    background-color: white;
+    border-bottom: 2px dashed silver;
+}
+.main-container {
+    max-width: 800px;
+    @media(max-width:767px) {
+        width: 90%;
+        margin: auto !important;
     }
 }
-body {
-    position: relative;
-}
-#spyOnThis {
-    height: 100%;
+.mein-button {
+    @media(max-width:576px) {
+        font-size: .5rem;
+        height: 1.5rem;
+        width: 5rem;
+    
+    }
 }
