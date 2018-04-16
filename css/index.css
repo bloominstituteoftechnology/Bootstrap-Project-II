@@ -9,21 +9,56 @@ h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
-.container-fluid {
-  background-color: white;
-  border-bottom: 2px dashed silver;
-}
 .logo-heading {
   padding: 20px 0 10px;
 }
-.nav a {
-  color: black;
-}
-.container {
-  max-width: 800px;
+body {
+  position: relative;
 }
 .footer {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+}
+.mein-main-nav {
+  margin: 0;
+}
+#meinNavigation {
+  position: fixed;
+}
+.mein-text.active {
+  color: white !important;
+  background-color: blanchedalmond !important;
+}
+.mein-container-top {
+  max-width: 800px;
+  margin: 0;
+  background-color: white;
+  border-bottom: 2px dashed silver;
+}
+.main-container {
+  max-width: 800px;
+}
+@media (max-width: 767px) {
+  .main-container {
+    width: 90%;
+    margin: auto !important;
+  }
+}
+@media (max-width: 576px) {
+  .mein-button {
+    font-size: .55rem;
+    height: 2rem;
+    width: 5rem;
+  }
+}
+@media (max-width: 576px) {
+  .mein-group {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 576px) {
+  .mein-item {
+    padding: 0;
+  }
 }
