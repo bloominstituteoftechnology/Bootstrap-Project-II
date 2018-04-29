@@ -1,6 +1,7 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  background: lightgoldenrodyellow;
 }
 h1,
 h2,
@@ -10,8 +11,9 @@ h5 {
   font-family: 'Indie Flower', cursive;
 }
 .container-fluid {
-  background-color: white;
+  background-color: lightskyblue;
   border-bottom: 2px dashed silver;
+  display: sticky-top;
 }
 .logo-heading {
   padding: 20px 0 10px;
@@ -24,6 +26,6 @@ h5 {
 }
 .footer {
   color: black;
-  background: blanchedalmond;
+  background: lightskyblue;
   padding: 20px 0;
 }
