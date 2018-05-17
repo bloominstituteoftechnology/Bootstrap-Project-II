@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
@@ -17,59 +18,82 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
-        <div class="col-3">
+        <nav class="navbar col-12 navbar-expand-sm d-flex p-2 justify-content-around navbar-light bg-light">
+          <a class="navbar-brand" href="#">
             <h1 class="logo-heading">Fun Bus</h1>
-        </div>
-        <div class="col-9">
-          <nav class="nav">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav>
-        </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="dropdown" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto d-flex p-2 justify-content-around col">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Aboutus">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Locations">Locations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="row">
-        <div class="col-sm-12">
-            <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
-        </div>
-    </div>
-    <div class="row">
       <div class="col-sm-12">
+        <img src="img/fun-bus.jpg" class="img-fluid rounded" alt="Responsive image">
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-sm-12 offset" id="Aboutus">
         <h2>Welcome To Fun Bus!</h2>
         <p>
-            Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.
+          Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger
+          adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty
+          design website expedition.
         </p>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-6">
         <h2>Let's Go!</h2>
-        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
-        <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
+        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition
+          colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
+        <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress
+          cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-          <img src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
+        <img src="img/adventure.jpg" class="img-fluid rounded" alt="Let's go on adventure!">
       </div>
     </div>
     <div class="row">
-        <div class="col-sm-6">
-            <img src="img/fun.jpg" class="img-fluid" alt="Lets have fun!">
-        </div>
-        <div class="col-sm-6">
-          <h2>Adventure Awaits</h2>
-          <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
-          <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
-        </div>
+      <div class="col-sm-6">
+        <img src="img/fun.jpg" class="img-fluid my-3 my-sm-0" alt="Lets have fun!">
+      </div>
+      <div class="col-sm-6">
+        <h2>Adventure Awaits</h2>
+        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition
+          colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
+        <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress
+          cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
+      </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 offset" id="Locations">
         <h2>Destinations</h2>
         <table class="table table-striped">
           <thead>
@@ -103,27 +127,119 @@
         </table>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-4">
+    <div id="carouselExampleIndicators" class="carousel slide mb-3" data-ride="carousel">
+      <!-- Carousel slid show -->
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/slider-1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/slider-2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/slider-3.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="row mb-3">
+      <div class="col-sm-4 mb-3">
         <h4>Fun In The Sun</h4>
-        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler
+          blogger website design expedition clean excursion traveling.</p>
+        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#SunnyFun">
+          Click for more info!
+        </button>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mb-3">
         <h4>Mountain Excursion</h4>
-        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler
+          blogger website design expedition clean excursion traveling.</p>
+        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#Mountain">
+          Click for more info!
+        </button>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mb-3">
         <h4>Island Getaway</h4>
-        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler
+          blogger website design expedition clean excursion traveling.</p>
+        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#Island">
+          Click for more info!
+        </button>
+      </div>
+    </div>
+    <div class="modal fade" id="SunnyFun" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Congratulations!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            You have just taken the first click towards endless spam! Thanks for your participation!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="Mountain" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Congratulations!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            You have just taken the first click towards endless spam! Thanks for your participation!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="Island" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Congratulations!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            You have just taken the first click towards endless spam! Thanks for your participation!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-8">
         <h4>Before You Go...</h4>
-        <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
+        <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical
+          wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure,
+          traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
       <div class="col-sm-4">
         <h4>Don't Forget These!</h4>
@@ -136,38 +252,111 @@
         </ul>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <form>
-          <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
-          <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Beach
-            </label>
+    <div class="row mt-3">
+      <div class="col-sm-12 offset mb-3" id="Contact">
+        <form class="needs-validation" novalidate>
+          <!-- Validation form -->
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom01">First name</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom02">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustomUsername">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                </div>
+                <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend"
+                  required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Mountain
-            </label>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">City</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom04">State</label>
+              <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom05">Zip</label>
+              <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
           </div>
-          <button type="submit" class="btn btn-info">Let's Travel</button>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+
+        <script>
+          // JavaScript for disabling form submissions if there are invalid fields
+          (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+              var forms = document.getElementsByClassName('needs-validation');
+              var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+        </script>
+
         </form>
       </div>
     </div>
     <div class="row footer">
-      <div class="col-sm-12">
-        Copyright Fun Bus 2018
+      <div class="col-sm-12 d-flex p-2 justify-content-center">
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Copyright Fun Bus 2018">
+          Read Me!
+        </button>
       </div>
     </div>
-  </div><!-- container -->
+  </div>
+  <!-- container -->
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/index.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
+
 </html>
