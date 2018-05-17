@@ -204,16 +204,31 @@
     </div>
     <div class="row form mt-4">
       <div class="col-sm-12">
-        <form>
-          <div class="form-group needs-validation" novalidate>
+        <form class="needs-validation" novalidate>
+          <div class="form-group">
             <label for="name">Name</label>
-            <input id="name" type="text" class="form-control" placeholder="Name">
-            <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control" placeholder="Phone">
-            <label for="email">Email</label>
-            <input id="email" type="email" class="form-control" placeholder="Email" />
+            <input id="name" type="text" class="form-control" placeholder="Name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
             <div class="invalid-feedback">
-              Please provide a valid email.
+              Please enter your name.
+            </div>
+            <label for="phone">Phone</label>
+            <input id="phone" type="phone" class="form-control" placeholder="Phone" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please enter your phone number.
+            </div>
+            <label for="email">Email</label>
+            <input id="email" type="email" class="form-control" placeholder="Email" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please enter your email.
             </div>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             <br />
@@ -239,26 +254,6 @@
           </div>
           <!-- form-group -->
         </form>
-        <script>
-          // Example starter JavaScript for disabling form submissions if there are invalid fields
-          (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-              // Fetch all the forms we want to apply custom Bootstrap validation styles to
-              var forms = document.getElementsByClassName('needs-validation');
-              // Loop over them and prevent submission
-              var validation = Array.prototype.filter.call(forms, function(form) {
-                form.addEventListener('submit', function(event) {
-                  if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                  }
-                  form.classList.add('was-validated');
-                }, false);
-              });
-            }, false);
-          })();
-        </script>
       </div>
     </div>
     <div class="row footer mt-5">
