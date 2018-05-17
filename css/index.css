@@ -33,6 +33,9 @@ h5 {
   pointer-events: auto;
   cursor: pointer;
 }
+.modal .cute-bus {
+  width: 240px;
+}
 .modal .company-name {
   font-family: 'Indie Flower', cursive;
   font-size: 1.3rem;
