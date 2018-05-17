@@ -27,3 +27,12 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #17a2b8;
+  background-color: white;
+  text-decoration: underline;
+}
+li {
+  line-height: 2;
+}
