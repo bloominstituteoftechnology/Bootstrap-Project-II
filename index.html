@@ -72,10 +72,10 @@
       <div class="col-sm-12">
         <h2>Destinations</h2>
 <!-- You can find the attempts at background-overlay here -->
-        <div id="carouselExampleControls" class="carousel slide background-overlay" data-ride="carousel">
-            <div class="carousel-inner background-overlay">
-              <div class="carousel-item active background-overlay">
-                <img class="d-block w-100 background-overlay" src="img/slider-3.jpg" alt="Beach Slider">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 tinted-image" src="img/slider-3.jpg" alt="Beach Slider">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Fun In The Sun</h5>
                     <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign.</p>
@@ -142,19 +142,48 @@
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
-      </div>
+        </div> <!-- Fun in the sun more info -->
       <div class="col-sm-4">
-        <h4>Mountain Excursion</h4>
-        <p>Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
-      </div>
+          <h4>Mountain excursion</h4>
+          <p>Traveler blogger website design expedition clean excursion traveling.</p>
+      </div> <!-- Mountain excursion more info -->
       <div class="col-sm-4">
         <h4>Island Getaway</h4>
         <p>Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+      </div> <!-- Island getaway more info -->
+    </div> <!-- More info buttons -->
+
+ 
+    <p class="d-flex justify-content-around">
+        <a class="btn btn-primary col-2" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Get more info</a>
+        <button class="btn btn-primary col-2" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Get more info</button>
+        <button class="btn btn-primary col-2" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Get more info</button>
+      </p>
+      <div class="row d-flex">
+        <div class="col-4">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+            <div class="collapse multi-collapse" id="multiCollapseExample3">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
+          </div>
       </div>
-    </div>
+
+
     <div class="row mt-3">
       <div class="col-sm-8">
         <h4>Before You Go...</h4>
