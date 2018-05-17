@@ -66,6 +66,7 @@ h5 {
   background: skyblue;
 }
 .footer {
+  width: 100%;
   background: skyblue;
   border: 2px solid beige;
   border-radius: 10px;
