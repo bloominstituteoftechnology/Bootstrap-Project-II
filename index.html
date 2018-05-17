@@ -163,26 +163,27 @@
                 <a class="dropdown-item" href="#">Vestibulum at eros</a>
               </div>
             </div>
-        <!-- <h4>Don't Forget These!</h4>
-        <ul class="list-group">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul> -->
       </div>
     </div>
-    <div class="row my-5">
+    <div class="row my-2">
       <div class="col-sm-12">
         <form>
           <div class="form-group">
           <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
+          <input id="name" type="text" class="form-control" placeholder="Name" required>
+          <div class="invalid-feedback">
+            Please provide your name.
+          </div>
           <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
+          <input id="phone" type="phone" class="form-control" placeholder="Phone" required>
+          <div class="invalid-feedback">
+            Please provide your phone number.
+          </div>
           <label for="email">eMail</label>
-          <input id="email" type="text" class="form-control" placeholder="eMail">
+          <input id="email" type="text" class="form-control" placeholder="eMail" required>
+          <div class="invalid-feedback">
+            Pleae provide your eMail.
+          </div>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
@@ -195,7 +196,7 @@
               Mountain
             </label>
           </div>
-        </div>
+        
         <div class="form-check">
           <input class="form-check-input" type="radio" name="exampleRadios" id="island" value="option3">
           <label class="form-check-label" for="island">
@@ -203,8 +204,8 @@
           </label>
         </div>
           <button type="submit" class="btn btn-info">Let's Travel</button>
-      </div>
         </form>
+        </div>
       </div>
     </div>
     <div class="row footer">
