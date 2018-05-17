@@ -155,18 +155,36 @@
     </div>
     <div class="row d-flex form-carousel">
       <div class="col-md-4 mt-3">
-        <form>
+        <form class="needs-validation" novalidate>
           <div class="form-group">
             <label for="name">Name</label>
-            <input id="name" type="text" class="form-control" placeholder="Name">
+            <input id="name" type="text" class="form-control" placeholder="Name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please enter your name.
+            </div>
           </div>
           <div class="form-group">
             <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control" placeholder="Phone">
+            <input id="phone" type="phone" class="form-control" placeholder="Phone" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please enter your phone number.
+            </div>
           </div>
           <div class="form-group">
             <label for="email">email</label>
-            <input id="email" type="text" class="form-control" placeholder="email">
+            <input id="email" type="text" class="form-control" placeholder="email" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please enter your email.
+            </div>
           </div>
           <div class="form-group">
             <div class="form-check">
