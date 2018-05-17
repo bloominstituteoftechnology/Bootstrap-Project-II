@@ -25,32 +25,32 @@
           <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <div class="col-9 d-flex justify-content-end align-items-center">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <ul class="navbar-nav mr-auto nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Go</a>
+                  <a class="nav-link" href="#go">Go</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Activities</a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Fun in the Sun</a>
+                    <a class="dropdown-item" href="#sun">Fun in the Sun</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Mountain Excursion</a>
+                    <a class="dropdown-item" href="#mountain">Mountain Excursion</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Island Getaway</a>
+                    <a class="dropdown-item" href="#island">Island Getaway</a>
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="#contact">Contact Us</a>
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
@@ -63,7 +63,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container custom-container" data-spy="scroll" data-target="#navbar" data-offset="0">
     <div class="row">
       <div class="col-sm-12">
         <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
@@ -71,7 +71,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12 my-3">
-        <h2>Welcome To Fun Bus!</h2>
+        <h2 id="home">Welcome To Fun Bus!</h2>
         <p>
           Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website
           expedition.
@@ -79,7 +79,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-6 my-3">
+      <div id="go" class="col-sm-6 my-3">
         <h2>Let's Go!</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
@@ -170,19 +170,82 @@
 
     <div class="row">
       <div class="col-sm-4 my-3">
-        <h4>Fun In The Sun</h4>
+        <h4 id="sun">Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#funModal">Get More Info</button>
+
+        <!-- Modal -->
+<div class="modal fade" id="funModal" tabindex="-1" role="dialog" aria-labelledby="funModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="funModalLabel">Fun In the Sun</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
       <div class="col-sm-4 my-3">
-        <h4>Mountain Excursion</h4>
+        <h4 id="mountain">Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="mountainModal">Get More Info</button>
+
+        <!-- Modal -->
+<div class="modal fade" id="mountainModal" tabindex="-2" role="dialog" aria-labelledby="mountainModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mountainModalLabel">Fun In the Sun</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
       <div class="col-sm-4 my-3">
-        <h4>Island Getaway</h4>
+        <h4 id="island">Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="islandModal">Get More Info</button>
+
+        <!-- Modal -->
+<div class="modal fade" id="islandModal" tabindex="-1" role="dialog" aria-labelledby="islandModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="islandModalLabel">Island Getaway</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </div>
     <div class="row">
@@ -203,7 +266,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-12 my-3">
+      <div class="col-sm-12 my-3" id="contact">
         <form class="needs-validation" novalidate>
           <div class="form-group">
             <label for="name">Name</label>
