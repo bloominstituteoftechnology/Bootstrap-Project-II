@@ -1,3 +1,36 @@
+.text-cerise {
+  color: #ff0095;
+  font-size: 1.8rem;
+}
+.text-cerise:hover {
+  text-decoration: none;
+  color: #ff66bf;
+}
+.text-cerise:focus {
+  text-decoration: none;
+}
+.text-tulip-tree {
+  color: #E5BD2E;
+  font-size: 1.8rem;
+}
+.text-tulip-tree:hover {
+  text-decoration: none;
+  color: #f0da89;
+}
+.text-tulip-tree:focus {
+  text-decoration: none;
+}
+.text-niagara {
+  color: #0FB3AC;
+  font-size: 1.8rem;
+}
+.text-niagara:hover {
+  text-decoration: none;
+  color: #3aeee7;
+}
+.text-niagara:focus {
+  text-decoration: none;
+}
 html,
 body {
   font-family: 'Roboto', sans-serif;
@@ -10,14 +43,15 @@ h5 {
   font-family: 'Indie Flower', cursive;
 }
 .container-fluid {
-  background-color: white;
-  border-bottom: 2px dashed silver;
+  background-color: #deb31c;
+  border-bottom: 10px solid #f0da89;
+  color: #fff;
 }
 .logo-heading {
   padding: 20px 0 10px;
 }
-.nav a {
-  color: black;
+.nav .nav-link2 {
+  color: #fff;
 }
 .container {
   max-width: 800px;
@@ -26,4 +60,65 @@ h5 {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+}
+.c-footer {
+  background: #ff0095;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+  color: white;
+  text-align: center;
+}
+.asp-ratio {
+  max-width: height;
+}
+.c-box-shadow {
+  box-shadow: 5px 5px 5px gray;
+}
+.c-button {
+  background: #ff0095;
+  box-shadow: 5px 5px 5px gray;
+  color: white;
+  border-color: #cc0077;
+}
+.c-button:hover {
+  background: #ff66bf;
+  border-color: #cc0077;
+}
+.c-button2 {
+  background: #0FB3AC;
+  box-shadow: 5px 5px 5px gray;
+  color: white;
+  border-color: #0b847f;
+}
+.c-button2:hover {
+  background: #3aeee7;
+  border-color: #0b847f;
+}
+.c-button3 {
+  background: #E5BD2E;
+  box-shadow: 5px 5px 5px gray;
+  color: white;
+  border-color: #c7a119;
+}
+.c-button3:hover {
+  background: #f0da89;
+  border-color: #c7a119;
+}
+.c-button4 {
+  background: #ff0095;
+  border-color: #cc0077;
+}
+.c-button4:hover {
+  background: #ff66bf;
+  border-color: #cc0077;
+}
+.c-button4:focus {
+  background: #ff0095;
+  border-color: #cc0077;
+}
+.c-button4:active {
+  background: #ff0095;
+  border-color: #cc0077;
 }
