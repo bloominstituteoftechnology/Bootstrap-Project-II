@@ -19,8 +19,18 @@ h5 {
 .nav a {
   color: black;
 }
+.stubborn {
+  padding: 8px 0;
+}
+.stubborn2 {
+  padding: 8px 0;
+  width: 150px;
+}
 .container {
   max-width: 800px;
+}
+.form-group {
+  border: 10px solid red;
 }
 .footer {
   color: black;
