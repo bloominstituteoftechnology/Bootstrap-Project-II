@@ -19,8 +19,31 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
+@media (max-width: 768px) {
+  .logo-heading {
+    text-align: center;
+  }
+}
+.header-row {
+  display: flex;
+}
 .nav a {
   color: black;
+}
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+.col-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .col-nav {
+    justify-content: center;
+  }
 }
 .container {
   max-width: 800px;

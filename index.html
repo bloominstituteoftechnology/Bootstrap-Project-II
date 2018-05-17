@@ -17,13 +17,15 @@
 </head>
 
 <body>
+
+  <!-- Nav Bar Container -->
   <div class="container-fluid fixed-top">
     <div class="container">
-      <div class="row">
-        <div class="col-3">
+      <div class="row header-row">
+        <div class="col-12 col-md-4 logo-col">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
-        <div class="col-9 d-flex align-items-center justify-content-end">
+        <div class="col-12 col-md-8 col-nav">
           <nav class="nav">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
@@ -34,7 +36,11 @@
       </div>
     </div>
   </div>
+
+  <!-- Main Content Container -->
   <div class="container nav-spacer">
+
+    <!-- Carousel Row -->
     <div class="row">
         <div class="col-sm-12">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -181,92 +187,80 @@
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
       <div class="col-sm-4">
-        <h4>Don't Forget These!</h4>
-        <ul class="list-group">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Morbi leo risus</li>
-          <li class="list-group-item">Porta ac consectetur ac</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
+          <h4>Don't forget...</h4>
+          <div id="accordion">
+              
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Island
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li>Mosquite Repellent</li>
+                      <li>Hat</li>
+                      <li>Water Bottle</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Mountain
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                      <ul>
+                          <li>Breathable Layer(s)</li>
+                          <li>Water</li>
+                          <li>Climbing Shoes</li>
+                          <li>Caribiner (optional)</li>
+                        </ul>
+                      </div>
+                </div>
+              </div>
+              
+              
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Beach
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                      <li>Polarized Sunglasses</li>
+                      <li>Sun tan lotion > SPF-40</li>
+                      <li>Flip Flops</li>
+              </div>
+                </div>
+              </div>
+            </div>
       </div>
     </div>
 
-    <!-- This is the start of the form -->
-    <!-- <div class="row mt-4">
-      <div class="col-sm-12">
-          <form class="needs-validation" novalidate>
-              <div class="form-row">
-                <div class="col-md-4 mb-3">
-                  <label for="validationCustom01">First name</label>
-                  <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
-                  <div class="valid-feedback">
-                    You'd make your Mom proud...
-                  </div>
-                  <div class="invalid-feedback">
-                      Really? C'mon...
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <label for="validationCustom02">Last name</label>
-                  <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" required>
-                  <div class="valid-feedback">
-                    Looks Good!
-                  </div>
-                  <div class="invalid-feedback">
-                      Really? C'mon...
-                  </div>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="col-md-4 mb-3">
-                  <label for="validationCustom03">Email</label>
-                  <input type="email" class="form-control" id="validationCustom03" placeholder="Email" required>
-                  <div class="valid-feedback">
-                      Looks Good!
-                  </div>
-                  <div class="invalid-feedback">
-                    Please provide a real email..
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <label for="validationCustom04">Phone Number</label>
-                  <input type="number" class="form-control" id="validationCustom04" placeholder="Phone Number" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid phone number.. numbers only...
-                  </div>
-                  <div class="invalid-feedback">
-                      Thanks.. now I'll be stalking you..
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                  <div class="custom-control custom-radio">
-                      <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                      <label class="custom-control-label" for="customRadio1">Beach</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                      <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                      <label class="custom-control-label" for="customRadio2">Mountain</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio3">Island</label>
-                      </div>
-                </div>
-              <button type="submit" class="btn btn-info">Let's Travel</button>
-            </form>
-      </div>
-    </div> -->
-
-    <div class="row footer">
+    <!-- Footer -->
+    <div class="row footer d.flex align-items-center">
       <div class="col-sm-12">
         Copyright Fun Bus 2018
       </div>
     </div>
   </div><!-- container -->
 
-  <!-- Island Modal -->
+  <!-- Custom Model with a form with validation! -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -319,7 +313,7 @@
                               <div class="invalid-feedback">
                                 Please provide a valid phone number.. numbers only...
                               </div>
-                              <div class="invalid-feedback">
+                              <div class="valid-feedback">
                                   Thanks.. now I'll be stalking you..
                               </div>
                             </div>
@@ -383,13 +377,12 @@
       var modal = $(this)
       modal.find('.modal-title').text(recipient)
       modal.find('.modal-body input').val(recipient)
+
+      // Needed to clear out some data weirdess with jQuery
       $('.form-row #validationCustom01').val('');
       $('.form-row #validationCustom02').val('');
       $('.form-row #validationCustom03').val('');
     })
-
-    
-
   </script>
 </body>
 </html>

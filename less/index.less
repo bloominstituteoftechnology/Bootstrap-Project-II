@@ -19,14 +19,43 @@ h1, h2, h3, h4, h5 {
 
 .logo-heading {
     padding: 20px 0 10px;
+
+    @media (max-width:768px){
+        text-align: center;
+    }
 }
+
+.header-row{
+
+    display: flex;
+
+    // @media (max-width:768px){
+    //     background-color: orange;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }   
+}
+
 
 .nav {
     a {
         color: black;
     }
+
+    @media (max-width:768px){
+        display: none;
+    }
 }
 
+.col-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media (max-width:768px){
+        justify-content: center;
+    }
+}
 .container {
     max-width: 800px;
 }
