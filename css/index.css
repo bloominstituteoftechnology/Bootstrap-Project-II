@@ -16,6 +16,9 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
+.nav {
+  align-items: center;
+}
 .nav a {
   color: black;
 }
