@@ -27,3 +27,12 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+.form-group > label {
+  margin-top: 25px;
+}
+.form-group > label:first-child {
+  margin-top: 0px;
+}
+.navbar {
+  background-color: #d6d6ff !important;
+}
