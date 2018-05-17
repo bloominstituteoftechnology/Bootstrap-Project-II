@@ -27,3 +27,17 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+.icon-globe {
+  width: 24px;
+  margin: -4px 0 0 0;
+  pointer-events: auto;
+  cursor: pointer;
+}
+.modal .cute-bus {
+  width: 240px;
+}
+.modal .company-name {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.3rem;
+  color: #17a2b8;
+}
