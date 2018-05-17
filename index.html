@@ -16,23 +16,38 @@
   <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navigation" data-offset="0">
   <div class="container-fluid sticky-top">
+    
+    
     <div class="container">
       <div class="row">
         <div class="col-3">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <div class="col-9 d-flex justify-content-end align-items-center">
-          <nav class="nav">
+          <nav id="navigation" class="navbar">
+           
+              <ul class="nav nav-pills">
+            <li class="nav-item">   
             <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
+             </li>
+             <li class="nav-item"> 
+            <a class="nav-link" href="#get-started">Get Started</a>
+          </li>
+            <li class="nav-item"> 
+            <a class="nav-link" href="#destinations">Destinations</a>
+          </li>
+            <li class="nav-item"> 
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          </ul>
           </nav>
         </div>
       </div>
     </div>
+
+    
   </div>
   <div class="container">
     <div class="row">
@@ -48,9 +63,9 @@
         </p>
       </div>
     </div>
-    <div class="row">
+    <div id="get-started" class="row">
       <div class="col-sm-6">
-        <h2>Let's Go!</h2>
+        <h2>Let's go</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
@@ -70,7 +85,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <h2>Destinations</h2>
+        <h2 id="destinations">Destinations</h2>
 <!-- You can find the attempts at background-overlay here -->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -200,8 +215,9 @@
         </ul>
       </div>
     </div>
-    <div class="row mt-3">
+    <div class="row mt-3" id="contact">
       <div class="col-sm-12">
+          <h2>Contact</h2>
         <form>
             <div class="form-group border p-3 rounded">
           <label for="name">Name</label>
