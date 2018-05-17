@@ -1,16 +1,20 @@
-
-// Enable tooltip
 $(function () {
+
+  const $contactForm = $('#contactForm');
+  const $contactSuccessModal = $('#contactSuccessModal');
+
+  // Enable tooltip
   $('[data-toggle="tooltip"]').tooltip();
-});
 
-// Trigger modal on submit, prevent post
-$('#contactForm').submit(function(e) {
-  e.preventDefault(e);
-  console.log('submitted');
-  $('#contactSuccessModal').modal();
-});
+  // Trigger modal on submit, prevent post
+  $contactForm.submit(function(e) {
+    e.preventDefault(e);
+    $contactSuccessModal.modal();
+  });
 
-$('#contactSuccessModal').on('hidden.bs.modal', function (e) {
-  $('#contactForm')[0].reset();
-})
+  // Reset form on modal close
+  $contactSuccessModal.on('hidden.bs.modal', function (e) {
+    $contactForm[0].reset();
+  })
+
+});
