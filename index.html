@@ -17,19 +17,19 @@
 </head>
 
 <!-- updated -->
-<body>
+<body data-spy="scroll" data-target="#navbar">
   <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
         <div class="col-3">
-            <h1 class="logo-heading">Fun Bus</h1>
+            <h1 class="logo-heading text-nowrap">Fun Bus</h1>
         </div>
-        <div class="col-9">
-          <nav class="nav">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
+        <div class=" my-auto col-xs-12 col-sm-9">
+          <nav id="navbar" class="nav nav-pills justify-content-end flex-nowrap mx-auto">
+            <a class="nav-link active" href="#home">Home</a>
+            <a class="nav-link text-nowrap" href="#about">About Us</a>
+            <a class="nav-link" href="#destinations">Destinations</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </nav>
         </div>
       </div>
@@ -41,7 +41,7 @@
             <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
         </div>
     </div>
-    <div class="row my-3 py-3 m-md-5 p-md-5 bg-info">
+    <div id="home" class="row my-3 py-3 m-md-5 p-md-5 bg-info">
       <div class="col-sm-12">
         <h1 class="text-light text-center">Welcome To Fun Bus!</h1>
         <p class="text-center">
@@ -49,7 +49,7 @@
         </p>
       </div>
     </div>
-    <div class="row my-3">
+    <div id="about" class="row my-3">
       <div class="col-sm-6 p-0 order-md-2">
           <img src="img/adventure.jpg" class="img-fluid rounded" alt="Let's go on adventure!">
       </div>
@@ -68,7 +68,7 @@
 
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="destinations">
       <div class="col-sm-12">
         <h2 class="text-info">Destinations</h2>
         <table class="table table-striped">
@@ -104,7 +104,7 @@
       </div>
     </div>
     <div class="row m-5 lg-column">
-      <div class="col-sm-4">
+      <div class="col-sm-4 pt-3">
           <h4>Fun In The Sun</h4>
         <img class="pb-3" src="https://loremflickr.com/200/100/beach" alt="">
 
@@ -112,22 +112,35 @@
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info btn-block">Get More Info</button>
       </div>
-      <div class="col-sm-4">
-        <h4>Mountain Excursion</h4>
+      <div class="col-sm-4 pt-3">
+        <h4 class="">Mountain Excursion</h4>
         <img class="pb-3" src="https://loremflickr.com/200/100/mountain" alt="">
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info btn-block">Get More Info</button>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 pt-3">
         <h4>Island Getaway</h4>
       <img class="pb-3" src="https://loremflickr.com/200/100/island" alt="">
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info btn-block">Get More Info</button>
       </div>
     </div>
-    <!-- JavaScript Component: Carousel -->
-    <div class="row m-5">
+    <div class="row">
     <div class="col-12">
+      <!-- JavaScript Component: Carousel -->
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/slider-1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/slider-2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/slider-3.jpg" alt="Third slide">
+    </div>
+  </div>
+</div>
 
     </div>
     </div>
@@ -148,13 +161,11 @@
         </ul>
       </div>
     </div>
-    <div><h1 class="text-center font-weight-bold text-info">Ready for Some Fun?</h1></div>
-    <div class="row bg-light m-0 p-0">
+    <div id="contact"><h1 class="text-center font-weight-bold text-info">Ready for Some Fun?</h1></div>
+    <div class="row bg-light p-0">
 
       <div class="col-sm-6 m-2 p-0">
-        <img class="img-fluid" src="https://loremflickr.com/180/180/beach" alt="">
-      <img class="img-fluid" src="https://loremflickr.com/180/180/mountain" alt="">
-    <img class="img-fluid mt-1" src="https://loremflickr.com/365/200/island" alt="">
+    <img class="mx-auto px-auto img-fluid" src="https://loremflickr.com/365/365/island" alt="">
   </div>
       <div class="col-sm-5 my-3">
         <form> <div class="form-group">
@@ -191,8 +202,8 @@
         </form>
       </div>
     </div>
-    <div class="row footer bg-light">
-      <div class="col-sm-12 text-center text-dark">
+    <div class="row footer bg-warning p-3 m-0">
+      <div class="col-sm-12 text-center text-light">
         Copyright Fun Bus 2018
       </div>
     </div>
