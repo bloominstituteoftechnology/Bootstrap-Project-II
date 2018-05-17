@@ -17,7 +17,7 @@
   <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-top" data-offset="0">
   <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
@@ -33,14 +33,14 @@
           </nav>
         </div>
         <div class="col-2 d-flex justify-content-center">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light rounded" id="navbar-top">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#top">Top<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#bottom">End</a>
+                    <a class="nav-item nav-link" href="#top" data-toggle="tooltip" data-placement="top" title="Return to Top">Top<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#bottom" data-toggle="tooltip" data-placement="top" title="Go to End">End</a>
                   </div>
                 </div>
               </nav>
@@ -48,6 +48,7 @@
       </div>
     </div>
   </div>
+
   <div class="container" id="top">
     <div class="row">
       <div class="col-sm-12">
