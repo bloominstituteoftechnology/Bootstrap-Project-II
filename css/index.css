@@ -1,13 +1,13 @@
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 .container-fluid {
   background-color: white;
@@ -17,7 +17,39 @@ h5 {
   padding: 20px 0 10px;
 }
 .nav a {
-  color: black;
+  color: red;
+}
+.navbar-toggler {
+  background: skyblue;
+  border: 2px solid beige;
+  height: 15px;
+  width: 10px;
+}
+.navbar-nav {
+  background: skyblue;
+  border: 2px solid beige;
+  border-radius: 10px;
+}
+.navbar-brand {
+  color: beige;
+  border: 2px solid beige;
+  border-radius: 10px;
+  background: skyblue;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.nav-link {
+  color: beige;
+}
+.navbar-toggler-icon {
+  background: skyblue;
+  border-radius: 3.5px;
+  border: 2px solid beige;
+  height: 15px;
+  width: 25px;
+}
+.bg {
+  background: white;
 }
 .container {
   max-width: 800px;
@@ -26,4 +58,17 @@ h5 {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+}
+.btn {
+  color: beige;
+  border: 2px solid beige;
+  border-radius: 10px;
+  background: skyblue;
+}
+.footer {
+  width: 100%;
+  background: skyblue;
+  border: 2px solid beige;
+  border-radius: 10px;
+  color: beige;
 }
