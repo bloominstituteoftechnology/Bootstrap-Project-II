@@ -214,7 +214,6 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Ok</button>
               </div>
             </div>
           </div>
@@ -234,18 +233,28 @@
     </div>
     <div class="row">
       <div class="col-sm-12 mt-2">
-        <form>
+        <form class="needs-validation" novalidate>
           <div class="form-group">
             <label for="exampleInputName1">Name</label>
-            <input type="name" class="form-control" id="exampleInputName1" aria-describedby="emailName" placeholder="Enter name">
+            <input type="name" class="form-control" id="exampleInputName1" aria-describedby="emailName" placeholder="Enter name" required>
+            <div class="invalid-feedback">
+              Please enter your name.
+            </div>
           </div>
           <div class="form-group">
             <label for="exampleInputPhone1">Phone</label>
-            <input type="phone" class="form-control" id="exampleInputPhone1" placeholder="Enter phone">
+            <input type="phone" class="form-control" id="exampleInputPhone1" placeholder="Enter phone" required>
+            <div class="invalid-feedback">
+              Please enter your phone number.
+            </div>
           </div>
+
           <div class="form-group">
             <label for="exampleInputEmail1">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+            <div class="invalid-feedback">
+              This is not a valid email address.
+            </div>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -267,8 +276,26 @@
           </div>
           <button type="submit" class="btn btn-info mt-3">Let's Travel</button>
         </form>
+        <script>
+          (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+              var forms = document.getElementsByClassName('needs-validation');
+              var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+        </script>
       </div>
     </div>
+    <!-- form row -->
     <div class="row footer mt-5">
       <div class="col-sm-12 text-center">
         Copyright Fun Bus 2018
