@@ -1,6 +1,7 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  /*position: relative;*/
 }
 h1,
 h2,
@@ -31,6 +32,18 @@ h5 {
 }
 .custom-modal {
   background-color: #1CB2B2;
+}
+.custom-hover:hover {
+  background-color: #1CB2B2;
+}
+.custom-scroll {
+  height: 500px;
+  overflow-y: scroll;
+  background-color: #f8f9fa;
+  /*border: 1px solid #f8f9fa;*/
+}
+.navbar-light .navbar-brand {
+  color: #1CB2B2;
 }
 .footer {
   color: black;
