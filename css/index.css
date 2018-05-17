@@ -22,6 +22,9 @@ h5 {
 .container {
   max-width: 800px;
 }
+.custom-nav {
+  max-width: 980px;
+}
 .footer {
   color: black;
   background: blanchedalmond;
