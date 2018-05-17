@@ -27,3 +27,7 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+#accordion .card button {
+  color: black;
+  font-size: 1.5rem;
+}
