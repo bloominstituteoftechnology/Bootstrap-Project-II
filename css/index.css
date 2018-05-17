@@ -18,6 +18,7 @@ h5 {
 }
 .nav a {
   color: black;
+  border: 1px solid red;
 }
 .container {
   max-width: 800px;
