@@ -24,20 +24,19 @@
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <div class="col-9 d-flex align-items-center justify-content-end">
-          <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
 
+          <!-- JavaScript Component: Navbar -->
+
+          <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto nav-pills">
+              <ul class="navbar-nav nav-pills">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown mr-2">
                   <a class="nav-link dropdown-toggle" href="#destinations" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Destinations
                   </a>
@@ -58,6 +57,9 @@
       </div>
     </div>
   </div>
+
+  <!-- JavaScript Component: Scrollspy -->
+
   <div class="container" data-spy="scroll" data-target="#navbar" data-offset="0">
     <div class="row">
         <div class="col-sm-12">
@@ -87,14 +89,14 @@
             <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
         </div>
         <div class="col-sm-6">
-          <h2>Adventure Awaits</h2>
+          <h2 id="destinations">Adventure Awaits</h2>
           <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
     </div>
     <div class="row mt-5">
       <div class="col-sm-12">
-        <h2 id="destinations">Destinations</h2>
+        <h2>Destinations</h2>
         <table class="table table-striped">
           <thead>
             <tr>
