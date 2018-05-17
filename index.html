@@ -122,7 +122,7 @@
                             <div class="collapse" id="collapseHike">
                             <div class="card card-body text-light bg-transparent custom-text-1">
                             Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.
-                            <button type="button" class="btn btn-info">Get More Info</button>
+                            <button type="button" class="btn btn-info custom-btn">Get More Info</button>
                         </div>
                         </div>
                         </div>
@@ -134,7 +134,7 @@
                             <div class="collapse" id="collapseMountain">
                             <div class="card card-body text-light bg-transparent custom-text-1">
                             Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.
-                            <button type="button" class="btn btn-info">Get More Info</button>
+                            <button type="button" class="btn btn-info custom-btn">Get More Info</button>
                         </div>
                         </div>
                         </div>
@@ -147,7 +147,7 @@
                             <div class="collapse" id="collapseIsland">
                             <div class="card card-body text-light bg-transparent custom-text-1">
                             Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.
-                            <button type="button" class="btn btn-info">Get More Info</button>
+                            <button type="button" class="btn btn-info custom-btn">Get More Info</button>
                         </div>
                         </div>
                         </div>
@@ -187,7 +187,7 @@
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       <div class="dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle custom-drop-btn" id="dropdownMenuButton" data-toggle="dropdown" data-toggle="tooltip"  data-placement="top" aria-haspopup="true" aria-expanded="false" title="Select your getaway!">
+  <button type="button" class="btn btn-secondary dropdown-toggle custom-btn" id="dropdownMenuButton" data-toggle="dropdown" data-toggle="tooltip"  data-placement="top" aria-haspopup="true" aria-expanded="false" title="Select your getaway!">
   Plan your Adventure
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -211,19 +211,28 @@
     </div>
     <div class="row mt-4">
       <div class="col-sm-12">
-        <form>
+         <form class="needs-validation" novalidate>
             <div class="form-group">
-                <label for="name">Name</label>
-                <input id="name" type="text" class="form-control" placeholder="Name">
-                </div>
+                <label for="validationCustomName">Name</label>
+                <input id="validationCustomName" type="text" class="form-control" placeholder="Name" required>
+            <div class="invalid-feedback">
+                Name required
+            </div>    
+            </div>
       <div class="form-group">
-                <label for="phone">Phone</label>
-                <input id="phone" type="phone" class="form-control" placeholder="Phone">
-                </div>
+                <label for="validationCustomPhone">Phone</label>
+                <input id="validationCustomPhone" type="phone" class="form-control" placeholder="Phone" required>
+      <div class="invalid-feedback">
+            Phone number required
+      </div>          
+      </div>
       <div class="form-group">
-                <label for="email">Email</label>
-                <input id="email" type="email" class="form-control" placeholder="Email">
-          </div>
+                <label for="validationCustomEmail">Email</label>
+                <input id="validationCustomEmail" type="email" class="form-control" placeholder="Email">
+      <div class="invalid-feedback">
+            Email required
+      </div>      
+      </div>
       <div class="form-group">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -248,8 +257,10 @@
             </label>
           </div>
           </div>
-          <button type="submit" class="btn btn-info mt-2">Let's Travel</button>
+          <button type="submit" class="btn btn-info mt-2 custom-btn">Let's Travel</button>
         </form>
+      </div>
+    </div>
       </div>
     </div>
     <div class="row footer mt-4">

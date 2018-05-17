@@ -32,7 +32,7 @@ h5 {
 .header {
   background: #F05773;
 }
-.header .link {
+.nav-link {
   color: #1ecebd;
 }
 .fun-bus {
@@ -72,6 +72,6 @@ h5 {
 .custom-text-3 {
   text-shadow: 1px 1px white;
 }
-.custom-drop-btn {
+.custom-btn {
   background: #1ecebd;
 }
