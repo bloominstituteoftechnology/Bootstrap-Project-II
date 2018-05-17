@@ -1,29 +1,35 @@
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Tahoma, Geneva, sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: #45b0e2;
 }
 .container-fluid {
-  background-color: white;
+  background-color: whitesmoke;
   border-bottom: 2px dashed silver;
 }
 .logo-heading {
   padding: 20px 0 10px;
+}
+.nav {
+  padding-left: 180px;
+  background: whitesmoke;
 }
 .nav a {
   color: black;
 }
 .container {
   max-width: 800px;
+  background: bisque;
 }
 .footer {
   color: black;
-  background: blanchedalmond;
   padding: 20px 0;
 }
