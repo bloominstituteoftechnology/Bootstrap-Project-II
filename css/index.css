@@ -10,6 +10,11 @@ h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+}
 .container-fluid {
   background-color: white;
   border-bottom: 2px dashed silver;
@@ -31,7 +36,7 @@ h5 {
   background-color: #eee;
 }
 .custom-modal {
-  background-color: #1CB2B2;
+  background-color: ##1CB2B2;
 }
 .custom-hover:hover {
   background-color: #1CB2B2;
@@ -39,11 +44,26 @@ h5 {
 .custom-scroll {
   height: 500px;
   overflow-y: scroll;
-  background-color: #f8f9fa;
-  /*border: 1px solid #f8f9fa;*/
+  background-color: #FFE7AA;
+  /*#f8f9fa*/
 }
 .navbar-light .navbar-brand {
   color: #1CB2B2;
+}
+@media (max-width: 400px) {
+  .custom-adv {
+    margin-top: 4%;
+  }
+}
+@media (max-width: 400px) {
+  .custom-n {
+    margin-top: 4%;
+  }
+}
+@media (max-width: 400px) {
+  .custom-text {
+    margin-right: -20px;
+  }
 }
 .footer {
   color: black;
