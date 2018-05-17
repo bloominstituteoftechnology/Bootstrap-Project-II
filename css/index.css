@@ -33,3 +33,6 @@ h5 {
 .form-group > label:first-child {
   margin-top: 0px;
 }
+.navbar {
+  background-color: #d6d6ff !important;
+}
