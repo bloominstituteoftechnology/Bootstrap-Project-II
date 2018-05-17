@@ -5,7 +5,8 @@ $(function () {
 });
 
 // Trigger modal on submit, prevent post
-$('#contactSubmitButton').on('click', function(e){
-  e.preventDefault();
+$('#contactForm').submit(function(e) {
+  e.preventDefault(e);
+  console.log('submitted');
   $('#contactSuccessModal').modal();
 });
