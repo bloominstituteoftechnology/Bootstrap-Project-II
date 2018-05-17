@@ -13,8 +13,14 @@ h5 {
   background-color: white;
   border-bottom: 2px dashed silver;
 }
+.custom-heading {
+  justify-content: center;
+}
 .logo-heading {
   padding: 20px 0 10px;
+}
+.nav {
+  justify-content: flex-end;
 }
 .nav a {
   color: black;
