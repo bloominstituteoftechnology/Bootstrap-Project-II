@@ -17,13 +17,13 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
         <div class="col-3">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
-        <div class="col-9">
+        <div class="col-9 d-flex justify-content-end align-items-center">
           <nav class="nav">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
@@ -36,12 +36,12 @@
   </div>
   <div class="container">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 mt-5 mb-3">
             <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
         </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 mt-4 mb-4">
         <h2>Welcome To Fun Bus!</h2>
         <p>
             Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.
@@ -49,27 +49,111 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-8 mb-5"><!--COLLAPSE START-->
+        <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapse-button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Coconuts
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    Catamaran fishing excursion sushi break surf fire dancer. Photographs boardwalk lobster bisque eco tour explore seafood catamaran tiki bar seafood. Catamaran binoculars bus surfing ski lodge mojito offpiste music, keepsake surfing guided tour souvenirs.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed collapse-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Sand
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Powder bus family summer sea camera swim coast. Bluetent ship tiki bar dancing, sushi boardwalk sun music read a book camera postcard offpiste. Eco tour sunscreen sea surfing eco tour hermit crab, skiing sea breeze water taxi apres ski.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed collapse-button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Bikinis
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    Explore boardwalk comfort skiing hike kiteboarding holiday apres ski. Hat kiteboarding vacation sunglasses getaway vacation boogie board sights. Leisure vacation longboard conch, sightseeing swim getaway break breeze safari longboard conch camera.
+                </div>
+              </div>
+            </div>
+          </div>
+      </div><!--COLLAPSE END-->
+      <div class="col-sm-4 d-flex flex-column justify-content-center align-items-center mb-5"><!--MODAL SCROLL START-->
+        <h3>Press Here to Enter Sweepstakes!</h3>
+        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalLong">
+            Rules and FAQ
+          </button>
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">SWEEPSTAKES RULES AND FAQ</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec condimentum eros. Etiam ut convallis nunc. Fusce cursus purus mauris, ut dapibus velit congue vel. Donec ultricies sodales ipsum, vel viverra nisl auctor id. In leo felis, vestibulum id finibus fringilla, gravida vitae mi. Proin interdum ipsum malesuada posuere congue. Integer a convallis diam. Vestibulum consectetur purus vitae libero euismod, non venenatis turpis gravida. Praesent nec hendrerit justo, a pulvinar quam. Etiam purus libero, semper nec pulvinar a, elementum eget orci. Duis ut iaculis lectus. Donec in convallis dolor. Fusce tincidunt convallis velit ut convallis. Fusce ut tempor mi. Praesent auctor massa ex, vel varius libero consequat a. Suspendisse in mi maximus, semper ipsum non, molestie odio.
+
+                    Donec eget nulla lectus. Ut vel dictum elit. Morbi nec elit nec diam fringilla sagittis a nec velit. Ut scelerisque consectetur maximus. Suspendisse vel suscipit mi. Nunc euismod volutpat iaculis. Vivamus in dui pretium, blandit tellus at, efficitur lectus. In nec libero dapibus, suscipit mi sed, faucibus nibh. Maecenas et maximus tortor, vitae semper mi. Fusce blandit turpis ut lectus aliquam porttitor.
+                    
+                    Ut scelerisque arcu eu ligula auctor, sed rhoncus metus pellentesque. Integer accumsan turpis congue, molestie risus in, consectetur ex. Nunc auctor metus nec euismod sodales. Curabitur luctus eros in lacus bibendum tempus. Donec sed hendrerit elit. Etiam semper scelerisque est et condimentum. Vestibulum id porttitor erat. Praesent convallis fringilla risus, a bibendum lectus scelerisque nec.
+                    
+                    Aenean rhoncus tristique mauris ut euismod. Proin tristique semper magna, in maximus leo sodales ut. Vestibulum eleifend pulvinar leo ut sollicitudin. Nunc eget dignissim ex. Aenean eget augue pulvinar turpis ullamcorper sollicitudin. Sed vel nunc mauris. Vivamus fermentum eget sapien at laoreet. Maecenas quis magna sit amet sem bibendum ornare. Sed molestie porta diam, et tincidunt tellus cursus eget. Mauris lorem mi, lobortis ultrices erat nec, tincidunt lacinia leo.
+                    
+                    Praesent porttitor, risus sed tincidunt tincidunt, mauris erat mollis neque, at aliquet tellus nisi eu odio. Maecenas nunc libero, molestie at ultricies quis, pretium eu ante. Fusce est turpis, accumsan eu blandit in, pellentesque quis metus. Etiam suscipit, augue ac blandit fermentum, nisl enim eleifend risus, convallis commodo sem tortor ac sem. Donec porta mi felis, ac fermentum leo pellentesque sed. Phasellus at eleifend nunc, sed ornare metus. Integer at ipsum mi. Etiam tincidunt enim vitae semper tempor. Vestibulum consectetur, turpis id ullamcorper rhoncus, arcu turpis commodo ex, non dignissim dui magna sit amet orci. Nulla tempus, tellus at varius ultrices, ligula massa condimentum lorem, ac finibus purus urna at leo. Vestibulum ut lorem tortor.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">no thanks</button>
+                  <button type="button" class="btn btn-info">I AGREE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button type="button" class="btn btn-info">SIGN ME UP!</button>
+      </div><!--MODAL SCROLL END-->
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 mb-3" >
         <h2>Let's Go!</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
-      <div class="col-sm-6">
-          <img src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
+      <div class="col-sm-6 d-flex align-items-center">
+          <img src="img/adventure.jpg" class="img-fluid rounded" alt="Let's go on adventure!">
       </div>
     </div>
     <div class="row">
-        <div class="col-sm-6">
-            <img src="img/fun.jpg" class="img-fluid" alt="Lets have fun!">
+        <div class="col-sm-6 d-flex align-items-center">
+            <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 mt-2">
           <h2>Adventure Awaits</h2>
           <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 mt-3 mb-5">
         <h2>Destinations</h2>
         <table class="table table-striped">
           <thead>
@@ -103,7 +187,34 @@
         </table>
       </div>
     </div>
+    
     <div class="row">
+      <div class="col-sm-12 mb-5"><!--CAROUSEL START-->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/slider-1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-3.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+      </div><!--CAROUSEL END-->
+    </div>
+
+    <div class="row mb-5">
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
@@ -121,11 +232,23 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-8 mt-5">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
+        <div class="dropdown d-flex justify-content-center"><!--DROP DOWN BUTTON START-->
+            <button class="btn btn-info btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Preferred Airline
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Alaska Airlines</a>
+              <a class="dropdown-item" href="#">Hawaiian Airlines</a>
+              <a class="dropdown-item" href="#">Virgin Airlines</a>
+              <a class="dropdown-item" href="#">Spirit Ailines</a>
+              <a class="dropdown-item" href="#">Southwest Airlines</a>
+            </div>
+          </div><!--DROP DOWN BUTTON END-->
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mt-1">
         <h4>Don't Forget These!</h4>
         <ul class="list-group">
           <li class="list-group-item">Cras justo odio</li>
@@ -137,33 +260,33 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-8 mb-4 mt-5">
         <form>
           <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
+          <input id="name" type="text" class="form-control form-group" placeholder="Name">
           <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
+          <input id="phone" type="phone" class="form-control form-group" placeholder="Phone">
           <label for="email">Email</label>
-          <input id="email" type="email" class="form-control" placeholder="Email">
-          <div class="form-check">
+          <input id="email" type="email" class="form-control form-group" placeholder="Email">
+          <div class="form-check form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
             <label class="form-check-label" for="exampleRadios1">
               Beach
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
             <label class="form-check-label" for="exampleRadios2">
               Mountain
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
             <label class="form-check-label" for="exampleRadios3">
               Island
             </label>
           </div>
-          <button type="submit" class="btn btn-info">Let's Travel</button>
+          <button type="submit" class="btn btn-info form-group">Let's Travel</button>
         </form>
       </div>
     </div>

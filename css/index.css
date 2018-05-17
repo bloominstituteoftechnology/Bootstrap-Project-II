@@ -22,6 +22,11 @@ h5 {
 .container {
   max-width: 800px;
 }
+button.btn.btn-link.collapse-button {
+  font-size: 20px;
+  font-weight: 600;
+  color: #17a2b8;
+}
 .footer {
   color: black;
   background: blanchedalmond;
