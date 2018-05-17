@@ -17,23 +17,29 @@
 </head>
 
 <body>
-  <div class="container-fluid sticky-top">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-3">
-            <h1 class="logo-heading">Fun Bus</h1>
-        </div>
-        <div class="col-9">
-          <nav class="nav d-flex justify-content-end">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav>
-        </div>
-      </div>
+<!-- Javascript Component: Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top container border-bottom rounded">
+    <h1 class="logo-heading">Fun Bus</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
     </div>
-  </div>
+  </nav>
   <div class="container">
     <div class="row mt-5 mb-3">
         <div class="col-sm-12">
@@ -155,6 +161,7 @@
       </div>
       <div class="col-sm-4">
         <h4>Don't Forget These!</h4>
+<!-- Javascript Component: Accordion -->
       <div id="accordion">
         <div class="card">
           <div class="card-header" id="headingOne">
