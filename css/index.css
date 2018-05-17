@@ -43,3 +43,20 @@ h5 {
   margin-top: 20px;
   padding-top: 20px;
 }
+.dropdown .blue button {
+  background: #17a2b8;
+}
+body {
+  height: 100%;
+  background: linear-gradient(180deg, #17a2b8, white, #17a2b8);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  background: white;
+}
+.footer {
+  color: #17a2b8;
+  background: white;
+  border: 1px solid #17a2b8;
+}
