@@ -31,12 +31,9 @@ h5 {
 .carousel {
   margin-top: 1.5%;
 }
-@media (max-width: 400px) {
-  .client_photos p {
-    display: flex;
-    flex-direction: column;
-  }
-  .client_photos p a {
-    margin: 5% 5%;
-  }
+.client_photos .card {
+  margin: 5% 0%;
+}
+.client_photos .card .collapse img {
+  width: 100%;
 }
