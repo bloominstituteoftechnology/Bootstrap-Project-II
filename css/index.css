@@ -42,3 +42,6 @@ h5 {
 .custom-form .button {
   margin-top: 15px;
 }
+.modal .modal-header {
+  background-color: #5255fc;
+}
