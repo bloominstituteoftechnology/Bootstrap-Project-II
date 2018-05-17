@@ -33,3 +33,13 @@ h5 {
 .fun img {
   width: 100%;
 }
+#accordion {
+  margin-top: 20px;
+}
+#accordion .card button {
+  font-family: 'indie-flower', cursive;
+}
+.dropdown {
+  margin-top: 20px;
+  padding-top: 20px;
+}
