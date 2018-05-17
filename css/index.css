@@ -27,3 +27,6 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+.background-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
