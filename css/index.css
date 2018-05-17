@@ -38,14 +38,20 @@ h5 {
 }
 #accordion .card button {
   font-family: 'indie-flower', cursive;
-  color: #17a2b8;
+  color: rgba(255, 187, 0, 0.849);
 }
 .dropdown {
   margin-top: 20px;
   padding-top: 20px;
 }
 .dropdown .blue button {
-  background: #17a2b8;
+  background: rgba(255, 187, 0, 0.849);
+}
+.changebtn button {
+  background: rgba(255, 187, 0, 0.849);
+}
+.exc button {
+  background: rgba(255, 187, 0, 0.849);
 }
 body {
   height: 100%;
