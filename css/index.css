@@ -14,18 +14,39 @@ h5 {
   border-bottom: 2px dashed silver;
 }
 .logo-heading {
+  color: #f7ce77;
+  text-shadow: 2px 2px black;
   padding: 20px 0 10px;
 }
-.nav a {
-  color: black;
+.custom-link {
+  color: #1ecebd;
 }
 .container {
   max-width: 800px;
 }
 .footer {
   color: black;
-  background: blanchedalmond;
+  background: #aff9c7;
   padding: 20px 0;
+}
+.header {
+  background: #F05773;
+}
+.header .link {
+  color: #1ecebd;
+}
+.fun-bus {
+  font-size: 3.2rem;
+  color: #1ecebd;
+  text-shadow: 2px 2px black;
+}
+.fun-head-1 {
+  background: #aff9c7;
+  padding: 10px;
+}
+.fun-head-2 {
+  background: #19b6af;
+  padding: 10px;
 }
 .custom-head-1 {
   font-size: 1.8rem;
@@ -50,4 +71,7 @@ h5 {
 }
 .custom-text-3 {
   text-shadow: 1px 1px white;
+}
+.custom-drop-btn {
+  background: #1ecebd;
 }

@@ -19,17 +19,25 @@
 <body>
   <div class="container-fluid sticky-top">
     <div class="container">
-      <div class="row">
+      <div class="row header">
         <div class="col-3">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <div class="col-9 d-flex justify-content-end align-items-center">
-          <nav class="nav">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav>
+          <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+ <!-- <a class="navbar-brand" href="#"></a>-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active custom-link" href="#">Home</a>
+            <a class="nav-link link" href="#">About Us</a>
+            <a class="nav-link link" href="#">Blog</a>
+            <a class="nav-link link" href="#">Contact</a>
+    </div>
+  </div>
+</nav>
         </div>
       </div>
     </div>
@@ -42,7 +50,7 @@
     </div>
     <div class="row mt-4">
       <div class="col-sm-12">
-        <h2>Welcome To Fun Bus!</h2>
+        <span><h2 class="fun-bus">Welcome To Fun Bus!</h2>
         <p>
             Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.
         </p>
@@ -50,7 +58,7 @@
     </div>
     <div class="row mt-4">
       <div class="col-sm-6">
-        <h2>Let's Go!</h2>
+        <h2 class="fun-head-1">Let's Go!</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
@@ -63,7 +71,7 @@
             <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
         </div>
         <div class="col-sm-6">
-          <h2>Adventure Awaits</h2>
+          <h2 class="fun-head-2">Adventure Awaits</h2>
           <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
@@ -178,6 +186,17 @@
       <div class="col-sm-8">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
+      <div class="dropdown">
+  <button type="button" class="btn btn-secondary dropdown-toggle custom-drop-btn" id="dropdownMenuButton" data-toggle="dropdown" data-toggle="tooltip"  data-placement="top" aria-haspopup="true" aria-expanded="false" title="Select your getaway!">
+  Plan your Adventure
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Hiking</a>
+    <a class="dropdown-item" href="#">Mountain</a>
+    <a class="dropdown-item" href="#">Island</a>
+  </div>
+</div>     
+      
       </div>
       <div class="col-sm-4">
         <h4>Don't Forget These!</h4>
