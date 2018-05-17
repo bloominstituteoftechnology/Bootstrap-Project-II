@@ -120,7 +120,7 @@
       <div class="col-sm-4 py-3">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">Get More Info</button>
       </div>
     </div>
 
@@ -201,7 +201,7 @@
               </label>
             </div>
           </div>
-          <button type="submit" class="btn btn-info">Let's Travel</button>
+          <button id="contactSubmitButton" type="submit" class="btn btn-info">Let's Travel</button>
         </form>
       </div>
     </div>
@@ -211,6 +211,28 @@
       </div>
     </div>
   </div><!-- container -->
+
+  <!-- BEGIN JavaScript Component: Modal -->
+  <div class="modal fade" id="contactSuccessModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Thank you!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>You are one step closer to riding the &nbsp;<span class="company-name">Fun Bus!</span></p>
+          <p>A representative will be in touch with you within the hour, so sit tight! 😄</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END JavaScript Component: Modal -->
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
