@@ -265,35 +265,70 @@
     <div class="row">
       <div class="col-sm-12">
         <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputName1">Name</label>
+              <input type="text" class="form-control" id="inputName1" placeholder="Name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPhone1">Phone</label>
+              <input type="text" class="form-control" id="inputPhone1" placeholder="Phone">
+            </div>
+          </div>
           <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" type="text" class="form-control form-control-sm" placeholder="Name">
-            <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control form-control-sm" placeholder="Phone">
-            <label for="email">Email</label>
-            <input id="email" type="text" class="form-control form-control-sm" placeholder="Email">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
           </div>
-
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Beach
-            </label>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Island
-            </label>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-            <label class="form-check-label" for="exampleRadios3">
-              Mountain
-            </label>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
           </div>
-          <button type="submit" class="btn btn-info">Let's Travel</button>
+          <div class="form-group form-check-inline">
+            <div class="form-check">
+              <input class="form-check-input" name="exampleRadio" type="radio" id="exampleRadio1" value="option1">
+              <label class="form-check-label" for="exampleRadio1">
+                Beach
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name="exampleRadio" type="radio" id="exampleRadio2" value="option2">
+              <label class="form-check-label" for="exampleRadio2">
+                Island
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name="exampleRadio" type="radio" id="exampleRadio3" value="option3">
+              <label class="form-check-label" for="exampleRadio3">
+                Mountain
+              </label>
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-info">Let's Travel</button>
+          </div>
         </form>
+        <!-- Contact Form -->
       </div>
     </div>
     <div class="row footer mt-3">
