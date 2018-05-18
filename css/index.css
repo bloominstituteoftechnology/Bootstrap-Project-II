@@ -27,3 +27,43 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+.adventure img {
+  width: 100%;
+}
+.fun img {
+  width: 100%;
+}
+#accordion {
+  margin-top: 20px;
+}
+#accordion .card button {
+  font-family: 'indie-flower', cursive;
+  color: rgba(255, 187, 0, 0.849);
+}
+.dropdown {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.dropdown .blue button {
+  background: rgba(255, 187, 0, 0.849);
+}
+.changebtn button {
+  background: rgba(255, 187, 0, 0.849);
+}
+.exc button {
+  background: rgba(255, 187, 0, 0.849);
+}
+body {
+  height: 100%;
+  background: linear-gradient(180deg, white, rgba(255, 187, 0, 0.849), white);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  background: white;
+}
+.footer {
+  color: #17a2b8;
+  background: white;
+  border: 1px solid #17a2b8;
+}
