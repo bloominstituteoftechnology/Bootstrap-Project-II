@@ -17,7 +17,7 @@
   <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="116">
   <div class="container-fluid sticky-top">
     <div class="container custom-nav">
       <div class="row">
@@ -37,16 +37,16 @@
                   <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#go">Go</a>
+                  <a class="nav-link" href="#">Go</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Activities</a>
+                  <a class="nav-link dropdown-toggle" href="#activities" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Do</a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#sun">Fun in the Sun</a>
+                    <a class="dropdown-item" href="#destinations">Destinations</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#mountain">Mountain Excursion</a>
+                    <a class="dropdown-item" href="#activities">Activities</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#island">Island Getaway</a>
+                    <a class="dropdown-item" href="#beforeYouGo">Before You Go</a>
                   </div>
                 </li>
                 <li class="nav-item">
@@ -66,7 +66,7 @@
 
 
 
-  <div class="container custom-container" data-spy="scroll" data-target="#navbar" data-offset="0">
+  <div class="container" id="home">
     <div class="row">
       <div class="col-sm-12">
         <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
@@ -74,7 +74,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12 my-3">
-        <h2 id="home">Welcome To Fun Bus!</h2>
+        <h2 >Welcome To Fun Bus!</h2>
         <p>
           Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website
           expedition.
@@ -103,7 +103,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12 my-3">
-        <h2>Destinations</h2>
+        <h2 id="destinations">Destinations</h2>
         <table class="table table-striped">
           <thead>
             <tr>
@@ -172,8 +172,8 @@
 
 
     <div class="row">
-      <div class="col-sm-4 my-3">
-        <h4 id="sun">Fun In The Sun</h4>
+      <div class="col-sm-4 my-3" id="activities">
+        <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#funModal">Get More Info</button>
 
@@ -199,7 +199,7 @@
         </div>
       </div>
       <div class="col-sm-4 my-3">
-        <h4 id="mountain">Mountain Excursion</h4>
+        <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#mountainModal">Get More Info</button>
 
@@ -225,7 +225,7 @@
         </div>
       </div>
       <div class="col-sm-4 my-3">
-        <h4 id="island">Island Getaway</h4>
+        <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#islandModal">Get More Info</button>
 
@@ -252,7 +252,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-8 my-3">
+      <div class="col-sm-8 my-3" id="beforeYouGo">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion
           wanderlust website WordPress adventure darn website darn.</p>
