@@ -15,8 +15,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-
-<body>
+  <body data-spy="scroll" data-target="#navbar-fun-bus" data-offset="50">
+  
   <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row header">
@@ -24,25 +24,32 @@
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <div class="col-9 d-flex justify-content-end align-items-center">
-          <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+          <nav id="navbar-fun-bus" class="navbar navbar-expand-md navbar-light bg-transparent">
  <!-- <a class="navbar-brand" href="#"></a>-->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-link active custom-link" href="#">Home</a>
-            <a class="nav-link link" href="#">About Us</a>
-            <a class="nav-link link" href="#">Blog</a>
-            <a class="nav-link link" href="#">Contact</a>
-    </div>
-  </div>
-</nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active link" href="#home">Home</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#about">About Us</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#destination">Destinations</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+          
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container" id="home">
     <div class="row">
         <div class="col-sm-12">
             <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
@@ -56,7 +63,7 @@
         </p>
       </div>
     </div>
-    <div class="row mt-4">
+    <div class="row mt-4" id="about">
       <div class="col-sm-6">
         <h2 class="fun-head-1">Let's Go!</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
@@ -76,7 +83,7 @@
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
     </div>
-    <div class="row mt-4">
+    <div class="row mt-4" id="destination">
       <div class="col-sm-12">
         <h2 class="fun-head-3">Destinations</h2>
         <table class="table table-striped">
@@ -187,17 +194,43 @@
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       <div class="dropdown">
-  <button type="button" class="btn btn-secondary dropdown-toggle custom-btn" id="dropdownMenuButton" data-toggle="dropdown" data-toggle="tooltip"  data-placement="top" aria-haspopup="true" aria-expanded="false" title="Select your getaway!">
-  Plan your Adventure
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Hiking</a>
-    <a class="dropdown-item" href="#">Mountain</a>
-    <a class="dropdown-item" href="#">Island</a>
-  </div>
-</div>     
+        <button type="button" class="btn btn-secondary dropdown-toggle custom-btn" id="dropdownMenuButton" data-toggle="dropdown" data-toggle="tooltip"  data-placement="top" aria-haspopup="true" aria-expanded="false" title="Select your getaway!">
+        Plan your Adventure
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Hiking</a>
+          <a class="dropdown-item" href="#">Mountain</a>
+          <a class="dropdown-item" href="#">Island</a>
+        </div>
+    </div>
       
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary custom-btn-2" data-toggle="modal" data-target="#funModal">
+  Click Me!
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="funModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">You win!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
+      <div class="modal-body">
+        Congratulations, you clicked a modal!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+      
+     </div>
       <div class="col-sm-4">
         <h4>Don't Forget These!</h4>
         <ul class="list-group">
@@ -209,8 +242,9 @@
         </ul>
       </div>
     </div>
-    <div class="row mt-4">
+    <div class="row mt-4" id="contact">
       <div class="col-sm-12">
+        <h4 class="contact">Contact</h4>
          <form class="needs-validation" novalidate>
             <div class="form-group">
                 <label for="validationCustomName">Name</label>
@@ -259,8 +293,6 @@
           </div>
           <button type="submit" class="btn btn-info mt-2 custom-btn">Let's Travel</button>
         </form>
-      </div>
-    </div>
       </div>
     </div>
     <div class="row footer mt-4">

@@ -2,8 +2,19 @@
     background: @pink;
 }
 
-.nav-link {
-    color: @turquoise;
+.nav-pills {
+    li {
+        a.active {
+            background-color: @turquoise!important;
+            color: white!important;
+        }
+    }
+}
+
+li {
+    a.link{
+        color: @light-turquoise!important;
+    }
 }
 
 .fun-bus {
@@ -58,5 +69,22 @@
 }
 
 .custom-btn {
-    background: @turquoise;
+    background: @turquoise
+}
+
+.custom-btn:hover {
+    background: darken(@turquoise, 10%);
+}
+
+.custom-btn-2 {
+    background: @pink;
+}
+
+.custom-btn-2:hover {
+    background: darken(@pink, 10%);
+}
+
+.contact {
+    background: @yellow;
+    padding: 10px;
 }

@@ -2,6 +2,9 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  position: relative;
+}
 h1,
 h2,
 h3,
@@ -11,15 +14,18 @@ h5 {
 }
 .container-fluid {
   background-color: white;
-  border-bottom: 2px dashed silver;
+  border-bottom: 4px dotted #19b6af;
 }
 .logo-heading {
   color: #f7ce77;
   text-shadow: 2px 2px black;
   padding: 20px 0 10px;
 }
-.custom-link {
-  color: #1ecebd;
+.nav-pill {
+  background: #1ecebd;
+}
+.link {
+  color: white;
 }
 .container {
   max-width: 800px;
@@ -32,8 +38,12 @@ h5 {
 .header {
   background: #F05773;
 }
-.nav-link {
-  color: #1ecebd;
+.nav-pills li a.active {
+  background-color: #1ecebd !important;
+  color: white!important;
+}
+li a.link {
+  color: #aff9c7 !important;
 }
 .fun-bus {
   font-size: 3.2rem;
@@ -78,4 +88,17 @@ h5 {
 }
 .custom-btn {
   background: #1ecebd;
+}
+.custom-btn:hover {
+  background: #18a194;
+}
+.custom-btn-2 {
+  background: #F05773;
+}
+.custom-btn-2:hover {
+  background: #ec284c;
+}
+.contact {
+  background: #f7ce77;
+  padding: 10px;
 }
