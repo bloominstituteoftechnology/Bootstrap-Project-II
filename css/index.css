@@ -22,6 +22,11 @@ h5 {
 .container {
   max-width: 800px;
 }
+@media (max-width: 768px) {
+  .form-carousel {
+    flex-direction: column-reverse;
+  }
+}
 .footer {
   color: black;
   background: blanchedalmond;
