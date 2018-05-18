@@ -2,6 +2,9 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  position: relative;
+}
 h1,
 h2,
 h3,
@@ -11,19 +14,91 @@ h5 {
 }
 .container-fluid {
   background-color: white;
-  border-bottom: 2px dashed silver;
+  border-bottom: 4px dotted #19b6af;
 }
 .logo-heading {
+  color: #f7ce77;
+  text-shadow: 2px 2px black;
   padding: 20px 0 10px;
 }
-.nav a {
-  color: black;
+.nav-pill {
+  background: #1ecebd;
+}
+.link {
+  color: white;
 }
 .container {
   max-width: 800px;
 }
 .footer {
   color: black;
-  background: blanchedalmond;
+  background: #aff9c7;
   padding: 20px 0;
+}
+.header {
+  background: #F05773;
+}
+.nav-pills li a.active {
+  background-color: #1ecebd !important;
+  color: white!important;
+}
+li a.link {
+  color: #aff9c7 !important;
+}
+.fun-bus {
+  font-size: 3.2rem;
+  color: #1ecebd;
+  text-shadow: 2px 2px black;
+}
+.fun-head-1 {
+  background: #aff9c7;
+  padding: 10px;
+}
+.fun-head-2 {
+  background: #19b6af;
+  padding: 10px;
+}
+.fun-head-3 {
+  background: #f7ce77;
+  padding: 10px;
+}
+.custom-head-1 {
+  font-size: 1.8rem;
+  padding-left: 0;
+  text-shadow: 2px 2px black;
+}
+.custom-head-2 {
+  font-size: 1.8rem;
+  padding-left: 0;
+  text-shadow: 2px 2px white;
+}
+.custom-head-3 {
+  font-size: 1.8rem;
+  padding-left: 0;
+  text-shadow: 2px 2px white;
+}
+.custom-text-1 {
+  background: rgba(255, 255, 255, 0.5);
+}
+.custom-text-2 {
+  background: rgba(255, 255, 255, 0.5);
+}
+.custom-text-3 {
+  background: rgba(255, 255, 255, 0.5);
+}
+.custom-btn {
+  background: #1ecebd;
+}
+.custom-btn:hover {
+  background: #18a194;
+}
+.custom-btn-2 {
+  background: #F05773;
+}
+.custom-btn-2:hover {
+  background: #ec284c;
+}
+.contact {
+  background: #f7ce77;
+  padding: 10px;
 }
