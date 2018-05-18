@@ -37,10 +37,10 @@
                   <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Go</a>
+                  <a class="nav-link" href="#go">Go</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#activities" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Do</a>
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Do</a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#destinations">Destinations</a>
                     <div class="dropdown-divider"></div>
@@ -227,28 +227,7 @@
       <div class="col-sm-4 my-3">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#islandModal">Get More Info</button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="islandModal" tabindex="-1" role="dialog" aria-labelledby="islandModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="islandModalLabel">Island Getaway</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-              </div>
-              <div class="modal-body">
-                Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Some tooltip text">Get More Info</button>
       </div>
     </div>
     <div class="row">
@@ -373,6 +352,11 @@
         });
       }, false);
     })();
+  </script>
+  <script type="text/javascript">
+  $(function () {
+$('[data-toggle="tooltip"]').tooltip()
+});
   </script>
 </body>
 
