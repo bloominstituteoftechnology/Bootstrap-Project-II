@@ -25,11 +25,6 @@ h5 {
 .custom-nav {
   max-width: 980px;
 }
-.custom-container {
-  height: 800px;
-  position: relative;
-  overflow-y: scroll;
-}
 .footer {
   color: black;
   background: blanchedalmond;
