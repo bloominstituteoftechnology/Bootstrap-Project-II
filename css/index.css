@@ -22,8 +22,26 @@ h5 {
 .container {
   max-width: 800px;
 }
+.table {
+  border: 3px solid black;
+}
+.table tbody {
+  border: 3px solid black;
+}
 .footer {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+}
+.btn:hover {
+  background-color: darkblue;
+}
+.custom-form .form-check {
+  padding: 10px;
+}
+.custom-form .button {
+  margin-top: 15px;
+}
+.modal .modal-header {
+  background-color: #5255fc;
 }
