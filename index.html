@@ -29,6 +29,8 @@
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
+
+            <!-- JavaScript Component - Dropdown -->
             <div class="dropdown">
               <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Contact Us
@@ -149,6 +151,8 @@
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+
+        <!-- JavaScript Component - Collapse -->
         <p>
           <button class="btn btn-primary btn-info secon-button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Get More Info</button>
         </p>
@@ -202,11 +206,14 @@
         </ul>
       </div>
     </div>
-    <div class="row form mt-4">
-      <div class="col-sm-12">
+    <div class="row form mt-3">
+      <div class="col-sm-12 new-form">
+        <h3>Ready for a vacation?</h3>
+
+        <!-- Validation -->
         <form class="needs-validation" novalidate>
           <div class="form-group">
-            <label for="name">Name</label>
+            <label class="adjust" for="name">Name</label>
             <input id="name" type="text" class="form-control" placeholder="Name" required>
             <div class="valid-feedback">
               Looks good!
@@ -214,7 +221,7 @@
             <div class="invalid-feedback">
               Please enter your name.
             </div>
-            <label for="phone">Phone</label>
+            <label class="adjust" for="phone">Phone</label>
             <input id="phone" type="phone" class="form-control" placeholder="Phone" required>
             <div class="valid-feedback">
               Looks good!
@@ -222,7 +229,7 @@
             <div class="invalid-feedback">
               Please enter your phone number.
             </div>
-            <label for="email">Email</label>
+            <label class="adjust" for="email">Email</label>
             <input id="email" type="email" class="form-control" placeholder="Email" required>
             <div class="valid-feedback">
               Looks good!
@@ -250,7 +257,11 @@
                 Island
               </label>
             </div>
+
+            <!-- JavaScript Component - Tooltip -->
             <button type="submit button" class="btn btn-info btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Keep in mind this does not include tax.">Let's Travel</button>
+
+            <!-- JavaScript Component - Modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Learn More
 </button>

@@ -30,3 +30,11 @@ h5 {
 .dropdown-toggle {
   background: white;
 }
+.form-group .adjust {
+  margin-bottom: 3px;
+  margin-top: 12px;
+}
+.new-form {
+  border: 1px solid #e6e6e6;
+  margin-top: 20px;
+}
