@@ -70,7 +70,7 @@ li a.link {
 .custom-head-2 {
   font-size: 1.8rem;
   padding-left: 0;
-  text-shadow: 2px 2px gray;
+  text-shadow: 2px 2px white;
 }
 .custom-head-3 {
   font-size: 1.8rem;
@@ -78,14 +78,13 @@ li a.link {
   text-shadow: 2px 2px white;
 }
 .custom-text-1 {
-  text-shadow: 1px 1px black;
   background: rgba(255, 255, 255, 0.5);
 }
 .custom-text-2 {
-  text-shadow: 1px 1px gray;
+  background: rgba(255, 255, 255, 0.5);
 }
 .custom-text-3 {
-  text-shadow: 1px 1px white;
+  background: rgba(255, 255, 255, 0.5);
 }
 .custom-btn {
   background: #1ecebd;
