@@ -12,6 +12,35 @@
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+  <script type="text/javascript">
+  $(function () {
+$('[data-toggle="tooltip"]').tooltip()
+});
+  </script>
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -49,6 +78,7 @@
                     <a class="dropdown-item" href="#beforeYouGo">Before You Go</a>
                   </div>
                 </li>
+                <!-- Dropdown Component -->
                 <li class="nav-item">
                   <a class="nav-link" href="#contact">Contact Us</a>
                 </li>
@@ -59,12 +89,11 @@
               </form>
             </div>
           </nav>
+          <!-- Navbar Component -->
         </div>
       </div>
     </div>
   </div>
-
-
 
   <div class="container" id="home">
     <div class="row">
@@ -230,6 +259,7 @@
         <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Some tooltip text">Get More Info</button>
       </div>
     </div>
+    <!-- Tooltip component -->
     <div class="row">
       <div class="col-sm-8 my-3" id="beforeYouGo">
         <h4>Before You Go...</h4>
@@ -250,6 +280,7 @@
           <li class="list-group-item">Vestibulum at eros</li>
         </ul>
       </div>
+      <!-- Collapse componenent  -->
       </div>
     </div>
     <div class="row">
@@ -320,6 +351,7 @@
             <button type="submit" class="btn btn-info">Let's Travel</button>
           </div>
         </form>
+        <!-- Form validated -->
       </div>
     </div>
     <div class="row footer">
@@ -329,35 +361,7 @@
     </div>
   </div>
   <!-- container -->
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/index.js"></script>
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-  </script>
-  <script type="text/javascript">
-  $(function () {
-$('[data-toggle="tooltip"]').tooltip()
-});
-  </script>
 </body>
+<!-- Scrollspy componenent -->
 
 </html>
