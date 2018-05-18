@@ -42,17 +42,18 @@
     </div>
     <div class="row">
       <div class="col-12 mb-4">
-        <div id="list-example" class="list-group">
+        <div id="list-example" class="list-group"> <!--Scrollspy component-->
             <a class="list-group-item list-group-item-action" href="#list-item-1">Welcome to the Fun Bus!</a>
             <a class="list-group-item list-group-item-action" href="#list-item-2">Destinations</a>
             <a class="list-group-item list-group-item-action" href="#list-item-3">Before You Go! </a>
             </div>
         </div> 
-      <div class="col-sm-12 data-spy="scroll" data-target="#navbar-fun-bus" data-offset="0"">
-        <h2>Welcome To Fun Bus!</h2>
+      <div class="col-sm-12 scrollspy-example" data-spy="scroll" data-target="#list-example" data-offset="0">
+        <h2 id="list-item-1">Welcome To Fun Bus!</h2>
         <p>
             Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.
         </p>
+      </div>
       </div>
     <div class="row">
       <div class="col-sm-6">
@@ -75,8 +76,8 @@
         </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
-        <h2>Destinations</h2>
+      <div class="col-sm-12 scrollspy-example" data-spy="scroll" data-target="#list-example" data-offset="0">
+        <h2 id="list-item-2">Destinations</h2>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> <!-- Added carousel-->
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -136,8 +137,9 @@
         </table>
       </div>
     </div>
-    <div class="row justify-content-center">
-           <div class="accordion" id="accordionExample"> <!--Added collapse component-->
+    <div class="row">
+          <div class="col-12">
+           <div class=" accordion" id="accordionExample"> <!--Added collapse component-->
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h3 class="mb-1">
@@ -170,7 +172,7 @@
                 </div>
               </div>
               <div class="card mb- 1">
-                <h class="card-header" id="headingThree">
+                <div class="card-header" id="headingThree">
                   <h3 class="mb-1">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         Island Getaway
@@ -189,8 +191,8 @@
       </div>
     <div class="container">
     <div class="row">
-      <div class="col-sm-8 mt-5">
-        <h4>Before You Go...</h4>
+      <div class="col-sm-8 mt-5 scrollspy-example" data-spy="scroll" data-target="#list-example" data-offset="0">
+        <h4 id="list-item-3">Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
       <div class="col-sm-4 mt-5">
