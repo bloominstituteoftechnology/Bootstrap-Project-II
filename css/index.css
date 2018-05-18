@@ -9,12 +9,11 @@ h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
-.container-fluid {
-  background-color: white;
-  border-bottom: 2px dashed silver;
+.cont-head {
+  background-color: #91D4D4;
 }
 .logo-heading {
-  padding: 20px 0 10px;
+  font-size: 2.5rem;
 }
 .nav a {
   color: black;
@@ -22,8 +21,11 @@ h5 {
 .container {
   max-width: 800px;
 }
+.background-grad {
+  background: linear-gradient(#91D4D4, #026977);
+}
 .footer {
   color: black;
-  background: blanchedalmond;
+  background: #026977;
   padding: 20px 0;
 }
