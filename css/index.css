@@ -1,6 +1,7 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  /*position: relative;*/
 }
 h1,
 h2,
@@ -8,6 +9,11 @@ h3,
 h4,
 h5 {
   font-family: 'Indie Flower', cursive;
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.7rem;
+  }
 }
 .container-fluid {
   background-color: white;
@@ -21,6 +27,43 @@ h5 {
 }
 .container {
   max-width: 800px;
+}
+.custom-btn {
+  background-color: #1CB2B2;
+  border: teal;
+}
+.custom-btn:hover {
+  background-color: #eee;
+}
+.custom-modal {
+  background-color: ##1CB2B2;
+}
+.custom-hover:hover {
+  background-color: #1CB2B2;
+}
+.custom-scroll {
+  height: 500px;
+  overflow-y: scroll;
+  background-color: #FFE7AA;
+  /*#f8f9fa*/
+}
+.navbar-light .navbar-brand {
+  color: #1CB2B2;
+}
+@media (max-width: 400px) {
+  .custom-adv {
+    margin-top: 4%;
+  }
+}
+@media (max-width: 400px) {
+  .custom-n {
+    margin-top: 4%;
+  }
+}
+@media (max-width: 400px) {
+  .custom-text {
+    margin-right: -20px;
+  }
 }
 .footer {
   color: black;

@@ -2,10 +2,17 @@
 
 html, body {
     font-family: 'Roboto', sans-serif;
+    /*position: relative;*/
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Indie Flower', cursive;
+}
+
+h1{
+	@media(max-width: 400px){
+	font-size: 1.7rem;
+}
 }
 
 .container-fluid {
@@ -14,7 +21,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .logo-heading {
-    padding: 20px 0 10px;
+    padding: 20px 0 10px;	
 }
 
 .nav {
@@ -26,6 +33,55 @@ h1, h2, h3, h4, h5 {
 .container {
     max-width: 800px;
 }
+
+.custom-btn{
+	background-color: #1CB2B2;
+	border: teal;
+
+	&:hover{
+	background-color: #eee;
+	}
+}
+
+.custom-modal{
+	background-color: #1CB2B2;
+}
+
+.custom-hover{
+	&:hover{
+	background-color: #1CB2B2;
+}
+}
+
+.custom-scroll{
+	height: 500px; 
+	overflow-y: scroll;
+	background-color: #ffebcd; /*#f8f9fa*/
+}
+
+.navbar-light .navbar-brand{
+	color: #1CB2B2;
+}
+
+.custom-adv{
+	@media(max-width: 400px){
+	margin-top: 4%;
+	}
+}
+
+.custom-n{
+	@media(max-width: 400px){
+        margin-top: 4%;
+	}
+}
+
+.custom-text{
+	@media(max-width: 400px){
+	margin-right:-20px;
+}
+}
+
+
 
 .footer {
     color: black;
