@@ -264,45 +264,21 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <form>
+        <form class="needs-validation">
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputName1">Name</label>
-              <input type="text" class="form-control" id="inputName1" placeholder="Name">
+              <input type="text" class="form-control" id="inputName1" placeholder="Name" required>
+              <div class="invalid-tooltip">Please enter a name</div>
             </div>
             <div class="form-group col-md-6">
               <label for="inputPhone1">Phone</label>
-              <input type="text" class="form-control" id="inputPhone1" placeholder="Phone">
+              <input type="text" class="form-control" id="inputPhone1" placeholder="Phone" required>
             </div>
           </div>
           <div class="form-group">
             <label for="inputEmail">Email</label>
-            <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-          </div>
-          <div class="form-group">
-            <label for="inputAddress2">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="form-group col-md-4">
-              <label for="inputState">State</label>
-              <select id="inputState" class="form-control">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="form-group col-md-2">
-              <label for="inputZip">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
+            <input type="email" class="form-control" id="inputEmail1" placeholder="Email" required>
           </div>
           <div class="form-group form-check-inline">
             <div class="form-check">
