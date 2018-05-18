@@ -79,6 +79,7 @@ li a.link {
 }
 .custom-text-1 {
   text-shadow: 1px 1px black;
+  background: rgba(255, 255, 255, 0.5);
 }
 .custom-text-2 {
   text-shadow: 1px 1px gray;
