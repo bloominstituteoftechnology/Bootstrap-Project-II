@@ -30,3 +30,11 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+.table tr {
+  cursor: pointer;
+}
+.hiddenRow {
+  padding: 0 5% !important;
+  background-color: white;
+  font-size: 1rem;
+}
