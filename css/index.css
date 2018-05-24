@@ -7,17 +7,19 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 .container-fluid {
-  background-color: white;
-  border-bottom: 2px dashed silver;
+  background-color: #c3def9;
+  border-bottom: 2px dashed #0a5f8a;
+  color: #0a5f8a;
 }
 .logo-heading {
   padding: 20px 0 10px;
 }
 .nav a {
-  color: black;
+  color: #0a5f8a;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 .container {
   max-width: 800px;
@@ -26,4 +28,9 @@ h5 {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+}
+.main-container {
+  background-color: #c3def9;
+  color: #0a5f8a;
+  font-family: 'Gloria Hallelujah', cursive;
 }

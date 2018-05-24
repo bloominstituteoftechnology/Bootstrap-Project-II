@@ -5,12 +5,18 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
+// Variables
+@bahama-blue: #026395;
+@tropical-blue: #c3def9;
+@venice-blue: #0a5f8a;
+
 .container-fluid {
-    background-color:white;
-    border-bottom: 2px dashed silver;    
+    background-color: @tropical-blue;
+    border-bottom: 2px dashed @venice-blue; 
+    color: @venice-blue;   
 }
 
 .logo-heading {
@@ -19,7 +25,8 @@ h1, h2, h3, h4, h5 {
 
 .nav {
     a {
-        color: black;
+        color: @venice-blue;
+        font-family: 'Gloria Hallelujah', cursive;
     }
 }
 
@@ -31,4 +38,10 @@ h1, h2, h3, h4, h5 {
     color: black;
     background: blanchedalmond;
     padding: 20px 0;
+}
+
+.main-container {
+    background-color: @tropical-blue;
+    color: @venice-blue;
+    font-family: 'Gloria Hallelujah', cursive;
 }
