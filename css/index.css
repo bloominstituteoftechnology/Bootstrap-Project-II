@@ -1,3 +1,8 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 html,
 body {
   font-family: 'Roboto', sans-serif;
@@ -12,6 +17,10 @@ h5 {
 .container-fluid {
   background-color: white;
   border-bottom: 2px dashed silver;
+}
+.container-fluid .heading {
+  display: flex;
+  align-items: center;
 }
 .logo-heading {
   padding: 20px 0 10px;
