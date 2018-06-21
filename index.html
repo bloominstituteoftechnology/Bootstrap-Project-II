@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Fun Bus Travel Agency</title>
+  <title>Fun Boat Travel Agency</title>
 
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,14 +17,15 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <!-- Navbar -->
+  <div class="container-fluid sticky-top">
     <div class="container">
-      <div class="row">
+      <div class="row d-flex align-items-center">
         <div class="col-3">
-            <h1 class="logo-heading">Fun Bus</h1>
+            <h1 class="logo-heading">Fun Blimp</h1>
         </div>
         <div class="col-9">
-          <nav class="nav">
+          <nav class="nav align-center justify-content-end">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
@@ -34,13 +35,19 @@
       </div>
     </div>
   </div>
+
+
+  <!-- Main Container -->
   <div class="container">
+    <!-- Jumbotron -->
     <div class="row">
         <div class="col-sm-12">
-            <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
+            <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image of a fun bus">
         </div>
     </div>
-    <div class="row">
+
+    <!-- Top Content Header -->
+    <div class="row pt-3">
       <div class="col-sm-12">
         <h2>Welcome To Fun Bus!</h2>
         <p>
@@ -48,6 +55,7 @@
         </p>
       </div>
     </div>
+    <!-- Top Content 1 -->
     <div class="row">
       <div class="col-sm-6">
         <h2>Let's Go!</h2>
@@ -55,12 +63,13 @@
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-          <img src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
+          <img src="img/adventure.jpg" class="img-fluid rounded pt-3" alt="Let's go on adventure!">
       </div>
     </div>
+    <!-- Top Content 2 -->
     <div class="row">
         <div class="col-sm-6">
-            <img src="img/fun.jpg" class="img-fluid" alt="Lets have fun!">
+            <img src="img/fun.jpg" class="img-fluid rounded pt-3" alt="Lets have fun!">
         </div>
         <div class="col-sm-6">
           <h2>Adventure Awaits</h2>
@@ -68,6 +77,8 @@
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
     </div>
+
+    <!-- Services Table -->
     <div class="row">
       <div class="col-sm-12">
         <h2>Destinations</h2>
@@ -103,29 +114,65 @@
         </table>
       </div>
     </div>
-    <div class="row">
+
+    <!-- Carousel -->
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 img-fluid" src="img/slider-1.jpg" alt="Island Picture">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="img/slider-2.jpg" alt="Mountain Picture">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="img/slider-3.jpg" alt="Beach Picture">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+    </div>
+
+    <!-- Bottom Content 1 -->
+    <div class="row pt-3">
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Bring your suntan lotion!">Get More Info</button>
       </div>
       <div class="col-sm-4">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Bring your Jacket!">Get More Info</button>
       </div>
       <div class="col-sm-4">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Bring your swimtrunks!">Get More Info</button>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-8">
+
+    <!-- Bottom Content 2 -->
+    <div class="row pt-2">
+      <div class="col-sm-8 mt-3">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mt-3">
         <h4>Don't Forget These!</h4>
         <ul class="list-group">
           <li class="list-group-item">Cras justo odio</li>
@@ -136,38 +183,72 @@
         </ul>
       </div>
     </div>
+
+    <!-- Form -->
     <div class="row">
       <div class="col-sm-12">
         <form>
-          <label for="name">Name</label>
-          <input id="name" type="text" class="form-control" placeholder="Name">
-          <label for="phone">Phone</label>
-          <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Beach
-            </label>
+          <div class="form-group mt-2">
+            <label for="name">Name</label>
+            <input id="name" type="text" class="form-control" placeholder="Name">
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Mountain
-            </label>
+          <div class="form-group mt-2">
+            <label for="phone">Phone</label>
+            <input id="phone" type="phone" class="form-control" placeholder="Phone">
           </div>
-          <button type="submit" class="btn btn-info">Let's Travel</button>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll sometimes share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Travel Location</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Island
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Mountain
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Beach
+              </label>
+            </div>
+          </div>
+
+
+          <button type="submit" class="btn btn-info my-3">Let's Travel</button>
         </form>
       </div>
     </div>
+
+    <!-- Footer -->
     <div class="row footer">
       <div class="col-sm-12">
         Copyright Fun Bus 2018
       </div>
     </div>
+
   </div><!-- container -->
 
+  
+
+
     <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
     <script src="js/index.js"></script>
 </body>
 </html>
