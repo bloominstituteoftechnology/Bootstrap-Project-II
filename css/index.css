@@ -16,6 +16,15 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
+.nav {
+  height: 100%;
+  flex-direction: column;
+}
+@media (min-width: 520px) {
+  .nav {
+    flex-direction: row;
+  }
+}
 .nav a {
   color: black;
 }
@@ -26,4 +35,7 @@ h5 {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+}
+.footer .form-check {
+  margin-left: 2.25px;
 }

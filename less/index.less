@@ -18,6 +18,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav {
+    height: 100%;
+    flex-direction: column;
+
+    @media (min-width: 520px) {
+        flex-direction: row;
+    }
+
     a {
         color: black;
     }
@@ -31,4 +38,9 @@ h1, h2, h3, h4, h5 {
     color: black;
     background: blanchedalmond;
     padding: 20px 0;
+
+    .form-check {
+        margin-left: 2.25px;
+    }
 }
+
