@@ -17,11 +17,15 @@ h5 {
   padding: 20px 0 10px;
   font-size: 70px;
 }
-.nav {
-  margin-top: -5%;
-  background-color: grey;
+.customNav {
+  top: 0;
+  background-color: #17a2b8;
+  position: fixed;
+  width: 85%;
+  left: 80px;
+  margin-bottom: 10%;
 }
-.nav a {
+.customNav a {
   color: black;
 }
 .container {
@@ -48,4 +52,7 @@ h5 {
   padding: -5%;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+.custom-img {
+  margin-top: 10%;
 }
