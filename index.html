@@ -26,22 +26,22 @@
         <div class="col-9 ">
           <nav class="nav justify-content-end">
             <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#aboutus">About Us</a>
+            <a class="nav-link" href="#destinations">Destinations</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </nav>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
-    <div class="row">
+    <div class="row" id = "aboutus">
         <div class="col-sm-12">
             <img src="img/fun-bus.jpg" class="img-fluid rounded" alt="Responsive image">
         </div>
     </div>
     <div class="row">
-      <div class="col-sm-12 mt-2">
+      <div class="col-sm-12 mt-2" >
         <h2>Welcome To Fun Bus!</h2>
         <p>
             Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.
@@ -55,12 +55,12 @@
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-          <img src="img/adventure.jpg" class="img-fluid rounded" alt="Let's go on adventure!">
+          <img src="img/adventure.jpg" class="img-fluid rounded mb-4" alt="Let's go on adventure!">
       </div>
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
+            <img src="img/fun.jpg" class="img-fluid rounded mb-4" alt="Lets have fun!">
         </div>
         <div class="col-sm-6">
           <h2>Adventure Awaits</h2>
@@ -97,17 +97,24 @@
         </a>
       </div>
 
-    <div class="row">
+    <div class="row" id = "destinations">
       <div class="col-sm-12">
         <h2>Destinations</h2>
         <p><strong>Click on each button to find out more!</strong></p>
+
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-sm-4">
+        <h4>Fun In The Sun</h4>
+        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <!-- Beach Getaway Modal -->
-        <button type = "button " class= "btn btn-dark btn-lg" data-toggle= "modal" data-target= "#BeachModal">Beach Getaway</button>
+        <button type = "button " class= "btn btn-dark" data-toggle= "modal" data-target= "#BeachModal">More Info</button>
         <div class="modal fade" id="BeachModal" tabindex="-1" role="dialog" aria-labelledby="BeachModal" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Beach Getaway</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Fun in the Sun </h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -125,13 +132,17 @@
               </div>
             </div>
           </div>
+      </div>
+      <div class="col-sm-4">
+        <h4>Mountain Excursion</h4>
+        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <!-- Mountain Retreat Modal -->
-        <button type = "button" class = "btn btn-dark btn-lg" data-toggle = "modal" data-target = "#MountainModal">Mountain Retreat</button>
+        <button type = "button" class = "btn btn-dark" data-toggle = "modal" data-target = "#MountainModal">More Info</button>
         <div class="modal fade" id="MountainModal" tabindex="-1" role="dialog" aria-labelledby="BeachModal" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Mountain Retreat</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Mountain Excursion</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -149,14 +160,17 @@
               </div>
             </div>
           </div>
-
-      <!-- Paradise Island Modal -->
-      <button type = "button" class = "btn btn-dark btn-lg" data-toggle = "modal" data-target = "#ParadiseIsland">Paradise Island</button>
+      </div>
+      <div class="col-sm-4">
+        <h4>Island Getaway</h4>
+        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+        <!-- Paradise Island Modal -->
+      <button type = "button" class = "btn btn-dark " data-toggle = "modal" data-target = "#ParadiseIsland">More Info</button>
       <div class="modal fade" id="ParadiseIsland" tabindex="-1" role="dialog" aria-labelledby="BeachModal" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Paradise Island</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Island Getaway</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -174,34 +188,16 @@
             </div>
           </div>
         </div>
-
-      </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col-sm-4">
-        <h4>Fun In The Sun</h4>
-        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
-      </div>
-      <div class="col-sm-4">
-        <h4>Mountain Excursion</h4>
-        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
-      </div>
-      <div class="col-sm-4">
-        <h4>Island Getaway</h4>
-        <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-8 mt-4">
+      <div class="col-sm-8 mt-4 mb-4">
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
 
       <!-- Added Dropdown Javascript Menu -->
-      <div class="col-sm-4 mt-4 ">
+      <div class="col-sm-4 mt-5 ">
           <div class="dropdown">
               <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Things to Bring!
@@ -215,20 +211,20 @@
             </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row" id = "contact">
       <div class="col-sm-6">
         <form>
           <div class= "form-group"> 
             <label for="name">Name</label>
-            <input id="name" type="text" class="form-control" placeholder="Name">
+            <input id="name" type="text" class="form-control" placeholder="Name" required>
           </div>
           <div class= "form-group">
             <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control" placeholder="Phone">
+            <input id="phone" type="phone" class="form-control" placeholder="Phone" required>
           </div>
           <div class = "form-group">
             <label for"email">Email</label>
-            <input id= "email" type= "email" class = "form-control" placeholder = "Email">  
+            <input id= "email" type= "email" class = "form-control" placeholder = "Email" required>  
           </div>
           <div class = "form-group">
           <div class="form-check">
