@@ -27,3 +27,104 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.container {
+  width: 780px;
+  margin: auto;
+  border: 1px solid red;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+.logo-heading {
+  border: 2px solid orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+.main-content .top-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .top-content .btn-features {
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: #577ae4;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0 5px 5px -3px red;
+  -moz-box-shadow: 0 5px 5px -3px red;
+  box-shadow: 0 5px 5px -3px red;
+  color: white;
+  cursor: pointer;
+  flex-direction: column;
+}
+.main-content .middle-img {
+  display: block;
+  margin: 30px auto;
+}
+.main-content .bottom-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-content .bottom-content .btn-features {
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: #577ae4;
+  border: 1px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0 5px 5px -3px red;
+  -moz-box-shadow: 0 5px 5px -3px red;
+  box-shadow: 0 5px 5px -3px red;
+  color: white;
+  cursor: pointer;
+}
+.main-content .bottom-content .btn-features p {
+  padding-right: 20px;
+}
