@@ -10,11 +10,11 @@ h5 {
   font-family: 'Indie Flower', cursive;
 }
 .container-fluid {
-  background-color: white;
+  background-color: blanchedalmond;
   border-bottom: 2px dashed silver;
 }
 .logo-heading {
-  padding: 20px 0 10px;
+  padding: 10px 0 0;
 }
 .nav a {
   color: black;
@@ -26,4 +26,22 @@ h5 {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+  border-top: 2px dashed silver;
+}
+.btn {
+  background-color: pink;
+  border: pink;
+  color: #525151;
+}
+.btn:hover {
+  background-color: #ff8095;
+}
+.post-content {
+  background: none repeat scroll 0 0;
+  opacity: 1;
+  margin: 0 auto;
+  margin-top: -54px;
+}
+.thumbnail {
+  margin: 0 auto;
 }
