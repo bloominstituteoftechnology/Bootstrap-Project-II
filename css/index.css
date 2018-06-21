@@ -28,6 +28,14 @@ h5 {
   padding: 20px 0;
   text-align: center;
 }
+.modal-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.modal-header .modal-title {
+  margin-left: auto;
+}
 .card-header {
   background-color: #17a2b8;
 }
