@@ -15,6 +15,11 @@ h5 {
 }
 .logo-heading {
   padding: 20px 0 10px;
+  font-size: 70px;
+}
+.nav {
+  margin-top: -5%;
+  background-color: grey;
 }
 .nav a {
   color: black;
@@ -33,4 +38,14 @@ h5 {
   padding: 10px;
   border-radius: 10px;
   margin: 5% 8% 5% 0%;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+  margin-left: 35%;
+}
+.customContainer {
+  padding: -5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
