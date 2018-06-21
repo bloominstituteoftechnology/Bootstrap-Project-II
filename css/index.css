@@ -38,6 +38,12 @@ h5 {
 .card-header h5 {
   text-align: center;
 }
+.card-header h5 .btn:focus {
+  text-decoration: none;
+}
+.card-header h5 .btn:hover {
+  text-decoration: none;
+}
 .card-header h5 .btn-link {
   padding: 22px 30px;
   color: white;
