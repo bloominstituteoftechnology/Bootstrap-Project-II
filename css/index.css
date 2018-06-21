@@ -9,9 +9,6 @@ h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
-.sticky-top {
-  position: sticky;
-}
 .container-fluid {
   background-color: white;
   border-bottom: 2px dashed silver;
@@ -19,19 +16,11 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
-.nav {
-  display: flex;
-  justify-content: flex-end;
-}
-.nav a {
+a {
   color: black;
 }
 .container {
   max-width: 800px;
-}
-.container .rounded-img {
-  border: 1px solid white;
-  border-radius: 20px;
 }
 .container .form-group {
   border: 1px solid black;
