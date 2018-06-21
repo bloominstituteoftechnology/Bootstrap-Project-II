@@ -17,11 +17,73 @@
 </head>
 
 <body>
+
+<!--trying to make the nav bar hover over the image yet still be sticky, not sure it'll happen-->
+
+
+  <!--<div class="thumbnail">
+        <img src="img/fun-bus.jpg" class="img-fluid w-100" alt="Toy Bus in Sand" />
+        
+       <div class="wrapper">
+<div class="caption post-content">
+ <div class="container">
+    <div class="row">
+<div class="col-3">
+    <h1 class="logo-heading mb-0">Fun Bus</h1>
+</div>
+    <div class="col-9 d-flex justify-content-end align-items-center">
+
+        <nav class="navbar navbar-expand-lg navbar-light rounded" style="background-color: pink;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Contact
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Questions?</a>
+                  <a class="dropdown-item" href="#">Comments?</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Careers</a>
+                </div>
+              </li>
+        
+            </ul>
+          
+          </div>
+        </nav>
+    </div>
+  </div><!-- row-->
+</div><!--container-->
+
+  </div>
+
+        </div>
+  </div>
+
+
+    <div class="col-sm-12 p-0">
+        <img src="img/fun-bus.jpg" class="img-fluid w-100 bus" alt="Responsive image">
+    </div>
+
   <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
         <div class="col-3"> 
-            <h1 class="logo-heading">Fun Bus</h1>
+            <h1 class="logo-heading mb-0">Fun Bus</h1>
         </div>
         <div class="col-9 d-flex justify-content-end align-items-center">
 
@@ -57,26 +119,12 @@
               
               </div>
             </nav>
-
-
-
-
-          <!-- <nav class="nav">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav> -->
         </div>
       </div>
-    </div> <!-- container -->
-  </div>
+    </div> <!-- nav container -->
+  </div><!-- header container -->
+
   <div class="container mt-3">
-    <div class="row">
-        <div class="col-sm-12">
-            <img src="img/fun-bus.jpg" class="img-fluid rounded" alt="Responsive image">
-        </div>
-    </div>
     <div class="row">
       <div class="col-sm-12 mt-4">
         <h2>Welcome To Fun Bus!</h2>
@@ -105,12 +153,16 @@
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
     </div>
+  
+  
     <div class="row">
       <div class="col-sm-12 mt-4 mb-5">
+          <div class="container sticky-top">
         <h2>Destinations</h2>
+          </div>
         <table class="table table-striped mt-3">
           <thead>
-            <tr>
+            <tr style="background-color:pink">
               <th scope="col">Location</th>
               <th scope="col">Activity</th>
               <th scope="col">Airfare</th>
@@ -140,6 +192,7 @@
         </table>
       </div>
     </div>
+  </div><!-- container-->
 
 
 <!--     CaRoUsEl!!!!!!       -->
@@ -174,20 +227,20 @@
 </div>
 
 
-
+<div class="container">
 
     <div class="row mt-5">
-      <div class="col-sm-4">
+      <div class="col-sm-4 mb-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mb-4">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info">Get More Info</button>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mb-5">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <button type="button" class="btn btn-info">Get More Info</button>
@@ -217,13 +270,15 @@
             <label for="name">Name</label>
             <input id="name" type="text" class="form-control" placeholder="Name">
           </div> 
-          <div class="form-group"> 
-            <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" type="email" class="form-control" placeholder="Email">
+          <div class="row">
+            <div class="col"> 
+              <label for="phone">Phone</label>
+              <input id="phone" type="phone" class="form-control" placeholder="Phone">
+            </div>
+            <div class="form-group col">
+              <label for="email">Email</label>
+              <input id="email" type="email" class="form-control" placeholder="Email">
+            </div>
           </div>
           <div class="form-check form-group">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
