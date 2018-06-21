@@ -22,6 +22,9 @@ h5 {
 .container {
   max-width: 800px;
 }
+.container .form-group {
+  border: 1px solid black;
+}
 .footer {
   color: black;
   background: blanchedalmond;
