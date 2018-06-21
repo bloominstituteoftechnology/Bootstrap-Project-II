@@ -15,6 +15,12 @@
 .header-container .header .header-row .logo-heading-container {
   padding-left: 0;
 }
+.header-container .header .header-row .logo-heading-container .logo-heading {
+  background-color: #f3fcff;
+  height: 100%;
+  text-align: center;
+  font-weight: 900;
+}
 .header-container .header .vertical-nav {
   width: 100%;
   display: flex;
@@ -27,9 +33,14 @@
   justify-content: flex-end;
   align-items: center;
   right: 0px;
+  width: 100%;
 }
 .header-container .header .vertical-nav .nav .nav-link {
   padding-right: 0;
+}
+.header-container .header .vertical-nav .nav .navbar-nav {
+  width: 100%;
+  justify-content: space-around;
 }
 .container {
   width: 100%;
