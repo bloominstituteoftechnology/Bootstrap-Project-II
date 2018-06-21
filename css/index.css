@@ -13,11 +13,6 @@ h5 {
   background-color: white;
   border-bottom: 2px dashed silver;
 }
-.container-fluid .row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .container-fluid .row .logo-heading {
   padding: 20px 0 10px;
 }
