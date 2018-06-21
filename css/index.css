@@ -30,13 +30,25 @@
 }
 .container {
   width: 100%;
+  padding: 15px 0;
 }
 .container .contact-us {
   width: 100%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+  margin: 0 auto;
   align-items: center;
+  background-color: #e94a4a9c;
+  background-image: url('../img/fun-bus.jpg');
+  background-repeat: no-repeat;
+  background-size: 254%;
+  background-position: 89%;
+  padding: 3% 0px;
+}
+.container .contact-us .contact-btn {
+  background-color: #17a2b8;
+  border-color: whitesmoke;
 }
 html,
 body {
@@ -64,6 +76,6 @@ h5 {
 }
 .footer {
   color: black;
-  background: blanchedalmond;
+  background: #BCD9E3;
   padding: 20px 0;
 }
