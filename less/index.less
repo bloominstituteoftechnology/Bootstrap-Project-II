@@ -1,11 +1,22 @@
 // Start here!
 
+
+//colors from imagecolorpicker
+//  #C2AEA4 light terracotta
+//  #B9705D dark terracotta
+//  #94C5C9  light aqua
+//  ##319396  dark aqua
+
 html, body {
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Indie Flower', cursive;
+}
+
+.sticky-top{
+  position: sticky;
 }
 
 .container-fluid {
@@ -18,6 +29,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav {
+    display: flex;
+    justify-content: flex-end;
+
     a {
         color: black;
     }
@@ -26,8 +40,14 @@ h1, h2, h3, h4, h5 {
 .container {
     max-width: 800px;
 
+    .rounded-img{
+      border: 1px solid white;
+      border-radius: 20px;
+    }
+
     .form-group{
       border: 1px solid black;
+      padding: 30px 2% 30px 2%;
     }
 }
 
