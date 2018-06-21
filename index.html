@@ -207,9 +207,39 @@
         </form>
       </div>
     </div>
-    <div class="row footer">
-      <div class="col-sm-12">
+    <div class="row footer align-items-center">
+      <div class="col-8">
         Copyright Fun Bus 2018
+      </div>
+      <div class="col-4 d-flex justify-content-end">
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-secondary">
+            Feedback
+          </button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="feedback" id="good" value="option1" checked>
+              <label class="form-check-label" for="good">
+                Good
+              </label>
+            </div>
+            <div class="form-check mt-1 mb-1">
+              <input class="form-check-input" type="radio" name="feedback" id="okay" value="option2">
+              <label class="form-check-label" for="okay">
+                Okay
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="feedback" id="bad" value="option3">
+              <label class="form-check-label" for="bad">
+                Bad
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div><!-- container -->
