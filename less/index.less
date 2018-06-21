@@ -19,7 +19,32 @@ h1, h2, h3, h4, h5 {
 
 .nav {
     a {
-        color: black;
+        color:#17a2b8;;
+    }
+    .dropdown-menu{
+        a{
+            &:hover{
+                color: white;
+                background-color: #17a2b8;
+            }
+        }
+    }
+}
+
+.navbar{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+        a{
+            ul{
+                li{
+                    a{
+                    &:hover{
+                        color: white;
+                        background-color: #17a2b8;
+                        }
+                    }
+                }
+            }
     }
 }
 
@@ -27,8 +52,26 @@ h1, h2, h3, h4, h5 {
     max-width: 800px;
 }
 
+th{
+    font-family: 'Indie Flower';
+    font-size: 1.2rem;
+}
+
+form{
+    font-family: 'Indie Flower';
+    font-size: 1.2rem;
+}
+
+.list-group-item{
+    &:hover{
+        color: white;
+        background-color: #17a2b8;
+    }
+}
+
 .footer {
     color: black;
     background: blanchedalmond;
     padding: 20px 0;
+    text-align: center;
 }
