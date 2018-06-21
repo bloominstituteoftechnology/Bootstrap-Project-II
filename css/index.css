@@ -15,8 +15,17 @@ h5 {
 }
 .logo-heading {
   padding: 20px 0 10px;
+  font-size: 70px;
 }
-.nav a {
+.customNav {
+  top: 0;
+  background-color: #17a2b8;
+  position: fixed;
+  width: 85%;
+  left: 80px;
+  margin-bottom: 10%;
+}
+.customNav a {
   color: black;
 }
 .container {
@@ -26,4 +35,24 @@ h5 {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+}
+.customform {
+  border: 1px solid #17a2b8;
+  box-shadow: 5px 5px #17a2b8;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5% 8% 5% 0%;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+  margin-left: 35%;
+}
+.customContainer {
+  padding: -5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.custom-img {
+  margin-top: 10%;
 }
