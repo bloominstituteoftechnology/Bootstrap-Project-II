@@ -12,8 +12,8 @@ Use the existing codebase as a starting point and accomplish the following tasks
 
 ## Task - Style and add to the form
 * Add an email input
-* Add a 3rd option in the radio buttons and name it "island"
-* Style the form by wrapping each input and all the radio buttons in a ```form-group```
+<!-- * Add a 3rd option in the radio buttons and name it "island" -->
+<!-- * Style the form by wrapping each input and all the radio buttons in a ```form-group``` -->
 
 ## Task - Build Utility classes into the site
 * Use the flex utility to vertically center and move the navigation to the far right of it's container.  
