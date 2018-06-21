@@ -22,10 +22,6 @@ h5 {
 .nav a {
   color: black;
 }
-.nav .active {
-  background-color: var(--info);
-  color: white;
-}
 .container {
   max-width: 800px;
 }
