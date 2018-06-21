@@ -7,10 +7,11 @@
   <title>Fun Bus Travel Agency</title>
 
   
+  <script src="js/jquery-3.3.1.min.js"></script>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
-  <script src="jquery-3.3.1.min.js"></script>
+  
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -260,7 +261,7 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    If you would like to contact a live agent please call 888-888-888.
+                    Your information was not submitted. If you would like to contact a live agent please call 888-888-888.
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -268,11 +269,6 @@
                 </div>
               </div>
             </div>
-          <!-- <script>
-              $("form").on('submit', function(){
-                $(".modal").show();
-              } );
-            </script> -->
         </form>
        
         <script>
@@ -294,6 +290,11 @@
                 });
               }, false);
             })();
+            $(document).ready(function() {
+              $("form").submit(function(){
+                alert("Submitted Thank You!");
+              });
+            });
             </script>
       </div>
     </div>
