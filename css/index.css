@@ -27,3 +27,22 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-class {
+  padding-right: 150px;
+}
+.main,
+.welcome,
+.lets-go,
+.adventure,
+.destinations,
+.triple-content,
+.before,
+.form,
+.footer {
+  margin-top: 20px;
+}
