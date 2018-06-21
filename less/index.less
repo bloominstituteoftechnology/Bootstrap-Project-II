@@ -26,9 +26,19 @@ h5 {
   padding: 20px 0 10px;
 }
 
-.nav {
+.navbar {
   a {
     color: black;
+
+    &:hover {
+      border-bottom: 5px solid var(--info);
+    }
+
+    &.active {
+      background-color: var(--info);
+      border-bottom: 5px solid var(--info);
+      color: white;
+    }
   }
 }
 

@@ -19,8 +19,16 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
-.nav a {
+.navbar a {
   color: black;
+}
+.navbar a:hover {
+  border-bottom: 5px solid var(--info);
+}
+.navbar a.active {
+  background-color: var(--info);
+  border-bottom: 5px solid var(--info);
+  color: white;
 }
 .container {
   max-width: 800px;
