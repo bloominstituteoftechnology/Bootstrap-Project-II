@@ -138,40 +138,42 @@
     </div>
     <div class="row mt-3">
       <div class="col-sm-12">
-        <form>
+        <form role="form" data-toggle="validator">
           <div class="form-group">
             <label for="name">Name</label>
-            <input id="name" type="text" class="form-control" placeholder="Name">
+            <input id="name" type="text" class="form-control" placeholder="Name" method="post" required>
           </div>
           <div class="form-group">
             <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control" placeholder="Phone">
+            <input id="phone" type="tel" class="form-control" placeholder="Phone" method="post" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$" required>
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input id="email" type="email" class="form-control" placeholder="Email">
+            <input id="email" type="email" class="form-control" placeholder="Email" method="post" required>
           </div>
           <div class="form-group">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-              <label class="form-check-label" for="exampleRadios1">
+              <input class="form-check-input" type="radio" name="location" id="beach" value="option1" checked>
+              <label class="form-check-label" for="beach">
                 Beach
               </label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-              <label class="form-check-label" for="exampleRadios2">
+            <div class="form-check mt-1 mb-1">
+              <input class="form-check-input" type="radio" name="location" id="mountain" value="option2">
+              <label class="form-check-label" for="mountain">
                 Mountain
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-              <label class="form-check-label" for="exampleRadios3">
+              <input class="form-check-input" type="radio" name="location" id="island" value="option3">
+              <label class="form-check-label" for="island">
                 Island
               </label>
             </div>
           </div>
-          <button type="submit" class="btn btn-info mb-3">Let's Travel</button>
+          <div class="form-group">
+            <button type="submit" class="btn btn-info mb-2">Let's Travel</button>
+          </div>
         </form>
       </div>
     </div>
