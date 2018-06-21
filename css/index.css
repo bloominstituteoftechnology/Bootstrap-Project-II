@@ -9,12 +9,18 @@ h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
+.row .col-sm-6 img {
+  border-radius: 30px;
+}
 .container-fluid {
   background-color: white;
   border-bottom: 2px dashed silver;
 }
 .logo-heading {
   padding: 20px 0 10px;
+}
+.nav {
+  justify-content: flex-end;
 }
 .nav a {
   color: black;
