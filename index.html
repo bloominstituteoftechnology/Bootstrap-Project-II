@@ -70,7 +70,7 @@
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="mt-3 row">
 
       <div class="col-sm-6">
           <img src="img/adventure.jpg" class="rounded img-fluid" alt="Let's go on adventure!">
@@ -133,7 +133,7 @@
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-info"data-toggle="modal" data-target="#exampleModalLong">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalLong">Get More Info</button>
 
           <!-- Modal -->
           <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -161,8 +161,7 @@
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-info btn-secondary" data-toggle=" modal tooltip" data-placement="bottom" title="Tooltip on bottom" data-target="#exampleModalLong"
->Get More Info</button>
+        <button type="button" class="btn btn-info " data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom" data-target="#exampleModalLong">Get More Info</button>
 
           <!-- Modal -->
           <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -230,62 +229,92 @@
       </div>
     </div>
 
-    <div class="form-group">
-      <div class="row answers">
+    <form class="needs-validation form-group" novalidate>
+      <div class="form-row">
 
-        <div class="col-sm-12">
-
-              <form>
-
-                <div class="inputs">
-                  <label for="name">Name</label>
-                  <input id="name" type="text" class="form-control" placeholder="Name">
-                </div>
-
-                <div class="inputs">
-                  <label for="phone">Phone</label>
-                  <input id="phone" type="phone" class="form-control" placeholder="Phone">
-                </div>
-
-                <div class="inputs">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
-                  </div>
-
+        <div class="col-12">
+          <label for="validationCustom01">Name</label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder=" Name"  required>
+          <div class="valid-feedback">
+                That's a silly name!
           </div>
-
-          <div class="mt-2 row radios">
-
-              <div class=" col-3 form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  Beach
-                </label>
-              </div>
-
-              <div class=" col-3 form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                  Mountain
-                </label>
-              </div>
-
-              <div class="col-3 form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option3">
-                <label class="form-check-label" for="exampleRadios2">
-                  Island
-                </label>
-              </div>
-
-              <button type="submit" class=" col-3 btn btn-info">Let's Travel</button>
-              </form>
-
+          <div class="invalid-feedback">
+                  That's not a name!
           </div>
-
         </div>
 
-    </div>
+        <div class="col-12">
+          <label for="calidationCustom01">Phone</label>
+          <input type="text" class="form-control" id="validationCustom03" placeholder="(###) - ### - ####" required name="" value="">
+          <div class="valid-feedback">
+                  Thumbs up!
+          </div>
+          <div class="invalid-feedback">
+                    please. please enter your phone number.
+          </div>
+        </div>
 
+        <div class="col-12">
+          <label for="validationCustom02">Email</label>
+          <input type="email" class="form-control" id="validationCustom02" placeholder="email@website.com"  required>
+          <div class="valid-feedback">
+                  At least it is not a hotmail account...
+          </div>
+          <div class="invalid-feedback">
+                    That's not a real email!
+          </div>
+        </div>
+
+        <div class="mt-2 row radios">
+
+            <div class=" col-3 form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Beach
+              </label>
+            </div>
+
+            <div class=" col-3 form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Mountain
+              </label>
+            </div>
+
+            <div class="col-3 form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option3">
+              <label class="form-check-label" for="exampleRadios2">
+                Island
+              </label>
+            </div>
+
+            <button type="submit" class=" col-3 btn btn-info">Let's Travel</button>
+      </div>
+
+      </div>
+
+    </form>
+
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
     </div>
 
     <div class="row footer">
