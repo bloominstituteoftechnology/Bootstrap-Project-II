@@ -20,6 +20,7 @@
 <body>
   <div class="container-fluid sticky-top">
     <div class="container">
+      <!-- JavaScript Component: Navbar -->
       <nav class="navbar navbar-expand navbar-light">
         <div class="row w-100">
           <div class="col-3">
@@ -41,14 +42,6 @@
               </li>
             </ul>
           </div>
-          <!-- <div class="col-9 d-flex justify-content-end align-items-center">
-          <nav class="nav">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav>
-        </div> -->
         </div>
       </nav>
     </div>
@@ -88,6 +81,7 @@
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
     </div>
+    <!-- JavaScript Component: Carousel -->
     <div class="row my-5">
       <div class="col-12">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -187,17 +181,22 @@
     Request More Information
   </a>
     </p>
+    <!-- JavaScript Component: Collapse -->
     <div class="collapse" id="collapseExample">
       <div class="row my-4">
         <div class="col-sm-12">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input id="name" type="text" class="form-control mb-2" placeholder="Name">
-            <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control mb-2" placeholder="Phone">
-            <label for="email">Email</label>
-            <input id="email" type="email" class="form-control mb-3" placeholder="Email">
-            <div class="form-check mb-2">
+          <form class="form-group" novalidate>
+
+            <label for="Name">Name</label>
+            <input id="Name" type="Name" class="form-control" placeholder="Name" required>
+
+            <label class="mt-2" for="phone">Phone</label>
+            <input id="phone" type="phone" class="form-control" placeholder="Phone" required>
+
+            <label class="mt-2" for="email">Email</label>
+            <input id="email" type="email" class="form-control" placeholder="Email" required>
+
+            <div class="form-check mt-3 mb-2">
               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
               <label class="form-check-label" for="exampleRadios1">
                 Beach
@@ -215,8 +214,15 @@
                 Island
               </label>
             </div>
-            <button type="submit" class="btn btn-info">Let's Travel</button>
-          </div>
+            <div class="row">
+              <div class="col-2 d-flex align-items-center">
+                <button type="submit" class="btn btn-info d-flex align-items-center">Let's Travel</button>
+              </div>
+              <div class="col-3">
+                <div class="error" aria-live="polite"></div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
