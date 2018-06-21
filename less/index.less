@@ -17,14 +17,53 @@ h1, h2, h3, h4, h5 {
     padding: 20px 0 10px;
 }
 
-.nav {
-    a {
-        color: black;
+
+.nav-container {
+    .nav {
+        a {
+            color: black;
+        }
+    }
+
+    .mobile-hide {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    .desktop-hide {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        .no-pad {
+            padding: 0;
+
+            .nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;  
+            }
+        }
+
+        @media (min-width: 768px) {
+            display: none;
+        }
     }
 }
 
 .container {
     max-width: 800px;
+
+    .mobile-reverse {
+        flex-wrap: wrap-reverse;
+    }
 }
 
 .footer {

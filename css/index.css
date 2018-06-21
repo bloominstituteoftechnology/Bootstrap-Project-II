@@ -16,11 +16,44 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
-.nav a {
+.nav-container .nav a {
   color: black;
+}
+.nav-container .mobile-hide {
+  display: none;
+}
+@media (min-width: 768px) {
+  .nav-container .mobile-hide {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.nav-container .desktop-hide {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.nav-container .desktop-hide .no-pad {
+  padding: 0;
+}
+.nav-container .desktop-hide .no-pad .nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .nav-container .desktop-hide {
+    display: none;
+  }
 }
 .container {
   max-width: 800px;
+}
+.container .mobile-reverse {
+  flex-wrap: wrap-reverse;
 }
 .footer {
   color: black;
