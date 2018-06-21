@@ -9,6 +9,9 @@ h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
+.row {
+  justify-content: center;
+}
 .row .col-sm-6 img {
   border-radius: 30px;
 }
@@ -21,6 +24,9 @@ h5 {
 }
 .nav {
   justify-content: flex-end;
+}
+.nav .btn {
+  border: none;
 }
 .nav a {
   color: black;
