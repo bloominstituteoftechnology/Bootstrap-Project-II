@@ -162,7 +162,7 @@
       <div class="col-sm-4">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Get More Info</button>
       </div>
     </div>
 
@@ -235,38 +235,20 @@
         Copyright Fun Bus 2018
       </div>
     </div>
+    
   </div><!-- container -->
 
   
-    <script>
-      var ref = $('#button-a');        
-        var popup = $('#popup');
-        popup.hide();
-        
-        ref.click(function(){
-                popup.show(); 
-                var popper = new Popper(ref,popup,{
-                        placement: 'top',
-                        onCreate: function(data){
-                                console.log(data);
-                        },
-                        modifiers: {
-                                flip: {
-                                        behavior: ['left', 'right', 'top','bottom']
-                                },
-                                offset: { 
-                                        enabled: true,
-                                        offset: '0,10'
-                                }
-                        }
-                });
-        });
-    </script>
 
 
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
     <script src="js/index.js"></script>
 </body>
 </html>
