@@ -11,7 +11,7 @@ Use the existing codebase as a starting point and accomplish the following tasks
 1. LESS preprocessing is needed so make sure you understand how to use your compiler.
 
 ## Task - Style and add to the form
-* Add an email input
+<!-- * Add an email input -->
 <!-- * Add a 3rd option in the radio buttons and name it "island" -->
 <!-- * Style the form by wrapping each input and all the radio buttons in a ```form-group``` -->
 
