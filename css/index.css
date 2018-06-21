@@ -16,8 +16,10 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
-.nav a {
-  color: black;
+.dropdown .custom-button {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
 }
 .container {
   max-width: 800px;
