@@ -27,3 +27,24 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+.inputs {
+  margin-top: 15px;
+}
+.form-group {
+  margin: 20px 0;
+  border: 1px solid black;
+  padding: 5px;
+  background: whitesmoke;
+}
+.radios {
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 100%;
+  align-items: center;
+  padding-left: 15px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
