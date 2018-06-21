@@ -27,3 +27,6 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+.roundimgclass img {
+  border-radius: 50%;
+}
