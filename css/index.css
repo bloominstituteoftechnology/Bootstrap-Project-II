@@ -12,15 +12,36 @@ h5 {
 .container-fluid {
   background-color: white;
   border-bottom: 2px dashed silver;
+  position: sticky;
+}
+.container {
+  max-width: 800px;
 }
 .logo-heading {
   padding: 20px 0 10px;
 }
+nav {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid red;
+}
 .nav a {
   color: black;
+  justify-content: flex-end;
 }
-.container {
-  max-width: 800px;
+.round-images {
+  border-radius: 50%;
+  max-width: 400px;
+  width: 100%;
+}
+.adventure {
+  margin-left: 20px;
+}
+.spacing {
+  margin-top: 20px;
+}
+.mt-0 {
+  margin-top: 20px;
 }
 .footer {
   color: black;
