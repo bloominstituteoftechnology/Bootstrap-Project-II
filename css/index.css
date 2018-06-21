@@ -18,6 +18,12 @@ h5 {
 }
 .nav {
   height: 100%;
+  flex-direction: column;
+}
+@media (min-width: 520px) {
+  .nav {
+    flex-direction: row;
+  }
 }
 .nav a {
   color: black;
