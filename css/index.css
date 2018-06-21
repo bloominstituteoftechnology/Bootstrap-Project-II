@@ -23,16 +23,6 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
-.animation {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.5s ease-in-out 0.5s;
-}
-.loaded .animation {
-  opacity: 1;
-  transform: translateY(1);
-  transition: all 0.5s ease-in-out 0.5s;
-}
 .container-fluid {
   background-color: white;
   border-bottom: none;
