@@ -16,11 +16,19 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
+.nav {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
 .nav a {
   color: black;
 }
+.nav a:hover {
+  border-bottom: 5px solid darkcyan;
+}
 .container {
-  max-width: 800px;
+  max-width: 1000px;
 }
 .footer {
   color: black;

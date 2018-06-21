@@ -18,13 +18,20 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav {
+    display: flex;
+    align-items:center;
+    margin-top: 30px;
     a {
         color: black;
-    }
+        
+        &:hover {
+            border-bottom: 5px solid darkcyan;
+        }
+       }
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .footer {
