@@ -26,8 +26,9 @@ h5 {
   max-height: 220px;
 }
 .scrollspy-data {
-  height: 500px;
-  overflow-y: scroll;
+  height: 300px;
+  overflow-x: auto;
+  overflow-y: auto;
   position: relative;
 }
 .footer {
