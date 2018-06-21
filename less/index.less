@@ -1,7 +1,16 @@
 // Start here!
 
+@prussianBlue: #0B3C5D;
+@skyBlue: #328CC1;
+@goldLeaf: #D9B310;
+@ivoryBlack: #1D2731;
+
 html, body {
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: @skyBlue;
 }
 
 h1, h2, h3, h4, h5 {
@@ -11,6 +20,10 @@ h1, h2, h3, h4, h5 {
 .container-fluid {
     background-color:white;
     border-bottom: 2px dashed silver;
+}
+
+.container {
+  background: @goldLeaf;
 }
 
 .logo-heading {
@@ -31,4 +44,27 @@ h1, h2, h3, h4, h5 {
     color: black;
     background: blanchedalmond;
     padding: 20px 0;
+}
+
+.header{
+  background: @ivoryBlack;
+  color: white;
+
+  .row {
+    background: @ivoryBlack;
+
+    nav a{
+      color: white;
+    }
+  }
+}
+
+.contentBox {
+  background: @prussianBlue;
+  color: white;
+}
+
+.copyright{
+  background: @ivoryBlack;
+  color: white;
 }
