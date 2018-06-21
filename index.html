@@ -19,31 +19,41 @@
 
 <body>
 
-  <div class="container-fluid sticky-top">
+  <div class="container-fluid">
     <div class="container">
-      <div class="row">
-        <div class="col-3">
-          <h1 class="logo-heading">Fun Bus</h1>
-        </div>
-        <div class="col-9 d-flex align-items-center justify-content-end">
-          <nav class="nav">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
+
+        <nav id="navbar" class="navbar fixed-top navbar-light bg-light">
+            <a class="navbar-brand" href="#">Fun Bus</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#welcome">Welcome</a>
+                      <a class="dropdown-item" href="#destination">Destinations</a>
+                    </div>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mdo">Blog</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#mdo">Contact</a>
+              </li> 
+            </ul>
           </nav>
-        </div>
-      </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
+  <div class="container main-body" data-spy="scroll" data-target="#navbar" data-offset-top="80">
+    <div id="welcome" class="row">
       <div class="col-sm-12">
         <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
       </div>
     </div>
-    <div class="row mt-2">
+    <!-- <div id="welcome"></div> -->
+    <div class="row border-bottom pt-4">
       <div class="col-sm-12">
         <h2>Welcome To Fun Bus!</h2>
         <p>
@@ -53,7 +63,7 @@
         </p>
       </div>
     </div>
-    <div class="row">
+    <div class="row pt-4">
       <div class="col-sm-6">
         <h2>Let's Go!</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition
@@ -66,7 +76,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row pt-4 border-bottom">
       <div class="col-sm-6">
         <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
       </div>
@@ -78,12 +88,11 @@
           cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
     </div>
-
-    <div class="row">
+    <div id="destination" class="row pt-4">
       <div class="col-sm-12">
         <h2>Destinations</h2>
+        <!--JavaScript Component: Carousel -->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <!--JavaScript Component: Carousel -->
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img class="d-block w-100" src="img/slider-1.jpg" alt="First slide">
@@ -108,7 +117,7 @@
       </div>
     </div>
 
-    <div class="row mt-3">
+    <div class="row mt-4">
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler
@@ -128,6 +137,7 @@
         <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#IslandMoreInfo">Get More Info</button>
       </div>
     </div>
+    <!--JavaScript Component: Modal -->
     <div class="modal fade" id="BeachMoreInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -219,8 +229,9 @@
         </div>
       </div>
     </div>
-
-    <div class="row mt-4">
+    <!--End Modal-->
+    <!--JavaScript Component: Accordian collapse-->
+    <div class="row mt-4 pt-4 border-top">
       <div class="col-sm-8 mt-4">
         <div id="accordion">
           <div class="card">
@@ -259,7 +270,7 @@
           </div>
         </div>
       </div>
-
+      <!--End Accordian Collapse-->
       <div class="col-sm-4 d-flex justify-content-center align-items-center">
         <div class="card">
           <div class="card-body">

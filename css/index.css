@@ -9,6 +9,12 @@ h4,
 h5 {
   font-family: 'Indie Flower', cursive;
 }
+body {
+  position: relative;
+}
+.main-body {
+  padding-top: 60px;
+}
 .container-fluid {
   background-color: white;
   border-bottom: 2px dashed silver;
@@ -16,8 +22,12 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
-.nav a {
+.navbar a {
   color: black;
+}
+.navbar .navbar-brand {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
 }
 .container {
   max-width: 800px;
