@@ -226,18 +226,36 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <form>
+        <form class="needs-validation" novalidate>
           <div class="form-group">
             <label for="name">Name</label>
-            <input id="name" type="text" class="form-control" placeholder="Name">
+            <input id="name" type="text" class="form-control" placeholder="Name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please enter your name.
+            </div>
           </div>
           <div class="form-group">
             <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control" placeholder="Phone">
+            <input id="phone" type="phone" class="form-control" placeholder="Phone" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please enter a valid phone number.
+            </div>
           </div>
           <div class="form-group">
             <label for="phone">Email</label>
-            <input id="phone" type="email" class="form-control" placeholder="Email">
+            <input id="phone" type="email" class="form-control" placeholder="Email" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please enter a valid Email address.
+            </div>
           </div>          
           <div class="form-group">
             <div class="form-check">
@@ -257,7 +275,7 @@
               <label class="form-check-label" for="exampleRadios2">
                 Island
               </label>
-            </div>
+            </div>            
           </div>
           
           <button type="submit" class="btn btn-info">Let's Travel</button>
@@ -270,6 +288,27 @@
       </div>
     </div>
   </div><!-- container -->
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
