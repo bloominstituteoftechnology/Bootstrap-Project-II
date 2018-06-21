@@ -99,17 +99,17 @@
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#BeachMoreInfo" >Get More Info</button>
+        <button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#BeachMoreInfo" >Get More Info</button>
       </div>
       <div class="col-sm-4">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#MountainMoreInfo">Get More Info</button>
+        <button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#MountainMoreInfo">Get More Info</button>
       </div>
       <div class="col-sm-4">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#IslandMoreInfo">Get More Info</button>
+        <button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#IslandMoreInfo">Get More Info</button>
       </div>
     </div>
     <div class="modal fade" id="BeachMoreInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -209,19 +209,19 @@
         <h4>Before You Go...</h4>
         <p>Excursion clean modern design wanderlust, traveler wanderlust expedition WordPress whimsical WordPress website whimsical wanderlust. Blogger wanderlust modern modern design modern colorful simple clean. Wanderlust Travel adventure, traveler excursion wanderlust website WordPress adventure darn website darn.</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 mt-5">
           <div class="accordion" id="accordionExample">
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <button class="btn btn-light btn-lg" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                       Don't Forget These!
                     </button>
                   </h5>
                 </div>
 
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
+                    
                         <ul class="list-group">
                             <li class="list-group-item">Cras justo odio</li>
                             <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -229,55 +229,108 @@
                             <li class="list-group-item">Porta ac consectetur ac</li>
                             <li class="list-group-item">Vestibulum at eros</li>
                           </ul>
-                    </div>
+                    
                   </div>
                 </div>
         
       </div>
     </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <form>
-          <div class="form-group row">
-            <label for="name">Name</label>
-            <input id="name" type="text" class="form-control" placeholder="Name">
-          </div>
-          <div class="form-group row">
-            <label for="phone">Phone</label>
-            <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          </div>
-          <div class="form-group row">
-            <label for="phone">Email</label>
-            <input id="phone" type="phone" class="form-control" placeholder="name@example.com">
-          </div>
-          <fieldset class="form-group">
-            <div class="row">
-              <legend class="col-form-label col-sm-2 pt-0">Destination?</legend>
-                <div class="col-sm-10">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                    Beach
-                    </label>
+
+    <button type="button" class="btn btn-secondary btn-lg mx-auto" style:"width: 200px;" data-toggle="modal" data-target="#formButton">
+        Let's go!
+    </button>
+
+    <div class="modal fade" id="formButton" tabindex="-1" role="dialog" aria-labelledby="informationForm" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Provide your information below</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+                <form class="needs-validation" novalidate>
+                    <div class="form-group row mb-3">
+                      <label for="name">Name</label>
+                      <input id="name" type="text" class="form-control" placeholder="Name" required>
+                      <div class="invalid-feedback">
+                          Please enter your name.
+                    </div>
+                      </div>
+                    <div class="form-group row mb-3">
+                      <label for="phone">Phone</label>
+                      <input id="phone" type="phone" class="form-control" placeholder="Phone" required>
+                      <div class="invalid-feedback">
+                          Please enter your phone number.
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row mb-3">
+                      <label for="phone">Email</label>
+                      <input id="phone" type="phone" class="form-control" placeholder="name@example.com" required>
+                      <div class="invalid-feedback">
+                          Please enter an email address.
+                        </div>
+                    </div>
+                    
+                    <fieldset class="form-group">
+                      <div class="row">
+                        <legend class="col-form-label col-sm-3">Destination?</legend>
+                          <div class="col-sm-7">
+                            <div class="custom-control custom-radio">
+                              <input class="custom-control-input" type="radio" name="radio-stacked" id="beachOption" required>
+                              <label class="custom-control-label" for="beachOption"> Beach</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                              <input class="custom-control-input" type="radio" name="radio-stacked" id="mountainOption" required>
+                              <label class="custom-control-label" for="mountainOption">
+                              Mountain
+                              </label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                              <input class="custom-control-input" type="radio" name="radio-stacked" id="islandOption" required>
+                              <label class="custom-control-label" for="islandOption">
+                              Island
+                              </label>
+                              <div class="invalid-feedback">
+                                  Please select a destination.
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <div class="modal-footer">
+                          <button type="submit" class="btn btn-info">Let's Travel</button>
+                        </div>
+                        <script>
+                            (function() {
+                              'use strict';
+                              window.addEventListener('load', function() {
+                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                var forms = document.getElementsByClassName('needs-validation');
+                                // Loop over them and prevent submission
+                                var validation = Array.prototype.filter.call(forms, function(form) {
+                                  form.addEventListener('submit', function(event) {
+                                    if (form.checkValidity() === false) {
+                                      event.preventDefault();
+                                      event.stopPropagation();
+                                    }
+                                    form.classList.add('was-validated');
+                                  }, false);
+                                });
+                              }, false);
+                            })();
+                            </script>
+                  </form>
                   </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                    Mountain
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                    Island
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-          <button type="submit" class="btn btn-info">Let's Travel</button>
-        </form>
+            
+          </div>
+        </div>
+      </div>
+        
+       
       </div>
     </div>
     <div class="row footer mt-4">
