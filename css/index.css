@@ -12,6 +12,12 @@ h5 {
 .container-fluid {
   background-color: white;
   border-bottom: 2px dashed silver;
+  position: sticky;
+  display: flex;
+  align-content: center;
+}
+.btn {
+  margin-right: 10px;
 }
 .logo-heading {
   padding: 20px 0 10px;
@@ -30,6 +36,12 @@ h5 {
 }
 .container .img-fluid {
   margin-top: 10px;
+}
+.input-group {
+  margin-top: 25px;
+}
+.btn-info {
+  margin: 5px 0 10px 0;
 }
 .footer {
   color: black;
