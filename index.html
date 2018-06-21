@@ -10,6 +10,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -23,13 +24,24 @@
         <div class="col-3">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
-        <div class="col-9 d-flex justify-content-end">
-          <nav class="nav">
+        <div class="col-9 d-flex justify-content-end align-items-center">
+          <nav class="nav d-none d-md-flex">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
             <a class="nav-link" href="#">Contact</a>
           </nav>
+          <div class="dropdown d-flex d-md-none">
+            <button class="btn btn-secondary dropdown-toggle btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">Contact</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -40,7 +52,7 @@
           <img src="img/fun-bus.jpg" class="img-fluid" alt="A toy bus in the sand.">
         </div>
     </div>
-    
+
     <div class="row">
       <div class="col-sm-12 mt-3">
         <h2>Welcome To Fun Bus!</h2>
@@ -60,8 +72,8 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-sm-12">
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-12 mt-2 mb-2">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">  
               <div class="carousel-item active">
@@ -78,11 +90,11 @@
         </div>
       </div>
 
-    <div class="row mt-4">
+    <div class="row mt-2">
         <div class="col-sm-6">
             <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 mt-2">
           <h2>Adventure Awaits</h2>
           <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p> 
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
@@ -127,17 +139,17 @@
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Fun In The Sun Info">Get More Info</button>
       </div>
       <div class="col-sm-4">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Mountain Excursion Info">Get More Info</button>
       </div>
       <div class="col-sm-4">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+        <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Island Getaway Info">Get More Info</button>
       </div>
     </div>
     <div class="row mt-4">
@@ -173,7 +185,7 @@
             </div>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-          <div class="form-group mt-3">
+          <div class="form-group mt-3 ml-3">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
               <label class="form-check-label" for="exampleRadios1">
@@ -192,7 +204,7 @@
                 Island
               </label>
             </div>          
-            <button type="submit" class="btn btn-info">Let's Travel</button>
+            <button type="submit" class="btn btn-info mt-2" data-toggle="tooltip" data-placement="top" title="Click to Submit">Let's Travel</button>
           </div>
         </form>
       </div>
