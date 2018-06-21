@@ -19,6 +19,9 @@ h5 {
 .navbar a {
   color: black;
 }
+.navbar-toggler-icon {
+  width: 5em;
+}
 .container {
   max-width: 800px;
 }
