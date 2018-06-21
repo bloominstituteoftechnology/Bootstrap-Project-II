@@ -33,13 +33,13 @@ h5 {
 }
 .card-header {
   background-color: #17a2b8;
+  padding: 0;
 }
 .card-header h5 {
   text-align: center;
 }
 .card-header h5 .btn-link {
+  padding: 22px 30px;
   color: white;
-}
-.card-header h5 .btn-link:hover {
-  text-decoration: none;
+  width: 100%;
 }
