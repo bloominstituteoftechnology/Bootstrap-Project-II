@@ -22,6 +22,15 @@ h5 {
 .container {
   max-width: 800px;
 }
+.carousel-inner .carousel-item .top-img {
+  max-height: 220px;
+}
+.scrollspy-data {
+  height: 300px;
+  overflow-x: auto;
+  overflow-y: auto;
+  position: relative;
+}
 .footer {
   color: black;
   background: blanchedalmond;
