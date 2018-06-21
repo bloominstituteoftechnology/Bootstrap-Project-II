@@ -22,6 +22,9 @@ h5 {
 .container {
   max-width: 800px;
 }
+.container .mobile-reverse {
+  flex-wrap: wrap-reverse;
+}
 .footer {
   color: black;
   background: blanchedalmond;
