@@ -2,6 +2,9 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  position: relative;
+}
 h1,
 h2,
 h3,
@@ -18,6 +21,10 @@ h5 {
 }
 .nav a {
   color: black;
+}
+.nav .active {
+  background-color: var(--info);
+  color: white;
 }
 .container {
   max-width: 800px;

@@ -17,7 +17,7 @@
   <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-nav" data-offset="86">
   <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row">
@@ -25,23 +25,23 @@
           <h1 class="logo-heading">Fun Bus</h1>
         </div>
         <div class="col-9 d-flex align-items-center justify-content-end">
-          <nav class="nav">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
+          <nav id="main-nav" class="nav">
+            <a class="nav-link active" href="#home">Home</a>
+            <a class="nav-link" href="#about">About Us</a>
+            <a class="nav-link" href="#destination">Destinations</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </nav>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
-    <div class="row mb-4">
+    <div id="home" class="row mb-4">
       <div class="col-sm-12">
         <img src="img/fun-bus.jpg" class="img-fluid" alt="Responsive image">
       </div>
     </div>
-    <section class="py-3">
+    <section id="about" class="py-3">
       <div class="row mb-2">
         <div class="col-sm-12">
           <h2>Welcome To Fun Bus!</h2>
@@ -86,7 +86,7 @@
         </div>
       </div>
     </section>
-    <div class="row my-2">
+    <div id="destination" class="row my-2">
       <div class="col-sm-12">
         <h2 class="mb-3">Destinations</h2>
         <!--
@@ -196,7 +196,7 @@
         </ul>
       </div>
     </div>
-    <div class="row mt-3 mb-4">
+    <div id="contact" class="row mt-3 mb-4">
       <div class="col-sm-12">
         <form>
           <div class="form-group">
