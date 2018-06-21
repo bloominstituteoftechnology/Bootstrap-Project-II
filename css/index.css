@@ -27,3 +27,44 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-class {
+  padding-right: 150px;
+}
+.welcome,
+.lets-go,
+.adventure,
+.destinations,
+.triple-content,
+.before,
+.form,
+.footer {
+  margin-top: 20px;
+}
+body {
+  position: relative;
+}
+.footer-row,
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-scrollspy {
+  position: relative;
+  height: 200px;
+  overflow: auto;
+}
+.custom-scrollspy-row {
+  border: 1px solid black;
+  padding: 0;
+  margin-left: 0px;
+  margin-right: 0;
+}
+.custom-navbar {
+  justify-content: space-between;
+}
