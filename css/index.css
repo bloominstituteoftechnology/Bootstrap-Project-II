@@ -28,12 +28,7 @@ h5 {
   padding: 20px 0;
   text-align: center;
 }
-.modal-header {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.modal-header .modal-title {
+.modal-title {
   margin-left: auto;
 }
 .card-header {
