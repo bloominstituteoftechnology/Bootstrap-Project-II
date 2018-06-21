@@ -1,3 +1,31 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+.container-fluid {
+  background-color: white;
+  border-bottom: 2px dashed silver;
+}
+.logo-heading {
+  padding: 20px 0 10px;
+}
+.nav a {
+  color: black;
+}
+.container {
+  max-width: 900px;
+  background-color: #F9F5D7;
+}
+.margin-temp {
+  margin: 20px 0;
+}
 .navigation {
   display: flex;
   justify-content: space-around;
@@ -7,8 +35,23 @@
   font-family: georgia, serif;
   font-size: 60px;
 }
+.upper-content {
+  margin: 20px 0;
+}
+.upper-middle {
+  margin: 20px 0;
+}
+.middle {
+  margin: 20px 0;
+}
+.lower-middle {
+  margin: 20px 0;
+}
+.lowest-middle {
+  margin: 50px 0;
+}
 .bottom-content {
-  margin-top: 50px;
+  margin: 20px 0;
 }
 .vac-selection {
   display: flex;
@@ -16,11 +59,10 @@
 }
 .footer {
   color: black;
-  background: blanchedalmond;
   padding: 20px 0;
 }
 .footer .copyright-label {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin: 20px 0;
 }
