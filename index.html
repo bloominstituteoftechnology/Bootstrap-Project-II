@@ -23,9 +23,9 @@
         <div class="col-6">
             <h1 class="logo-heading"><s>Fun Bus</s>Struggle Bus</h1>
         </div>
-        <div class="col-9">
+        <div class="col-12">
             
-          <nav class="nav">
+          <nav class="nav d-flex justify-content-end">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
@@ -76,12 +76,12 @@
         <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
       </div>
       <div class="col-sm-6">
-          <img class="rounded-5" src="img/adventure.jpg" class="img-fluid" alt="Let's go on adventure!">
+          <img src="img/adventure.jpg" class="img-fluid rounded" alt="Let's go on adventure!">
       </div>
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <img class="rounded" src="img/fun.jpg" class="img-fluid" alt="Lets have fun!">
+            <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
         </div>
         <div class="col-sm-6">
           <h2>Adventure Awaits</h2>
@@ -89,41 +89,50 @@
           <p>Pretty simple traveling fun WordPress wanderlust darn simple organized. WordPress travelblogger simple WordPress cute whimsical organized. Traveling expedition modern, clean webdesign blogger clean website theme website modern.</p>
         </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <h2>Destinations</h2>
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Location</th>
-              <th scope="col">Activity</th>
-              <th scope="col">Airfare</th>
-              <th scope="col">Hotel</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Beach</th>
-              <td>Chillin</td>
-              <td>$600</td>
-              <td>$400</td>
-            </tr>
-            <tr>
-              <th scope="row">Mountain</th>
-              <td>Hiking</td>
-              <td>$400</td>
-              <td>$200</td>
-            </tr>
-            <tr>
-              <th scope="row">Island</th>
-              <td>Boating</td>
-              <td>$1700</td>
-              <td>$600</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <div class="row">
+        <div class="col-sm-12">
+   
+        </div>
     </div>
+    <p>
+        
+        <button class="btn btn-info w-100" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <h2>Destinations</h2>
+            <p><small>
+              </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Location</th>
+                  <th scope="col">Activity</th>
+                  <th scope="col">Airfare</th>
+                  <th scope="col">Hotel</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Beach</th>
+                  <td>Chillin</td>
+                  <td>$600</td>
+                  <td>$400</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mountain</th>
+                  <td>Hiking</td>
+                  <td>$400</td>
+                  <td>$200</td>
+                </tr>
+                <tr>
+                  <th scope="row">Island</th>
+                  <td>Boating</td>
+                  <td>$1700</td>
+                  <td>$600</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
     <div class="row">
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
@@ -160,26 +169,24 @@
     <div class="row">
       <div class="col-sm-12" >
         <form>
-          <label for="name">Name</label>
+          <label for="name"></label>
           <input id="name" type="text" class="form-control" placeholder="Name">
-          <label for="phone">Phone</label>
+          <label for="email"></label>
+          <input id="email" type="text" class="form-control" placeholder="email">
+          <label for="phone"></label>
           <input id="phone" type="phone" class="form-control" placeholder="Phone">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Beach
-            </label>
+          <div class="col-4">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">Beach</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">Mountain</label>
+            <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios3">Island</label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Mountain
-            </label>
-          <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  Island
-                </label>
           </div>
           <button type="submit" class="btn btn-info my-4">Let's Travel</button>
         </form>
