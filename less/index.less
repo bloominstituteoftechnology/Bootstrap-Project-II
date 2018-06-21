@@ -1,34 +1,62 @@
 // Start here!
 
-html, body {
-    font-family: 'Roboto', sans-serif;
+body,
+html {
+  font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Indie Flower', cursive;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
 }
 
 .container-fluid {
-    background-color:white;
-    border-bottom: 2px dashed silver;    
+  background-color: white;
+  border-bottom: 2px dashed silver;
 }
 
 .logo-heading {
-    padding: 20px 0 10px;
+  padding: 20px 0 10px;
 }
 
 .nav {
-    a {
-        color: black;
-    }
+  a {
+    color: black;
+  }
 }
 
 .container {
-    max-width: 800px;
+  max-width: 800px;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+.error {
+  width: 100%;
+  padding: 0;
+  font-size: 90%;
+  background-color: red;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.error.active {
+  padding: 0.3em;
 }
 
 .footer {
-    color: black;
-    background: blanchedalmond;
-    padding: 20px 0;
+  color: black;
+  background: blanchedalmond;
+  padding: 20px 0;
 }
