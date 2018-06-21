@@ -50,6 +50,15 @@
   background-color: #17a2b8;
   border-color: whitesmoke;
 }
+.footer {
+  color: black;
+  background: #BCD9E3;
+  padding: 20px 0;
+  border-top: 2px dashed silver;
+}
+.footer .copyright {
+  text-align: center;
+}
 html,
 body {
   font-family: 'Roboto', sans-serif;
@@ -73,9 +82,4 @@ h5 {
 }
 .container {
   max-width: 800px;
-}
-.footer {
-  color: black;
-  background: #BCD9E3;
-  padding: 20px 0;
 }
