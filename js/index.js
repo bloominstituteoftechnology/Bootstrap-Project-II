@@ -27,3 +27,5 @@ $(function () {
 })
 
 $('#example').tooltip(options)
+
+$('body').scrollspy({ target: '#navbar-example' })

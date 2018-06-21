@@ -45,3 +45,17 @@ nav {
 .footer {
   margin-top: 20px;
 }
+body {
+  position: relative;
+}
+.footer-row,
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-scrollspy {
+  position: relative;
+  height: 200px;
+  overflow: auto;
+}
