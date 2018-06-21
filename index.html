@@ -25,18 +25,17 @@
 
         <div class="row">
     <div class="col-6 mb-3">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-          Home
-        </button>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-            About
-          </button>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-          Blog
-        </button>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-        Contact Us
-      </button>
+      <div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Menu
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Home</a>
+      <a class="dropdown-item" href="#">About Us</a>
+      <a class="dropdown-item" href="#">Blog</a>
+          <a class="dropdown-item" href="#">Contact Us</a>
+    </div>
+  </div>
     </div>
       </div>
     </div>
@@ -63,7 +62,7 @@
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-info">Submit</button>
     </form>
     </div>
     </div>
