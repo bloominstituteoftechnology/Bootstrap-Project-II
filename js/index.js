@@ -25,7 +25,3 @@ function validateForm() {
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
-
-$('#example').tooltip(options)
-
-$('body').scrollspy({ target: '#navbar-example' })
