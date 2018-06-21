@@ -26,4 +26,17 @@ h5 {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+  text-align: center;
+}
+.card-header {
+  background-color: #17a2b8;
+}
+.card-header h5 {
+  text-align: center;
+}
+.card-header h5 .btn-link {
+  color: white;
+}
+.card-header h5 .btn-link:hover {
+  text-decoration: none;
 }
