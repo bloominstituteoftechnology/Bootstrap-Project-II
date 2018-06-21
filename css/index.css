@@ -1,6 +1,7 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  background: khaki;
 }
 h1,
 h2,
@@ -21,6 +22,9 @@ h5 {
 }
 .container {
   max-width: 800px;
+}
+.col-sm-12 {
+  background: aquamarine;
 }
 .footer {
   color: black;
