@@ -2,6 +2,9 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  background: #328CC1;
+}
 h1,
 h2,
 h3,
@@ -12,6 +15,9 @@ h5 {
 .container-fluid {
   background-color: white;
   border-bottom: 2px dashed silver;
+}
+.container {
+  background: #D9B310;
 }
 .logo-heading {
   padding: 20px 0 10px;
@@ -26,4 +32,30 @@ h5 {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+}
+.header {
+  background: #1D2731;
+  color: white;
+}
+.header .row {
+  background: #1D2731;
+}
+.header .row nav a {
+  color: white;
+}
+.contentBox {
+  background: #0B3C5D;
+  color: white;
+}
+.copyright {
+  background: #1D2731;
+  color: white;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
 }
