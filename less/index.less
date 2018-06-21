@@ -1,5 +1,13 @@
 // Start here!
 
+
+//colors from imagecolorpicker
+//  #C2AEA4 light terracotta
+//  #B9705D dark terracotta
+//  #E6F6F6  very light agua
+//  #94C5C9  light aqua
+//  #319396  dark aqua
+
 html, body {
     font-family: 'Roboto', sans-serif;
 }
@@ -10,25 +18,47 @@ h1, h2, h3, h4, h5 {
 
 .container-fluid {
     background-color:white;
-    border-bottom: 2px dashed silver;    
+    border-bottom: 2px dashed silver;
 }
 
 .logo-heading {
     padding: 20px 0 10px;
 }
 
-.nav {
-    a {
-        color: black;
-    }
+a {
+    color: black;
 }
 
 .container {
     max-width: 800px;
+
+    .form-group{
+      border: 1px solid black;
+      padding: 30px 2% 30px 2%;
+    }
 }
 
+.btn{
+  background-color: #319396;
+
+  &:hover{
+    background-color: #94C5C9;
+  }
+}
+
+.form-group{
+  background-color: #E6F6F6;
+}
+
+.table-striped{
+  background-color: #E6F6F6;
+}
+
+
 .footer {
-    color: black;
-    background: blanchedalmond;
-    padding: 20px 0;
+    color: white;
+    background: #C2AEA4;
+    padding: 10px 0px;
+    border: 1px solid white;
+    border-radius: 5px;
 }

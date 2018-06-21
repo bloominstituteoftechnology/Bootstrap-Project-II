@@ -16,14 +16,32 @@ h5 {
 .logo-heading {
   padding: 20px 0 10px;
 }
-.nav a {
+a {
   color: black;
 }
 .container {
   max-width: 800px;
 }
+.container .form-group {
+  border: 1px solid black;
+  padding: 30px 2% 30px 2%;
+}
+.btn {
+  background-color: #319396;
+}
+.btn:hover {
+  background-color: #94C5C9;
+}
+.form-group {
+  background-color: #E6F6F6;
+}
+.table-striped {
+  background-color: #E6F6F6;
+}
 .footer {
-  color: black;
-  background: blanchedalmond;
-  padding: 20px 0;
+  color: white;
+  background: #C2AEA4;
+  padding: 10px 0px;
+  border: 1px solid white;
+  border-radius: 5px;
 }
