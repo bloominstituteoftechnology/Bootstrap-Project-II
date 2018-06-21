@@ -139,12 +139,27 @@
       </div>
     </div>
 
+<!--Javascript Component: Dropdown-->
     <div class="row mt-5">
+     
+     
       <div class="col-sm-4">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button" class="btn btn-info">Get More Info</button>
+       
+        <div class="dropdown">
+        <button type="button" class="btn btn-info dropdown-toggle" id="dropdownMenuButton">Get More Info</button>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Call</a>
+            <a class="dropdown-item" href="#">Text</a>
+            <a class="dropdown-item" href="#">Mail</a>
+        </div>
+      
       </div>
+      </div>
+      
+      
       <div class="col-sm-4">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
@@ -172,7 +187,15 @@
         </ul>
       </div>
     </div>
-    <div class="row mt-5 p-0">
+
+    <!--Javascript Component: Collapse-->
+    <div>
+      <button class="btn btn-primary mb-5" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Sign Up!
+      </button>
+    </div>
+
+    <div class="row mt-5 p-0 collapse" id="collapseExample">
       <div class="col-sm-8 justify-content-center">
         <form>
             <div class="form-group">
@@ -215,6 +238,7 @@
         </form>
       </div>
     </div>
+
     <div class="row footer">
       <div class="col-sm-12">
         Copyright Fun Bus 2018
@@ -222,6 +246,7 @@
     </div>
   </div><!-- container -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
