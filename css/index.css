@@ -13,14 +13,21 @@ h5 {
   background-color: white;
   border-bottom: 2px dashed silver;
 }
+.container {
+  max-width: 800px;
+}
 .logo-heading {
   padding: 20px 0 10px;
+}
+nav {
+  justify-content: flex-end;
+  border: 1px solid red;
 }
 .nav a {
   color: black;
 }
-.container {
-  max-width: 800px;
+.border-radius {
+  border-radius: 50%;
 }
 .footer {
   color: black;
