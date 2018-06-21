@@ -29,7 +29,8 @@ h5 {
 }
 .customform {
   border: 1px solid #17a2b8;
-  box-shadow: 2px 2px #17a2b8;
+  box-shadow: 5px 5px #17a2b8;
   padding: 10px;
   border-radius: 10px;
+  margin: 5% 8% 5% 0%;
 }
