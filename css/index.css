@@ -28,6 +28,16 @@
 .header .vertical-nav .nav .nav-link {
   padding-right: 0;
 }
+.container {
+  width: 100%;
+}
+.container .contact-us {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
 html,
 body {
   font-family: 'Roboto', sans-serif;
