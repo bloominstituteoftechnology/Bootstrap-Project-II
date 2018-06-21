@@ -19,8 +19,17 @@ h5 {
 .nav a {
   color: black;
 }
+.email {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  background: #8AE3FE;
+}
 .container {
   max-width: 800px;
+}
+.container .img-fluid {
+  margin-top: 10px;
 }
 .footer {
   color: black;
