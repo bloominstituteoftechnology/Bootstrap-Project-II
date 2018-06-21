@@ -100,36 +100,72 @@
     <div class="row">
       <div class="col-sm-12">
         <h2>Destinations</h2>
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Location</th>
-              <th scope="col">Activity</th>
-              <th scope="col">Airfare</th>
-              <th scope="col">Hotel</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Beach</th>
-              <td>Chillin</td>
-              <td>$600</td>
-              <td>$400</td>
-            </tr>
-            <tr>
-              <th scope="row">Mountain</th>
-              <td>Hiking</td>
-              <td>$400</td>
-              <td>$200</td>
-            </tr>
-            <tr>
-              <th scope="row">Island</th>
-              <td>Boating</td>
-              <td>$1700</td>
-              <td>$600</td>
-            </tr>
-          </tbody>
-        </table>
+      
+        <!-- Beach Getaway Modal -->
+        <button type = "button " class= "btn btn-danger btn-lg" data-toggle= "modal" data-target= "#BeachModal">Beach Getaway</button>
+        <div class="modal fade" id="BeachModal" tabindex="-1" role="dialog" aria-labelledby="BeachModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Beach Getaway</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p> This is the beach model </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Book it Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Mountain Retreat Modal -->
+        <button type = "button" class = "btn btn-info btn-lg" data-toggle = "modal" data-target = "#MountainModal">Mountain Retreat</button>
+        <div class="modal fade" id="MountainModal" tabindex="-1" role="dialog" aria-labelledby="BeachModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Mountain Retreat</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p> This is the mountain model </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Book it Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <!-- Paradise Island Modal -->
+      <button type = "button" class = "btn btn-success btn-lg" data-toggle = "modal" data-target = "#ParadiseIsland">Paradise Island</button>
+      <div class="modal fade" id="ParadiseIsland" tabindex="-1" role="dialog" aria-labelledby="BeachModal" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Paradise Island</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p> This is the paradise island model </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Book it Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
     <div class="row mt-3">
