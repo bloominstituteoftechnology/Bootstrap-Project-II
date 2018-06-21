@@ -24,16 +24,33 @@
   <div class="container-fluid sticky-top">
     <div class="container">
       <div class="row align-items-center justify-content-between">
-        <div class="col-3">
+        <div class="col-6">
             <h1 class="logo-heading">Fun Bus</h1>
         </div>
-        <div class="col-6">
-          <nav class="nav">
+        <div class="col-6 nav-container">
+          <nav class="nav mobile-hide">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">About Us</a>
             <a class="nav-link" href="#">Blog</a>
             <a class="nav-link" href="#">Contact</a>
           </nav>
+
+          <div class="col-6 desktop-hide">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Navigation
+            </button>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body no-pad">
+                <nav class="nav">
+                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="#">Contact</a>
+                  </nav>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
