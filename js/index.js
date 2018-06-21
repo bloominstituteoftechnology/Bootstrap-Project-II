@@ -21,3 +21,9 @@ function validateForm() {
         return false;
     }
 }
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+$('#example').tooltip(options)

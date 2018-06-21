@@ -26,10 +26,10 @@
         </div>
         <div class="col-9 d-flex align-items-center justify-content-end">
           <nav class="nav">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link disabled" href="#" data-toggle="tooltip" title="You are here" data-placement="right">Home</a>
+            <a class="nav-link" href="#" data-toggle="tooltip" title="Learn who we are" data-placement="right">About Us</a>
+            <a class="nav-link" href="#" data-toggle="tooltip" title="Updated daily" data-placement="right">Blog</a>
+            <a class="nav-link" href="#" data-toggle="tooltip" title="For more info" data-placement="right">Contact</a>
           </nav>
         </div>
       </div>
@@ -90,36 +90,49 @@
     <div class="row mt-4">
       <div class="col-sm-12">
         <h2 id="destinations">Destinations</h2>
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Location</th>
-              <th scope="col">Activity</th>
-              <th scope="col">Airfare</th>
-              <th scope="col">Hotel</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Beach</th>
-              <td>Chillin</td>
-              <td>$600</td>
-              <td>$400</td>
-            </tr>
-            <tr>
-              <th scope="row">Mountain</th>
-              <td>Hiking</td>
-              <td>$400</td>
-              <td>$200</td>
-            </tr>
-            <tr>
-              <th scope="row">Island</th>
-              <td>Boating</td>
-              <td>$1700</td>
-              <td>$600</td>
-            </tr>
-          </tbody>
-        </table>
+        
+        
+            <p>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Toggle destinations
+                </button>
+            </p>
+          <div class="row">
+            <div class="col-12 collapse" id="collapseExample">
+            <table class="table table-striped col-12">
+              <thead>
+                <tr>
+                  <th scope="col">Location</th>
+                  <th scope="col">Activity</th>
+                  <th scope="col">Airfare</th>
+                  <th scope="col">Hotel</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Beach</th>
+                  <td>Chillin</td>
+                  <td>$600</td>
+                  <td>$400</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mountain</th>
+                  <td>Hiking</td>
+                  <td>$400</td>
+                  <td>$200</td>
+                </tr>
+                <tr>
+                  <th scope="row">Island</th>
+                  <td>Boating</td>
+                  <td>$1700</td>
+                  <td>$600</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -315,7 +328,7 @@
     </div>
     <div class="row mt-4">
       <div class="col-sm-12">
-        Copyright Fun Bus 2018
+        Copyright &copy; Fun Bus 2018
       </div>
     </div>
   </div><!-- container -->
