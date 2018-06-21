@@ -22,6 +22,9 @@ h5 {
 .container {
   max-width: 800px;
 }
+.container .modal-dialog {
+  margin-top: 20%;
+}
 .footer {
   color: black;
   background: blanchedalmond;
