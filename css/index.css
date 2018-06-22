@@ -50,9 +50,9 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 780px;
   margin: auto;
-  border: 1px solid red;
+  width: 100%;
+  border: 1px solid blue;
   margin: 0 auto;
   font-family: Arial, sans-serif;
 }
@@ -62,13 +62,22 @@ h5 {
   justify-content: center;
   align-items: center;
 }
-nav {
-  margin: 10px;
-  display: flex;
-  justify-content: space-around;
-}
 .welcome-fun-bus {
   margin-top: 20px;
+}
+a .btn-promo-deal {
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  font-family: "museo-sans", sans-serif;
+  padding: 10px 15px;
+  font-weight: 300;
+  letter-spacing: .1px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  text-shadow: 0 0 0;
+  background: #3f85ff;
 }
 .btn {
   cursor: pointer;
@@ -76,77 +85,11 @@ nav {
   color: #fff;
   font-family: "museo-sans", sans-serif;
   padding: 10px 15px;
-  font-weight: 300 !important;
+  font-weight: 300;
   letter-spacing: .1px;
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
   text-shadow: 0 0 0;
-  background: #3f96cb;
-}
-.main-content {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  margin: 75px 0 35px 0;
-  padding: 35px 0;
-  font-size: 16px;
-  line-height: 18px;
-}
-.main-content .top-content {
-  display: flex;
-  justify-content: space-around;
-}
-.main-content .top-content .btn-features {
-  margin-top: 20px;
-  width: 100px;
-  height: 50px;
-  background-color: #577ae4;
-  border: 1px solid black;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-box-shadow: 0 5px 5px -3px red;
-  -moz-box-shadow: 0 5px 5px -3px red;
-  box-shadow: 0 5px 5px -3px red;
-  color: white;
-  cursor: pointer;
-  flex-direction: column;
-}
-.main-content .middle-img {
-  display: block;
-  margin: 30px auto;
-}
-.main-content .bottom-content {
-  display: flex;
-  justify-content: space-around;
-}
-.main-content .bottom-content .btn-features {
-  margin-top: 20px;
-  width: 100px;
-  height: 50px;
-  background-color: #577ae4;
-  border: 1px solid black;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-box-shadow: 0 5px 5px -3px red;
-  -moz-box-shadow: 0 5px 5px -3px red;
-  box-shadow: 0 5px 5px -3px red;
-  color: white;
-  cursor: pointer;
-}
-.main-content .bottom-content .btn-features p {
-  padding-right: 20px;
+  background: #3f58ee;
 }
