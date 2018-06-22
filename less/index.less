@@ -1,5 +1,11 @@
 // Start here!
 
+// Variables
+
+@sm: ~"(max-width: 576px)";
+
+// Styles
+
 html, body {
     font-family: 'Roboto', sans-serif;
 }
@@ -35,7 +41,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .middle-picture-content {
-    @media (max-width: 576px) {
+    @media @sm {
         display: flex;
         flex-direction: column-reverse;
     }
