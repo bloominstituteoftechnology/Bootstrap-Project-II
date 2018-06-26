@@ -1,5 +1,11 @@
 // Start here!
 
+// Variables
+
+@sm: ~"(max-width: 576px)";
+
+// Styles
+
 html, body {
     font-family: 'Roboto', sans-serif;
 }
@@ -18,6 +24,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav {
+    
     a {
         color: black;
     }
@@ -31,4 +38,11 @@ h1, h2, h3, h4, h5 {
     color: black;
     background: blanchedalmond;
     padding: 20px 0;
+}
+
+.middle-picture-content {
+    @media @sm {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }

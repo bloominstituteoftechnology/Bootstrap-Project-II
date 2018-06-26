@@ -27,3 +27,9 @@ h5 {
   background: blanchedalmond;
   padding: 20px 0;
 }
+@media (max-width: 576px) {
+  .middle-picture-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
