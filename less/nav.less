@@ -1,0 +1,45 @@
+/* Navigation Styles */
+
+.header-container {
+    border-bottom: 2px dashed silver;
+    .header {
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        justify-content: space-between;
+        .header-row {
+            width: 100%;
+            margin: 0;
+            .logo-heading-container {
+                padding-left: 0;
+                .logo-heading {
+                    background-color: #f3fcff;
+                    height: 100%;
+                    text-align: center;
+                    font-weight: 900;
+                }
+            }
+        }
+        .vertical-nav {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 0;
+            .nav {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-end;
+                align-items: center;
+                right: 0px;
+                width: 100%;
+                .nav-link {
+                    padding-right: 0;
+                }
+                .navbar-nav {
+                    width: 100%;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+}
