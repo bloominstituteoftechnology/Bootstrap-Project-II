@@ -1,3 +1,11 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.padding {
+  padding-bottom: 30px;
+}
 html,
 body {
   font-family: 'Roboto', sans-serif;
@@ -26,4 +34,7 @@ h5 {
   color: black;
   background: blanchedalmond;
   padding: 20px 0;
+}
+small {
+  font-size: 6px;
 }
