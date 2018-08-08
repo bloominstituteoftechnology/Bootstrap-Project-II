@@ -21,9 +21,51 @@ h5 {
 }
 .container {
   max-width: 800px;
+  background-color: #F9F5D7;
+}
+.margin-temp {
+  margin: 20px 0;
+}
+.navigation {
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  margin: 30px 0 0 0;
+  font-family: georgia, serif;
+  font-size: 60px;
+}
+.carousel {
+  width: 100%;
+}
+.upper-content {
+  margin: 20px 0;
+}
+.upper-middle {
+  margin: 20px 0;
+}
+.middle {
+  margin: 20px 0;
+}
+.lower-middle {
+  margin: 20px 0;
+}
+.lowest-middle {
+  margin: 50px 0;
+}
+.bottom-content {
+  margin: 20px 0;
+}
+.vac-selection {
+  display: flex;
+  justify-content: flex-start;
 }
 .footer {
   color: black;
-  background: blanchedalmond;
   padding: 20px 0;
+}
+.footer .copyright-label {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
